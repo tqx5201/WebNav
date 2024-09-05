@@ -75,6 +75,12 @@
                 <!----------------------------- 左/顶侧部菜单 ----------------------------->
                 <ul id="main-menu" class="main-menu">
                     <li class="">
+                        <a href="#个人站点" class="smooth">
+                            <i class="fa-home"></i>
+                            <span class="title">AI站点</span>
+                        </a>
+                    </li>
+                    <li class="">
                         <a href="#网页工具" class="smooth">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                             <span class="title">网页工具</span>
@@ -292,9 +298,9 @@
                             <li><input hidden type="radio" name="type" id="type-xiaohongshu" value="https://www.xiaohongshu.com/search_result?keyword="
                                 data-placeholder="搜索小红书"><label for="type-xiaohongshu"><span style="color:#FF1E3E">小红书</span></label></li>
                             <li><input hidden type="radio" name="type" id="type-douyin" value="https://www.douyin.com/search/"
-                                data-placeholder="搜索你感兴趣的内容"><label for="type-douyin"><span style="color:#00afc7">抖音</span></label></li>
-                            <li><input hidden type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?"
-                                data-placeholder="快递100"><label for="type-快递100"><span style="color:#3278e6">快递100</span></label></li>
+                                data-placeholder="搜索你感兴趣的内容"><label for="type-douyin"><span style="color:#2E1A2D">抖音</span></label></li>
+                            <!-- <li><input hidden type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?"
+                                data-placeholder="快递100"><label for="type-快递100"><span style="color:#3278e6">快递100</span></label></li> -->
                         </ul>
                     </div>
                     <!-- <div class="search-group group-f">
@@ -350,6 +356,104 @@
 
 
             <!----------------------------- 网址链接 ----------------------------->
+            <!-- 个人站点 -->
+            <h4 class="text-gray"><i class="fa-solid fa-tags" style="margin-right: 7px;" id="个人站点"></i>个人站点</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://chat.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://chat.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/nextchat.ico" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>NextChat</strong>
+                                </a>
+                                <p class="overflowClip_2">ChatGPT网页应用, 部署于Vercel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://bingai.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://bingai.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/bingai.ico" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>BingAI</strong>
+                                </a>
+                                <p class="overflowClip_2">NewBing镜像站, 部署于Cloudflare Workers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://oapi.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://oapi.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/oneapi.ico" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>OneAPI</strong>
+                                </a>
+                                <p class="overflowClip_2">ChatGPT API分发站, 有需要的可发邮件申请Key</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://alist.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://alist.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/alist.svg" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>Alist</strong>
+                                </a>
+                                <p class="overflowClip_2">个人影音库, 部署于本地, Cloudflare代理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://yuedu.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://yuedu.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/reader.ico" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>Reader</strong>
+                                </a>
+                                <p class="overflowClip_2">开源小说/网文阅读, 部署于本地, Cloudflare代理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://box.imkk.uk/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://box.imkk.uk/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img data-src="https://cdn.imkk.uk/icon/nav/filebox.png" class="lozad img-circle" width="40" src="./images/loading.svg">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>FileBox</strong>
+                                </a>
+                                <p class="overflowClip_2">匿名口令分享文本、文件, 部署于本地, Cloudflare代理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!--END AI站点 -->
+
+
             <!-- 网页工具 -->
             <h4 class="text-gray"><i class="fa-solid fa-tags" style="margin-right: 7px;" id="网页工具"></i>网页工具</h4>
             <div class="row">
