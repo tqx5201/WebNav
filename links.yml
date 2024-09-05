@@ -3,9 +3,9 @@
 ## 页面配置
 ################
 # 作者名称
-user_name: KK
+user_name: DSTBP
 # 网站名称
-site_name: OneNav
+site_name: WebNav
 # 网站Favicon
 shortcut_icon: ./favicon.ico
 # 网站LOGO
@@ -15,17 +15,21 @@ shortcut_icon: ./favicon.ico
 # 一般需在小写大写衔接处加 - 且全部转为小写 并在前面加上 fa-solid 或 fa-brands
 # 如找到图标名称为 GraduationCap 则使用时填写 fa-graduation-cap
 # 特别的如图标 Github 使用时应填写 fa-brands fa-github
+
 logo: fa-solid fa-compass
 # 网站关键字
-keywords: 导航页, 导航, OneNav, GenEasy, Github, Github Pages
+keywords: 导航页, 导航, WebNav, DSTBP, Github, Github Pages, r0xanne
 # 网站描述
 description: 个人网址集
 # 个人主页
-home_url: https://www.imkk.uk/
+home_url: https://www.dstbp.net/
 # 个人邮箱
-email: Nav@imkk.uk
+email: 2090674202@qq.com
 # GitHub链接
-github_url: https://github.com/MadisonWirtanen
+github_url: https://github.com/dstbp
+
+
+
 ################
 ## 网址链接
 ################
@@ -34,21 +38,24 @@ categories:
     icon: fa-solid fa-star
     links:
       - title: 主页
-        logo: https://cdn.imkk.uk/icon/svg/Home.svg
-        url: https://www.imkk.uk/
-        description: 我的主页, 欢迎访问
+        logo: fa-home
+        url: https://www.dstbp.net/
+        description: 我的主页
+
       - title: 博客
-        logo: https://cdn.imkk.uk/icon/svg/Blog.svg
-        url: https://blog.imkk.uk/
-        description: 我的博客, 欢迎留言
-      - title: 监测站
-        logo: https://cdn.imkk.uk/icon/svg/CheckCircle.svg
-        url: https://monitor.imkk.uk/
-        description: 监测网站运行状态
-      - title: Email
-        logo: https://cdn.imkk.uk/icon/svg/Envelope.svg
-        url: mailto:nav@imkk.uk
-        description: 点击即可通过邮件联系我
+        logo: ./images/ico/Blog.svg
+        url: https://dstbp.com/
+        description: 我的博客
+
+      # - title: 监测站
+      #   logo: fa-check-circle
+      #   url: https://monitors.dstbp.net/
+      #   description: 监测网站运行状态
+
+      # - title: Email
+      #   logo: fa-envelope
+      #   url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KBoYERgeHxwaGBpoWVkGS0dF
+      #   description: 点击即可通过邮件联系我
 
   - category: Proxy
     hide_menu: true
