@@ -1,0 +1,26 @@
+import os
+
+def rename_files_in_directory(directory, start_number):
+    # 获取目录中的所有文件
+    files = os.listdir(directory)
+    
+    # 排序文件，确保按指定顺序重命名
+    files.sort()
+
+    for index, filename in enumerate(files):
+        # 构建新的文件名，带上扩展名
+        file_extension = os.path.splitext(filename)[1]
+        new_name = f"{start_number + index}{file_extension}"
+
+        # 原文件路径和新文件路径
+        old_path = os.path.join(directory, filename)
+        new_path = os.path.join(directory, new_name)
+
+        # 重命名文件
+        os.rename(old_path, new_path)
+        print(f"Renamed: {old_path} to {new_path}")
+
+# 使用示例
+directory_path = r'D:\MyConfiguration\TCLDUSER.DESKTOP-3KB71FN\Desktop\aaa\test'
+start_number = 47
+rename_files_in_directory(directory_path, start_number)
