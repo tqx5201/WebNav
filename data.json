@@ -1,0 +1,1558 @@
+{
+  "main-menu": {
+    "个人站点": {
+      "href": "#个人站点",
+      "icon": "fa-solid fa-home",
+      "title": "个人站点"
+    },
+    "网页工具": {
+      "href": "#网页工具",
+      "icon": "fa-solid fa-wrench",
+      "title": "网页工具"
+    },
+    "技术工具": {
+      "href": "#技术工具",
+      "icon": "fa-solid fa-bug",
+      "title": "技术工具"
+    },
+    "赛题平台": {
+      "href": "#赛题平台",
+      "icon": "fa-solid fa-dragon",
+      "title": "赛题平台"
+    },
+    "学术资源": {
+      "href": "#学术资源",
+      "icon": "fa-solid fa-graduation-cap",
+      "title": "学术资源"
+    },
+    "AI站点": {
+      "href": "#AI站点",
+      "icon": "fa-solid fa-laptop",
+      "title": "AI站点"
+    },
+    "设计素材": {
+      "href": "#设计素材",
+      "icon": "fa-solid fa-marker",
+      "title": "设计素材"
+    },
+    "影音游戏": {
+      "href": "#影音游戏",
+      "icon": "fa-brands fa-youtube",
+      "title": "影音游戏"
+    },
+    "摸鱼娱乐": {
+      "href": "#摸鱼娱乐",
+      "icon": "fa-solid fa-gamepad",
+      "title": "摸鱼娱乐"
+    },
+    "其他": {
+      "href": "#其他",
+      "icon": "fa-solid fa-star",
+      "title": "其他"
+    }
+  },
+  "search": {
+    "常用": [
+      {
+        "id": "type-baidu",
+        "value": "https://www.baidu.com/s?wd=",
+        "placeholder": "百度一下，你就知道",
+        "name": "百度",
+        "color": "#2100e0"
+      },
+      {
+        "id": "type-bing1",
+        "value": "https://cn.bing.com/search?q=",
+        "placeholder": "微软 Bing 搜索",
+        "name": "Bing",
+        "color": "#007daa"
+      },
+      {
+        "id": "type-google",
+        "value": "https://www.google.com/search?q=",
+        "placeholder": "谷歌搜索",
+        "name": "Google",
+        "color": "#4285f4"
+      },
+      {
+        "id": "type-bili1",
+        "value": "https://search.bilibili.com/all?keyword=",
+        "placeholder": "哔哩哔哩搜索",
+        "name": "BiliBili",
+        "color": "#00a1d6"
+      },
+      {
+        "id": "type-git1",
+        "value": "https://github.com/search?utf8=%E2%9C%93&q=",
+        "placeholder": "搜索 Github 仓库",
+        "name": "Github",
+        "color": "#000000"
+      }
+    ],
+    "搜索": [
+      {
+        "id": "type-search",
+        "value": "https://www.baidu.com/s?wd=",
+        "placeholder": "百度一下，你就知道",
+        "name": "百度",
+        "color": "#2319dc"
+      },
+      {
+        "id": "type-bing",
+        "value": "https://cn.bing.com/search?q=",
+        "placeholder": "微软 Bing 搜索",
+        "name": "Bing",
+        "color": "#007daa"
+      },
+      {
+        "id": "type-google1",
+        "value": "https://www.google.com/search?q=",
+        "placeholder": "谷歌搜索",
+        "name": "Google",
+        "color": "#3b83fa"
+      },
+      {
+        "id": "type-sogo",
+        "value": "https://www.sogou.com/web?query=",
+        "placeholder": "搜狗搜索",
+        "name": "搜狗",
+        "color": "#ff5943"
+      },
+      {
+        "id": "type-bili",
+        "value": "https://search.bilibili.com/all?keyword=",
+        "placeholder": "bilibili 搜索",
+        "name": "BiliBili",
+        "color": "#00a1d6"
+      },
+      {
+        "id": "type-git",
+        "value": "https://github.com/search?utf8=%E2%9C%93&q=",
+        "placeholder": "搜索 Github 仓库",
+        "name": "Github",
+        "color": "#000000"
+      }
+    ],
+    "工具": [
+      {
+        "id": "type-ping",
+        "value": "https://www.cesu.net/ping/",
+        "placeholder": "只输 ip 地址",
+        "name": "PING检测",
+        "color": "#00599e"
+      },
+      {
+        "id": "type-links",
+        "value": "https://link.chinaz.com/",
+        "placeholder": "请输入网址 ( 不带http:// )",
+        "name": "友链检测",
+        "color": "#313439"
+      },
+      {
+        "id": "type-https",
+        "value": "https://stool.chinaz.com/https?url=",
+        "placeholder": "请输入网址 ( 不带http:// )",
+        "name": "HTTPS检测",
+        "color": "#f00"
+      }
+    ],
+    "社区": [
+      {
+        "id": "type-zhihu",
+        "value": "https://www.zhihu.com/search?type=content&q=",
+        "placeholder": "知乎，与你分享刚编的故事",
+        "name": "知乎",
+        "color": "#0084ff"
+      },
+      {
+        "id": "type-52pojie",
+        "value": "https://www.52pojie.cn/search.php?mod=forum&searchid=11382&orderby=lastpost&ascdesc=desc&searchsubmit=yes&kw=",
+        "placeholder": "请输入搜索内容",
+        "name": "吾爱破解",
+        "color": "#e21010"
+      },
+      {
+        "id": "type-kanxue",
+        "value": "https://bbs.kanxue.com/search-",
+        "placeholder": "社区关键词 回车搜索",
+        "name": "看雪",
+        "color": "#3cb0f1"
+      },
+      {
+        "id": "type-stack",
+        "value": "https://stackoverflow.com/search?q=",
+        "placeholder": "Search...",
+        "name": "Stack Overflow",
+        "color": "#f48024"
+      },
+      {
+        "id": "type-juejin",
+        "value": "https://juejin.cn/search?query=",
+        "placeholder": "探索稀土掘金",
+        "name": "稀土掘金",
+        "color": "#1e80ff"
+      },
+      {
+        "id": "type-csdn",
+        "value": "https://juejin.cn/search?query=",
+        "placeholder": "CSDN search",
+        "name": "CSDN",
+        "color": "#fb5430"
+      },
+      {
+        "id": "type-douban",
+        "value": "https://www.douban.com/search?q=",
+        "placeholder": "豆瓣",
+        "name": "豆瓣",
+        "color": "#55a300"
+      }
+    ],
+    "生活": [
+      {
+        "id": "type-taobao1",
+        "value": "https://s.taobao.com/search?q=",
+        "placeholder": "搜索宝贝",
+        "name": "淘宝",
+        "color": "#f40"
+      },
+      {
+        "id": "type-jd",
+        "value": "https://search.jd.com/Search?keyword=",
+        "placeholder": "商品搜索",
+        "name": "京东",
+        "color": "#c91623"
+      },
+      {
+        "id": "type-xiachufang",
+        "value": "http://www.xiachufang.com/search/?keyword=",
+        "placeholder": "搜索菜谱、食材",
+        "name": "下厨房",
+        "color": "#dd3915"
+      },
+      {
+        "id": "type-xiangha",
+        "value": "https://www.xiangha.com/so/?q=caipu&s=",
+        "placeholder": "搜菜谱、食材",
+        "name": "香哈菜谱",
+        "color": "#930"
+      },
+      {
+        "id": "type-xiaohongshu",
+        "value": "https://www.xiaohongshu.com/search_result?keyword=",
+        "placeholder": "搜索小红书",
+        "name": "小红书",
+        "color": "#ff1e3e"
+      },
+      {
+        "id": "type-douyin",
+        "value": "https://www.douyin.com/search/",
+        "placeholder": "搜索你感兴趣的内容",
+        "name": "抖音",
+        "color": "#2e1a2d"
+      }
+    ]
+  },
+  "links": {
+    "个人站点": [
+      {
+        "name": "Vercel",
+        "url": "https://vercel.com/dstbps-projects/",
+        "img": "vercel.jpg",
+        "desc": "vercel 项目管理"
+      },
+      {
+        "name": "crypto stackexchange",
+        "url": "https://crypto.stackexchange.com/questions/ask",
+        "img": "stackexchange.jpg",
+        "desc": "密码学爱好者讨论论坛-提问模块"
+      },
+      {
+        "name": "腾讯云",
+        "url": "https://console.cloud.tencent.com/",
+        "img": "tecentCloud.jpg",
+        "desc": "腾讯云控制台"
+      },
+      {
+        "name": "uptimerobot",
+        "url": "https://old.uptimerobot.com/dashboard",
+        "img": "uptimerobot.jpg",
+        "desc": "站点检测网站"
+      },
+      {
+        "name": "收藏文章",
+        "url": "https://dstbp.com/posts/articles/",
+        "img": "dstbp1.jpg",
+        "desc": "在学习过程中收藏过的优秀文章"
+      },
+      {
+        "name": "优秀 github 项目",
+        "url": "https://dstbp.com/posts/githubs",
+        "img": "dstbp2.jpg",
+        "desc": "在学习过程中收藏过的 github 项目"
+      },
+      {
+        "name": "notion",
+        "url": "https://www.notion.so/700f7512c5ed44f7af7d86e7e09ce290",
+        "img": "notion.jpg",
+        "desc": "笔记"
+      },
+      {
+        "name": "语雀",
+        "url": "https://www.yuque.com/dstbp/knowledge",
+        "img": "yuque.jpg",
+        "desc": "语雀笔记"
+      },
+      {
+        "name": "自动化云任务",
+        "url": "https://y1.yum9.cc/",
+        "img": "yum9.jpg",
+        "desc": "OneTool 简约大气高效的自动化云任务系统"
+      },
+      {
+        "name": "gmail邮箱",
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "img": "gmail.jpg",
+        "desc": "TaddeoWang123@gmail.com"
+      },
+      {
+        "name": "163邮箱",
+        "url": "https://mail.163.com/js6/main.jsp?sid=JNjKmKOORwRVYEZTLxOOKJgWDOJHLVVn",
+        "img": "163.jpg",
+        "desc": "taddeowang123@163.com"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/_dstbp_/",
+        "img": "instagram.jpg",
+        "desc": "_dstbp_"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://x.com/WangTaddeo",
+        "img": "x.jpg",
+        "desc": "@WangTaddeo"
+      }
+    ],
+    "网页工具": [
+      {
+        "name": "图片/PDF工具箱",
+        "url": "https://www.11zon.com/zh-cn/",
+        "img": "11zon.jpg",
+        "desc": "11zon\n                                    压缩图片、图片转换、图片裁剪、调整图片大小、图像旋转、图像合并、压缩PDF、转换PDF"
+      },
+      {
+        "name": "TinyPNG",
+        "url": "https://tinify.cn/",
+        "img": "tinify.jpg",
+        "desc": "智能压缩Webp、JPEG和PNG图片"
+      },
+      {
+        "name": "图片工具箱",
+        "url": "https://www.iloveimg.com/zh-cn/",
+        "img": "iloveimg.jpg",
+        "desc": "iloveimg\n                                    压缩图片、加水印、html转图片、去背景、模糊面部、裁剪图片、调整图片、提升图片质量"
+      },
+      {
+        "name": "音频MIDI",
+        "url": "https://midi.martinic.com/zh/audio-to-midi",
+        "img": "martinic.jpg",
+        "desc": "音频转 MIDI"
+      },
+      {
+        "name": "菜鸟工具箱",
+        "url": "https://www.jyshare.com/front-end/",
+        "img": "jyshare.jpg",
+        "desc": "RGB转HEX、AI注释/解析代码、文本比对、图片取色、字数统计、图片转base64"
+      },
+      {
+        "name": "yandex 以图搜图",
+        "url": "https://yandex.com/images",
+        "img": "yandexImage.jpg",
+        "desc": "以图搜图，支持各种尺寸"
+      },
+      {
+        "name": "音频转换器",
+        "url": "https://audio-convert.com/cn",
+        "img": "audio-convert.jpg",
+        "desc": "支持MP3，WAV，M4A，FLAC，MIDI，OGG，AAC，M4R，WMA，OPUS，AIFF和MMF格式转换"
+      },
+      {
+        "name": "removebg",
+        "url": "https://www.remove.bg/",
+        "img": "removebg.jpg",
+        "desc": "去除照片背景"
+      },
+      {
+        "name": "网盘解析",
+        "url": "https://www.94speed.com/",
+        "img": "94speed.jpg",
+        "desc": "百度网盘无限速批量下载，支持文件夹下载"
+      },
+      {
+        "name": "印章生成器",
+        "url": "https://tools.kalvinbg.cn/convenience/seal",
+        "img": "kalvinbg.jpg",
+        "desc": "kalvinbg 印章生成器。支持正圆、椭圆、方正印章"
+      },
+      {
+        "name": "视频编辑器",
+        "url": "https://www.video2edit.com/zh",
+        "img": "video2edit.jpg",
+        "desc": "旋转视频、剪辑视频、合并视频、比较视频、压缩视频、格式转换"
+      },
+      {
+        "name": "在线字体查看器",
+        "url": "https://www.bejson.com/ui/font/",
+        "img": "bejson.jpg",
+        "desc": "在线字体查看器，支持 ttf、otf 和 woff 格式"
+      },
+      {
+        "name": "压缩图片",
+        "url": "https://www.bejson.com/ui/compress_img/",
+        "img": "bejson.jpg",
+        "desc": "在线压缩图片"
+      },
+      {
+        "name": "网络剪贴板",
+        "url": "https://netcut.cn/",
+        "img": "netcut.jpg",
+        "desc": "提供数据暂存和传送服务，可将文本数据或全格式文件数据上传到剪贴板中"
+      },
+      {
+        "name": "分享屏幕",
+        "url": "https://pin.gl/",
+        "img": "pin.jpg",
+        "desc": "简单快捷投映屏幕或摄像头的在线工具"
+      },
+      {
+        "name": "简历生成器",
+        "url": "https://rxresu.me/dashboard/resumes",
+        "img": "rxresu.jpg",
+        "desc": "独一无二的简历生成器，保护你的隐私。安全、可定制可移植、开源且永久免费"
+      },
+      {
+        "name": "草料二维码",
+        "url": "https://cli.im/",
+        "img": "cli.jpg",
+        "desc": "二维码解码、文本链接转二维码"
+      },
+      {
+        "name": "AbeimAPI",
+        "url": "https://res.abeim.cn/api/",
+        "img": "abeim.jpg",
+        "desc": "稳定、快速、免费的 API 接口服务"
+      },
+      {
+        "name": "UApi",
+        "url": "https://uapis.cn/",
+        "img": "UApi.jpg",
+        "desc": "提供免费接口调用平台"
+      },
+      {
+        "name": "Favicon Fetcher",
+        "url": "https://www.zhanid.com/tool/favicon-fetch.html",
+        "img": "zhanid.jpg",
+        "desc": "获取并下载网站 Favicon"
+      },
+      {
+        "name": "磁力在线播放",
+        "url": "https://webtor.io/",
+        "img": "webtor.jpg",
+        "desc": "免费在线种子磁力播放和下载工具，支持加载字幕，支持扩展程序"
+      },
+      {
+        "name": "文叔叔",
+        "url": "https://www.wenshushu.cn/",
+        "img": "wenshushu.jpg",
+        "desc": "临时收发文件"
+      },
+      {
+        "name": "libcimbar",
+        "url": "https://cimbar.org/",
+        "img": "cimbar.jpg",
+        "desc": "无网络环境下利用二维码传输文件，无需互联网/蓝牙/NFC等，所有数据都通过相机镜头传输。https://cimbar.org/\n                                    选择需要传输的文件，解码器是一个使用手机摄像头读取动画条形码的手机应用程序：手机打开APP，对准屏幕，传输开始会出现进度条。Android\n                                    APP下载：https://github.com/sz3/cfc/releases"
+      },
+      {
+        "name": "图片识别代码",
+        "url": "https://screenshottocode.com/",
+        "img": "screenshottocode.jpg",
+        "desc": "放入屏幕截图并将其转换为干净的代码"
+      },
+      {
+        "name": "CAJ转PDF",
+        "url": "https://xpdf.cn/caj-to-pdf",
+        "img": "caj2pdf.jpg",
+        "desc": "CAJ转PDF工具是一款功能强大的软件，可以将中国知网文献格式CAJ转换成PDF格式，方便用户进行阅读和使用"
+      },
+      {
+        "name": "微信公众号文章下载",
+        "url": "https://changfengbox.top/wechat",
+        "img": "changfengbox.jpg",
+        "desc": "一款可以批量下载微信公众号文章内容的小工具，无需安装证书，支持Window、Macos支持下载微信公众号的历史消息，可以保存文章为html/mhtml/md/pdf/docx文件"
+      },
+      {
+        "name": "任务拆分器",
+        "url": "https://goblin.tools/",
+        "img": "goblin.jpg",
+        "desc": "将复杂任务分解为可管理步骤的在线工具"
+      }
+    ],
+    "技术工具": [
+      {
+        "name": "Convert curl",
+        "url": "https://sqqihao.github.io/trillworks.html",
+        "img": "convert.jpg",
+        "desc": "Convert curl syntax to Python, Ansible URI, MATLAB, Node.js,\n                                    R, PHP, Strest, Go, Dart, JSON, Elixir, Rust"
+      },
+      {
+        "name": "爬虫工具库",
+        "url": "https://spidertools.cn/",
+        "img": "spidertools.jpg",
+        "desc": "Header格式化、Cookie格式化、Dict格式化、JS格式化、HTML格式化、url参数提取、url编码、url解码、html渲染、文本解码、JSON格式化"
+      },
+      {
+        "name": "K哥爬虫工具库",
+        "url": "https://www.kgtools.cn/",
+        "img": "kgtools.jpg",
+        "desc": "爬虫工具集，python编程学习工具，数据采集工具导航，AI工具集网站"
+      },
+      {
+        "name": "在线小工具库",
+        "url": "https://www.iotool.cn/",
+        "img": "iotool.jpg",
+        "desc": "有趣的小工具集合"
+      },
+      {
+        "name": "SpiderBox",
+        "url": "https://spiderbox.cn/",
+        "img": "spiderbox.jpg",
+        "desc": "SpiderBox - 虫盒 - 爬虫逆向资源导航站"
+      },
+      {
+        "name": "CyberChef",
+        "url": "https://gchq.github.io/CyberChef/",
+        "img": "CyberChef.jpg",
+        "desc": "赛博厨子，加解密工具库"
+      },
+      {
+        "name": "AST Explorer",
+        "url": "https://astexplorer.net/",
+        "img": "astexplorer.jpg",
+        "desc": "源代码的AST抽象语法结构树在线可视化"
+      },
+      {
+        "name": "APK加固",
+        "url": "https://nop.gs/upload.php",
+        "img": "nopgs.jpg",
+        "desc": "APK 加固安全测试，在线脱壳"
+      },
+      {
+        "name": "摩斯翻译器",
+        "url": "https://www.lddgo.net/encrypt/morse",
+        "img": "morse.jpg",
+        "desc": "在线摩斯密码翻译器"
+      },
+      {
+        "name": "图形计算器",
+        "url": "https://www.desmos.com/calculator?lang=zh-CN",
+        "img": "desmos.jpg",
+        "desc": "提供全球通用的免费绘图、科学、3D 和几何计算器"
+      },
+      {
+        "name": "椭圆曲线点加运算",
+        "url": "https://webencrypt.org/ec_gfp_add/",
+        "img": "webencrypt.jpg",
+        "desc": "有限域𝔽p上的椭圆曲线点加运算"
+      },
+      {
+        "name": "regex101",
+        "url": "https://regex101.com/",
+        "img": "regex101.jpg",
+        "desc": "在线的正则表达式测试和学习工具"
+      },
+      {
+        "name": "CMD5",
+        "url": "https://www.cmd5.com/",
+        "img": "cmd5.jpg",
+        "desc": "一款强大的MD5查询软件，专为解密MD5哈希值而设计"
+      },
+      {
+        "name": "MD5",
+        "url": "http://md5.cn/",
+        "img": "md5.jpg",
+        "desc": "强大的MD5查询软件，解密MD5哈希值"
+      },
+      {
+        "name": "Hashes",
+        "url": "https://hashes.com/zh/decrypt/hash",
+        "img": "hashes.jpg",
+        "desc": "解密 MD5、SHA1、MySQL、NTLM、SHA256、SHA512"
+      },
+      {
+        "name": "Apkpure",
+        "url": "https://apkpure.com/cn/",
+        "img": "apkpure.jpg",
+        "desc": "APK Pure免费APK下载器，适用于Android"
+      },
+      {
+        "name": "豌豆荚",
+        "url": "https://www.wandoujia.com/",
+        "img": "wandoujia.jpg",
+        "desc": "提供绿色安全应用与游戏的下载市场，汇聚海量的安卓软件、安卓应用和安卓游戏资源"
+      },
+      {
+        "name": "ARM to HEX",
+        "url": "https://armconverter.com/",
+        "img": "armconverter.jpg",
+        "desc": "用于将ARM ASM指令转换为十六进制"
+      },
+      {
+        "name": "SSL工具",
+        "url": "https://www.ssleye.com/ssltool/",
+        "img": "ssltool.jpg",
+        "desc": "提供证书工具、校验工具、SSL漏洞检测等多达20多种SSL工具，证书查看、测试证书生成、证书格式转换、CAA检测、ATS检测、小程序SSL检测、SSL漏洞检测等"
+      },
+      {
+        "name": "在线 Java 编译器",
+        "url": "https://www.jdoodle.com/online-java-compiler",
+        "img": "jdoodle.jpg",
+        "desc": "在线运行 Java 代码"
+      },
+      {
+        "name": "图片分析器",
+        "url": "https://www.aperisolve.com/",
+        "img": "aperisolve.jpg",
+        "desc": "一个对图像进行分层分析的在线平台。该平台还使用zsteg、steghide、outguess、exiftool、binwalk等进行更深入的隐写分析。该平台支持以下图像格式：.png、.jpg、.gif等"
+      },
+      {
+        "name": "BugKu工具库",
+        "url": "https://ctf.bugku.com/tools.html",
+        "img": "bugku.jpg",
+        "desc": "各种古典密码、与佛论禅、UUencode"
+      },
+      {
+        "name": "APK分析工具",
+        "url": "https://www.shenmeapp.com/",
+        "img": "shenmeapp.jpg",
+        "desc": "在线分析APK，轻松分析和优化 Android APK"
+      },
+      {
+        "name": "HTML-Editor",
+        "url": "https://html.jerryz.com.cn/",
+        "img": "jerryz.jpg",
+        "desc": "HTML代码在线编辑器，可即时预览"
+      },
+      {
+        "name": "Javascript混淆",
+        "url": "https://www.lddgo.net/encrypt/js",
+        "img": "morse.jpg",
+        "desc": "在线Javascript混淆加密"
+      },
+      {
+        "name": "Javascript混淆",
+        "url": "https://www.jshaman.com/#free",
+        "img": "jshaman.jpg",
+        "desc": "提供 JavaScript 代码混淆加密，有免费和付费版"
+      },
+      {
+        "name": "Javascript-Obfuscator",
+        "url": "https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx",
+        "img": "javascriptobfuscator.jpg",
+        "desc": "提供 JavaScript 代码ob混淆加密"
+      },
+      {
+        "name": "JS解混淆",
+        "url": "https://js-deobfuscator.vercel.app/",
+        "img": "deobfuscator.jpg",
+        "desc": "JavaScript 通用去混淆器，代码还原利器"
+      },
+      {
+        "name": "JS解混淆",
+        "url": "http://www.cnlans.com:8887/",
+        "img": "cnlans.jpg",
+        "desc": "改自[愧怍]开源的JavaScript解混淆工具"
+      },
+      {
+        "name": "JSDec",
+        "url": "https://jsdec.js.org/",
+        "img": "jsdec.jpg",
+        "desc": "JavaScript解混淆工具"
+      },
+      {
+        "name": "LaTeX公式编辑器",
+        "url": "https://www.latexlive.com/",
+        "img": "latexlive.jpg",
+        "desc": "在线LaTeX公式编辑器"
+      },
+      {
+        "name": "LaTeX公式识别器",
+        "url": "https://simpletex.cn/ai/latex_ocr",
+        "img": "simpletex.jpg",
+        "desc": "免费 Latex 图片公式识别"
+      },
+      {
+        "name": "论文翻译",
+        "url": "https://pdf2zh.com/",
+        "img": "pdf2zh.jpg",
+        "desc": "支持格式化论文翻译，保留公式、表格等信息"
+      },
+      {
+        "name": "Mermaid 绘图工具",
+        "url": "https://mermaid-live.nodejs.cn/",
+        "img": "mermaid.jpg",
+        "desc": "官方 Mermaid 代码绘制图表"
+      },
+      {
+        "name": "Mermaid 在线绘图工具",
+        "url": "https://www.jyshare.com/front-end/9729/",
+        "img": "jyshare.jpg",
+        "desc": "支持使用 Mermaid 代码绘制流程图，序列图，甘特图，类图，状态图，饼图，实体关系图"
+      },
+      {
+        "name": "The-X 密码学库",
+        "url": "https://the-x.cn/",
+        "img": "thex.jpg",
+        "desc": "The-X 在线工具箱 Base64 解码 AES RAS 解码 加密"
+      }
+    ],
+    "赛题平台": [
+      {
+        "name": "vjudge",
+        "url": "https://vjudge.net/problem",
+        "img": "vjudge.jpg",
+        "desc": "ACM 选手题库，通过爬取其他OJ的题目，让我们可以直接在VJ上查找并提交各种OJ的题目"
+      },
+      {
+        "name": "力扣",
+        "url": "https://leetcode.cn/problemset/",
+        "img": "leetcode.jpg",
+        "desc": "海量技术面试题库，拥有算法、数据结构、系统设计等1000+题目"
+      },
+      {
+        "name": "牛客",
+        "url": "https://www.nowcoder.com/exam/intelligent",
+        "img": "nowcoder.jpg",
+        "desc": "牛客网公司真题，全网最全企业面试，面试真题模拟题库"
+      },
+      {
+        "name": "ctfshow",
+        "url": "https://ctf.show/",
+        "img": "ctfshow.jpg",
+        "desc": "萌新入门的好地方，拥有 1500+ 的原创题目，欢乐 有爱\n                                    的学习氛围，超过 10000+ CTFer的共同打造"
+      },
+      {
+        "name": "nssctf",
+        "url": "https://www.nssctf.cn/index",
+        "img": "nssctf.jpg",
+        "desc": "nssctf by 探姬"
+      },
+      {
+        "name": "攻防世界",
+        "url": "https://adworld.xctf.org.cn/home/index",
+        "img": "xctf.jpg",
+        "desc": "亚洲最大网络安全攻防联赛XCTF联赛赛事资源信息及媒体发布平台，安全极客CTF赛事交流社区，专注于为网络安全、信息安全、白帽技术爱好者提供交流学习平台"
+      },
+      {
+        "name": "Bugku CTF",
+        "url": "https://ctf.bugku.com/challenges/index",
+        "img": "bugku.jpg",
+        "desc": "国内最活跃的CTF在线训练平台，网络安全爱好者首选。提供丰富的CTF、AWD、渗透加固题目，助力信息安全人才实战演练和技能提升"
+      },
+      {
+        "name": "CTFHub",
+        "url": "https://www.ctfhub.com/#/challenge",
+        "img": "ctfhub.jpg",
+        "desc": "专注网络安全、信息安全、白帽子技术的在线学习，实训平台"
+      },
+      {
+        "name": "封神台",
+        "url": "https://hack.zkaq.cn/",
+        "img": "zkaq.jpg",
+        "desc": "掌控安全在线演练靶场"
+      },
+      {
+        "name": "BUUCTF",
+        "url": "https://buuoj.cn/",
+        "img": "buuctf.jpg",
+        "desc": "一个 CTF 竞赛和训练平台，为各位 CTF\n                                    选手提供真实赛题在线复现等服务"
+      },
+      {
+        "name": "洛谷",
+        "url": "https://www.luogu.com.cn/training/list",
+        "img": "luogu.jpg",
+        "desc": "致力于为参加noip、noi、acm的选手提供清爽、快捷的编程体验"
+      },
+      {
+        "name": "赛题征集平台",
+        "url": "https://love.dasctf.com/#/challenge",
+        "img": "dasctf.jpg",
+        "desc": "DASCTF 赛题征集"
+      },
+      {
+        "name": "猿人学平台",
+        "url": "https://www.python-spider.com/challenge/",
+        "img": "yuanrenxue.jpg",
+        "desc": "猿人学JS逆向、Android逆向平台"
+      }
+    ],
+    "学术资源": [
+      {
+        "name": "码农学习路线图",
+        "url": "https://roadmap.sh/roadmaps",
+        "img": "roadmap.jpg",
+        "desc": "面向开发人员的社区驱动型交互式路线图、文章和资源"
+      },
+      {
+        "name": "OI Wiki",
+        "url": "https://oi-wiki.org/",
+        "img": "oiwiki.jpg",
+        "desc": "包含OI（Olympiad in Informatics，信息学奥林匹克竞赛）各大范畴的基础知识"
+      },
+      {
+        "name": "CTF Wiki",
+        "url": "https://ctf-wiki.org/",
+        "img": "ctfwiki.jpg",
+        "desc": "包含 CTF 各大范畴的基础知识"
+      },
+      {
+        "name": "网安学习文章",
+        "url": "http://www.yxfzedu.com",
+        "img": "yxfzedu.jpg",
+        "desc": "密码应用,软件破解,软件安全,游戏外挂与反外挂_(゜-゜)つロ 逆向"
+      },
+      {
+        "name": "Algorithm Archive",
+        "url": "https://www.algorithm-archive.org/",
+        "img": "algorithm-archive.jpg",
+        "desc": "包含常见语言的常见重要算法指南"
+      },
+      {
+        "name": "计算机工具指南",
+        "url": "https://missing-semester-cn.github.io/",
+        "img": "missing-semester.jpg",
+        "desc": "计算机教育中缺失的一课：如何使用计算机相关的基础工具"
+      },
+      {
+        "name": "OEIS",
+        "url": "https://oeis.org/",
+        "img": "oeis.jpg",
+        "desc": "一个网上可搜索的整数数列资料库，常用于解析数论"
+      },
+      {
+        "name": "Android原生OS",
+        "url": "https://mi.fiime.cn/Android",
+        "img": "fiime.jpg",
+        "desc": "基于android的针对各种设备的开源操作系统，收录最全的安卓原生系统下载站点"
+      },
+      {
+        "name": "精易论坛",
+        "url": "https://bbs.125.la/",
+        "img": "bbs.jpg",
+        "desc": "精易论坛——程序设计学习交流技术论坛"
+      },
+      {
+        "name": "学者网",
+        "url": "https://www.scholat.com/scholarsearch-home.html",
+        "img": "scholat.jpg",
+        "desc": "全球学者库，系统收录了国内外主流学术期刊论文及学者信息, 是国内收录最多的学者库之一"
+      },
+      {
+        "name": "资源网站",
+        "url": "https://www.iiice.cn/",
+        "img": "iiice.jpg",
+        "desc": "下次一定 - 专门为白嫖怪开发的宝藏网站"
+      },
+      {
+        "name": "热盘搜",
+        "url": "http://www.repanso.com/",
+        "img": "repanso.jpg",
+        "desc": "百度云网盘搜索引擎，网盘云搜索服务。搜索电影、电视剧、小说、文档、资料等百度云资源"
+      },
+      {
+        "name": "CTF 导航——移动安全",
+        "url": "https://www.ctfiot.com/yidonganquan",
+        "img": "ctfiot.jpg",
+        "desc": "移动安全、IOT安全、ICS安全、区块链安全"
+      },
+      {
+        "name": "Z-library",
+        "url": "https://z-lib.id/",
+        "img": "z-lib.jpg",
+        "desc": "Zlibrary Z-library图书馆起始页面"
+      },
+      {
+        "name": "Library Genesis",
+        "url": "https://libgen.li/",
+        "img": "libgen.jpg",
+        "desc": "Library Genesis 创世纪图书馆"
+      },
+      {
+        "name": "鸠摩搜索",
+        "url": "https://www.jiumodiary.com/",
+        "img": "jiumodiary.jpg",
+        "desc": "文档搜索引擎"
+      },
+      {
+        "name": "Sci-Hub",
+        "url": "https://sci-hub.ru/",
+        "img": "sci-hub.jpg",
+        "desc": "书籍论文下载 将知识带给每个人"
+      },
+      {
+        "name": "arXiv",
+        "url": "https://arxiv.org/",
+        "img": "arxiv.jpg",
+        "desc": "论文预印本收集网站"
+      },
+      {
+        "name": "笔杆网",
+        "url": "https://www.bigan.net/",
+        "img": "bigan.jpg",
+        "desc": "检测文本内容是否由AI生成；查重+AIGC检测！一站式解决毕业论文重复问题！"
+      },
+      {
+        "name": "医药信息查询",
+        "url": "https://www.dayi.org.cn/",
+        "img": "dayi.jpg",
+        "desc": "中国医药信息查询平台，提供最权威医药、疾病信息查询"
+      },
+      {
+        "name": "识典古籍",
+        "url": "https://www.shidianguji.com/",
+        "img": "shidianguji.jpg",
+        "desc": "涵盖众多古籍的免费线上文库，有Al问答和网友读书笔记功能"
+      },
+      {
+        "name": "历史车轮",
+        "url": "https://www.lishichelun.com/tool",
+        "img": "lishichelun.jpg",
+        "desc": "用时间轴的形式展示历史上的人物生平和事件"
+      }
+    ],
+    "AI站点": [
+      {
+        "name": "AI绘画提示词生成器",
+        "url": "https://gen.kejilion.pro/",
+        "img": "kejilion.jpg",
+        "desc": "支持: Stable Diffusion / Midjourney / Flux"
+      },
+      {
+        "name": "DeepSeek",
+        "url": "https://chat.deepseek.com/",
+        "img": "deepseek.jpg",
+        "desc": "深度搜索AI，帮你写代码、读文件、写作各种创意内容，请把你的任务交给我吧"
+      },
+      {
+        "name": "问小白",
+        "url": "https://www.wenxiaobai.com/",
+        "img": "wenxiaobai.jpg",
+        "desc": "我是满血版 DeepSeek，实时在线，支持深度思考和联网搜索。免费不限次数"
+      },
+      {
+        "name": "可灵 AI",
+        "url": "https://kling.kuaishou.com/",
+        "img": "kling.jpg",
+        "desc": "快手AI团队自研的视频生成大模型。生成的视频分辨率高达1080p，时长最高可达2分钟（帧率30fps），且支持自由的宽高比"
+      },
+      {
+        "name": "EasyChat",
+        "url": "https://origin.eqing.tech/",
+        "img": "easychat.jpg",
+        "desc": "最简单的ChatGPT使用方式，支持以各种身份询问"
+      },
+      {
+        "name": "OpenAI",
+        "url": "https://chatgpt.com/",
+        "img": "chatgpt.jpg",
+        "desc": "ChatGPT 主站，需要科学上网"
+      },
+      {
+        "name": "Theb.ai",
+        "url": "https://beta.theb.ai/home",
+        "img": "thebai.jpg",
+        "desc": "ChatGPT 国内平替网站"
+      },
+      {
+        "name": "DatuChat",
+        "url": "https://datuchat.com/",
+        "img": "datuchat.jpg",
+        "desc": "DatuChat\n                                    构建于当今顶尖人工智能平台ChatGPT，不仅能聊天、翻译、写文章、作诗，也通过了谷歌和亚马逊的初级程序员面试"
+      },
+      {
+        "name": "MewXAI星月熊",
+        "url": "https://qr.mewx.art/",
+        "img": "mewxai.jpg",
+        "desc": "AI绘画、艺术二维码和艺术字"
+      },
+      {
+        "name": "阿水ai",
+        "url": "https://ai.ashuiai.com/home",
+        "img": "ashuiai.jpg",
+        "desc": "AI绘画、AI对话、AI写作"
+      },
+      {
+        "name": "AI写作",
+        "url": "https://xiezuocat.com/",
+        "img": "xiezuocat.jpg",
+        "desc": "秘塔写作猫是一款由AI赋能的写作工具，推敲用法、斟酌文法、改写文风，还可以续写文章"
+      },
+      {
+        "name": "AI角色对话",
+        "url": "https://www.sayloai.com/",
+        "img": "sayloai.jpg",
+        "desc": "Al驱动的故事角色扮演游戏应用，沉浸式的剧本互动体验"
+      },
+      {
+        "name": "AI音乐创作",
+        "url": "https://www.stableaudio.com/",
+        "img": "stableaudio.jpg",
+        "desc": "生成长达 3 分钟的高质量AI音频"
+      },
+      {
+        "name": "AI音乐创作（推荐）",
+        "url": "https://suno.com/",
+        "img": "suno.jpg",
+        "desc": "可能是目前最好用的Al音乐生成器"
+      }
+    ],
+    "设计素材": [
+      {
+        "name": "ASCII Art 字符画工具",
+        "url": "http://patorjk.com/software/taag",
+        "img": "patorjk.jpg",
+        "desc": "一个文字 banner 生成的利器，通过文本生成ASCII art\n                                    字符画的在线网站"
+      },
+      {
+        "name": "图片转字符",
+        "url": "http://www.glassgiant.com/ascii/",
+        "img": "glassgiant.jpg",
+        "desc": "将图片转换为 ASCII 艺术文本，一堆字母、数字和符号。"
+      },
+      {
+        "name": "Pexels",
+        "url": "https://www.pexels.com/",
+        "img": "pexels.jpg",
+        "desc": "免费素材图片服务"
+      },
+      {
+        "name": "彼岸壁纸",
+        "url": "http://www.netbian.com/",
+        "img": "netbian.jpg",
+        "desc": "超高清动漫电脑壁纸_彼岸桌面壁纸"
+      },
+      {
+        "name": "unsplash",
+        "url": "https://unsplash.com/",
+        "img": "unsplash.jpg",
+        "desc": "免版权的精美图片网站"
+      },
+      {
+        "name": "Flaticon",
+        "url": "https://www.flaticon.com/",
+        "img": "flaticon.jpg",
+        "desc": "丰富且免费的图标库"
+      },
+      {
+        "name": "可画",
+        "url": "https://www.canva.cn/",
+        "img": "canva.jpg",
+        "desc": "各类素材设计制作网站"
+      },
+      {
+        "name": "Color Hunt",
+        "url": "https://colorhunt.co/",
+        "img": "colorhunt.jpg",
+        "desc": "为设计和艺术项目获取色彩灵感"
+      },
+      {
+        "name": "Iconfont",
+        "url": "https://www.iconfont.cn/",
+        "img": "iconfont.jpg",
+        "desc": "阿里巴巴图标库，国内功能很强大且图标内容很丰富的矢量图标库"
+      },
+      {
+        "name": "Bootstrap",
+        "url": "https://v3.bootcss.com/components",
+        "img": "bootcss.jpg",
+        "desc": "Bootstrap\n                                    自带了大量可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能"
+      },
+      {
+        "name": "Huggingface",
+        "url": "https://huggingface.co/",
+        "img": "huggingface.jpg",
+        "desc": "一个协作平台，其中托管了大量的用于机器学习的开源模型和数据集"
+      },
+      {
+        "name": "Whimsical",
+        "url": "https://whimsical.com/",
+        "img": "whimsical.jpg",
+        "desc": "提供包括流程图、线框图、思维导图和便签板等多种作图工具"
+      },
+      {
+        "name": "搜图神器",
+        "url": "https://www.soutushenqi.com/home",
+        "img": "soutushenqi.jpg",
+        "desc": "搜图神器官方网站-一键搜索聚合，海量图片资源免费下载！"
+      },
+      {
+        "name": "英文艺术字",
+        "url": "http://www.jiqie.com/a/34.htm",
+        "img": "jiqie.jpg",
+        "desc": "连笔英文艺术签名设计 英文字体在线生成器 Sign Generator"
+      },
+      {
+        "name": "Slackmojis",
+        "url": "https://slackmojis.com/",
+        "img": "slackmojis.jpg",
+        "desc": "免费emoji表情符号网站"
+      },
+      {
+        "name": "xicons",
+        "url": "https://www.xicons.org/",
+        "img": "xicons.jpg",
+        "desc": "一个开源图标集，可以用在个人和商业项目的免费矢量图标"
+      },
+      {
+        "name": "免费正版高清照片素材库",
+        "url": "https://pixabay.com/zh/photos/",
+        "img": "pixabay.jpg",
+        "desc": "超过3.9百万的免版税库存照片"
+      },
+      {
+        "name": "免费设计资源库",
+        "url": "https://resourceboy.com/",
+        "img": "resourceboy.jpg",
+        "desc": "一个在线最好海量免费设计资源网站，提供免费海量设计资源，涵盖材质、笔刷、图案、mockup、艺术字、模型、纹理、文字效果、海报传单等等"
+      },
+      {
+        "name": "Notion 风格头像制作",
+        "url": "https://notion-avatar.vercel.app/zh",
+        "img": "notionavatar.jpg",
+        "desc": "一个生成 Notion 风格头像的在线工具"
+      },
+      {
+        "name": "思维导图流程图",
+        "url": "https://www.processon.com/diagrams",
+        "img": "processon.jpg",
+        "desc": "一个专业强大的在线作图工具，支持多种图形绘制，多人实时协作，AI快速生成，海量模板，知识社区等功能"
+      },
+      {
+        "name": "手写签名",
+        "url": "https://www.calligrapher.ai/",
+        "img": "calligrapher.jpg",
+        "desc": "随机生成手写风格的英文签名"
+      }
+    ],
+    "影音游戏": [
+      {
+        "name": "小云搜索",
+        "url": "https://yunso.net/",
+        "img": "yunso.jpg",
+        "desc": "网盘搜索引擎"
+      },
+      {
+        "name": "奈斯搜索",
+        "url": "https://www.niceso.fun/",
+        "img": "niceso.jpg",
+        "desc": "阿里云盘资源搜索网站"
+      },
+      {
+        "name": "MyFreeMP3",
+        "url": "https://tools.liumingye.cn/music/#/",
+        "img": "liumingye.jpg",
+        "desc": "音乐试听/下载"
+      },
+      {
+        "name": "音乐搜索器",
+        "url": "https://musicjx.com/",
+        "img": "musicjx.jpg",
+        "desc": "多站合一音乐搜索"
+      },
+      {
+        "name": "无损音乐",
+        "url": "https://flac.one/",
+        "img": "flac.jpg",
+        "desc": "无损生活 - 全网无损音乐免费下载，音乐搜索,音乐在线试听,下载,在线解析网"
+      },
+      {
+        "name": "歌曲宝",
+        "url": "https://www.gequbao.com/",
+        "img": "gequbao.jpg",
+        "desc": "MP3 音乐高品质在线免费下载"
+      },
+      {
+        "name": "漫猫动漫",
+        "url": "https://www.comicat.org/",
+        "img": "comicat.jpg",
+        "desc": "免费看番"
+      },
+      {
+        "name": "追剧网",
+        "url": "https://www.zhuiju100.com/",
+        "img": "zhuiju100.jpg",
+        "desc": "免费追剧-最新电视剧更新"
+      },
+      {
+        "name": "69美剧",
+        "url": "https://69mj.com/",
+        "img": "69mj.jpg",
+        "desc": "免费综艺、电影、电视剧更新"
+      },
+      {
+        "name": "NyaFun动漫",
+        "url": "https://www.nyadm.net/",
+        "img": "nyadm.jpg",
+        "desc": "免费看番-日漫国漫"
+      },
+      {
+        "name": "包子漫画",
+        "url": "https://baozimh.org/",
+        "img": "baozimh.jpg",
+        "desc": "免费看番-国漫"
+      },
+      {
+        "name": "colamanga 漫画",
+        "url": "https://www.colamanga.com/",
+        "img": "colamanga.jpg",
+        "desc": "提供优质的免费漫画阅读体验，拥有全球高武、大奉打更人、枯萎的花泪、全球冰封等"
+      },
+      {
+        "name": "MC光影模组",
+        "url": "https://shadersmods.com/",
+        "img": "shadersmods.jpg",
+        "desc": "Minecraft 大量的顶级着色器、模组、地图、纹理包和其他重要工具"
+      },
+      {
+        "name": "MC皮肤",
+        "url": "https://namemc.com/",
+        "img": "namemc.jpg",
+        "desc": "现有的Minecraft外观最大的收藏之一。\n                                    有超过200万种皮肤可供选择"
+      },
+      {
+        "name": "MC资源包",
+        "url": "https://resourcepacks24.de/",
+        "img": "resourcepacks24.jpg",
+        "desc": "Minecraft 最大资源包网站"
+      },
+      {
+        "name": "MC光影模组",
+        "url": "https://minecraftshader.com/",
+        "img": "minecraftshader.jpg",
+        "desc": "Minecraft 光影网站"
+      },
+      {
+        "name": "MC百科",
+        "url": "https://www.mcmod.cn/",
+        "img": "mcmod.jpg",
+        "desc": "MC百科|最大的 Minecraft 中文MOD百科"
+      },
+      {
+        "name": "MC整合包",
+        "url": "https://www.curseforge.com/",
+        "img": "curseforge.jpg",
+        "desc": "Minecraft 的模组、整合包、光影、资源包等附加内容"
+      },
+      {
+        "name": "巴哈姆特",
+        "url": "https://forum.gamer.com.tw/",
+        "img": "forum.jpg",
+        "desc": "巴哈姆特电玩资讯站（简称巴哈姆特或巴哈）是以ACG为主的台湾网络论坛与新闻网站"
+      },
+      {
+        "name": "koyso",
+        "url": "https://koyso.com/",
+        "img": "koyso.jpg",
+        "desc": "一个专注于提供单机游戏下载的网站。致力于为玩家提供丰富多样的游戏资源"
+      },
+      {
+        "name": "flysheep资源避难所",
+        "url": "https://www.flysheep6.com/",
+        "img": "flysheep6.jpg",
+        "desc": "游戏合集存档"
+      },
+      {
+        "name": "nexusmods",
+        "url": "https://www.nexusmods.com/",
+        "img": "nexusmods.jpg",
+        "desc": "目前全世界最大的游戏 Mod 分享平台"
+      }
+    ],
+    "摸鱼娱乐": [
+      {
+        "name": "SCP Wiki",
+        "url": "https://scp-wiki-cn.wikidot.com/",
+        "img": "scp.jpg",
+        "desc": "严禁未经授权的人员进行访问，肇事者将被监控，定位并处理"
+      },
+      {
+        "name": "TrevorHenderson Wiki",
+        "url": "https://trevorhenderson.fandom.com/",
+        "img": "trevorhenderson.jpg",
+        "desc": "Trevor Henderson Wiki专注于收集有关Trevor Henderson创建的隐生物的信息。我们的目标是与其他粉丝合作，构建可靠、准确的资源，提供尽可能多的有关隐秘生物的详细信息"
+      },
+      {
+        "name": "纪妖",
+        "url": "https://cbaigui.com/",
+        "img": "cbaigui.jpg",
+        "desc": "国内外妖怪知识图鉴"
+      },
+      {
+        "name": "鬼姐姐鬼故事",
+        "url": "http://www.uleif.com/",
+        "img": "uleif.jpg",
+        "desc": "鬼故事_恐怖鬼故事大全_原创短篇鬼故事_鬼故事短篇超吓人"
+      },
+      {
+        "name": "鬼怪网",
+        "url": "http://guiguaiwang.com/",
+        "img": "guiguaiwang.jpg",
+        "desc": "提供各种类型的鬼故事,灵异事件,短篇鬼故事,医院鬼故事,校园鬼故事,网友鬼故事,内涵鬼故事,原创鬼故事"
+      },
+      {
+        "name": "食物合成表",
+        "url": "https://cook.yunyoujun.cn/",
+        "img": "yunyoujuncook.jpg",
+        "desc": "好的，今天我们来做菜！"
+      },
+      {
+        "name": "网络威胁实时地图",
+        "url": "https://cybermap.kaspersky.com/cn",
+        "img": "cybermap.jpg",
+        "desc": "地图 | 卡巴斯基网络威胁实时地图"
+      },
+      {
+        "name": "emoji厨房",
+        "url": "https://emoji.supply/kitchen/",
+        "img": "emojikitchen.jpg",
+        "desc": "Emoji表情素材合成器，轻松拥有emoji合成表情"
+      },
+      {
+        "name": "语气转换器",
+        "url": "https://goblin.tools/Formalizer",
+        "img": "goblin.jpg",
+        "desc": "功能设置完善，直接上线输入你想说的话，可以直接转换成想要的语气"
+      },
+      {
+        "name": "神奇海螺试验场",
+        "url": "https://lab.magiconch.com/",
+        "img": "magiconch.jpg",
+        "desc": "有很多有趣的项目,梗图生成器、拼音首字母缩写释义工具、动画巡礼、重复文字生成"
+      },
+      {
+        "name": "疯狂星期四文案生成器",
+        "url": "https://crazyv50.com/",
+        "img": "crazyv50.jpg",
+        "desc": "刚换的qq音乐的会员兑换码，多了一个，发你们用 KFC-CRAZY-THURSDAY-VME50"
+      },
+      {
+        "name": "Life Restart",
+        "url": "https://liferestart.syaro.io/public/",
+        "img": "liferestart.jpg",
+        "desc": "风靡一时的人生重开模拟器"
+      },
+      {
+        "name": "鱼了个鱼",
+        "url": "https://ylgy.imkk.uk/",
+        "img": "ylgy.jpg",
+        "desc": "低配版羊了个羊系列小游戏, 部署于GitHub Pages"
+      },
+      {
+        "name": "图种制作",
+        "url": "https://madisonwirtanen.github.io/js-seed-map/",
+        "img": "madisonwirtanen.jpg",
+        "desc": "图种制作工具, 将压缩包与图片合成一张新图片, 部署于GitHub\n                                    Pages"
+      },
+      {
+        "name": "114514论证器",
+        "url": "https://madisonwirtanen.github.io/homo/",
+        "img": "madisonwirtanen.jpg",
+        "desc": "一个将任意数字分解成 114514 构成的公式的工具, 部署于GitHub\n                                    Pages"
+      },
+      {
+        "name": "圣地巡礼地图",
+        "url": "https://anitabi.cn/map",
+        "img": "anitabi.jpg",
+        "desc": "用地图呈现二次元作品内场景的实际位置，可配合对比图生成器使用"
+      },
+      {
+        "name": "角色对战",
+        "url": "https://www.jazzvswaffles.com/",
+        "img": "jazzvswaffles.jpg",
+        "desc": "基于Al生成，把任意两个角色放在—起的跨战力PK游戏"
+      },
+      {
+        "name": "做房子模拟器",
+        "url": "https://rooms.xyz/",
+        "img": "rooms.jpg",
+        "desc": "硬核从零开始打造属于自己的像素房子"
+      },
+      {
+        "name": "噪音模拟器",
+        "url": "https://neal.fun/ambient-chaos/",
+        "img": "neal.jpg",
+        "desc": "在网页实时合成个性化白噪音"
+      },
+      {
+        "name": "元素组合模拟器",
+        "url": "https://neal.fun/infinite-craft/",
+        "img": "neal.jpg",
+        "desc": "通过拖动不同元素如水、火、风、土等进行组合,合成新的道具和物品"
+      },
+      {
+        "name": "找鼠标",
+        "url": "https://pointerpointer.com/",
+        "img": "pointerpointer.jpg",
+        "desc": "用照片指出你现在鼠标的位置"
+      },
+      {
+        "name": "俄罗斯方块",
+        "url": "https://v2fy.com/game/tetris/",
+        "img": "v2fy.jpg",
+        "desc": "在线俄罗斯方块"
+      },
+      {
+        "name": "狗屁不通文章生成器",
+        "url": "https://www.iotool.cn/other/bullshit",
+        "img": "iotool.jpg",
+        "desc": "专门用于填充字数的废话工具"
+      },
+      {
+        "name": "人类能力测试器",
+        "url": "https://aring.cc/human-benchmark",
+        "img": "aring.jpg",
+        "desc": "测试视觉反应，记住您看到的数字，您比黑猩猩聪明吗？每分钟可以打多少字？快速找出不同的颜色..."
+      },
+      {
+        "name": "全球高清实况摄像头",
+        "url": "https://www.skylinewebcams.com/zh/webcam.html",
+        "img": "skylinewebcams.jpg",
+        "desc": "手机全球超多对外公开的摄像头，让你足不出户感受异国风光"
+      },
+      {
+        "name": "星球生成器",
+        "url": "https://oskarstalberg.com/game/planet/planet.html",
+        "img": "oskarstalberg.jpg",
+        "desc": "基于 unity 的网页游戏，建造一个超酷的星球"
+      },
+      {
+        "name": "颜值计算器",
+        "url": "https://www.prettyscale.com/zh/",
+        "img": "prettyscale.jpg",
+        "desc": "我美吗？我丑吗？我为什么丑？还是不够漂亮？面部美丑在线分析测试。在3分钟内分析完您的脸"
+      },
+      {
+        "name": "城市路网绘制器",
+        "url": "https://anvaka.github.io/city-roads/",
+        "img": "anvaka.jpg",
+        "desc": "输入城市名字，自动绘制所有城市道路地图"
+      },
+      {
+        "name": "电子包浆",
+        "url": "https://magiconch.com/patina/",
+        "img": "magiconch.jpg",
+        "desc": "图片赛博做旧，支持图片绿化、虚拟水印.、虑拟传播年份、高效率模糊、浮雕锐化、噪点颗粒、像素不对齐、作假"
+      },
+      {
+        "name": "能不能好好说话？",
+        "url": "https://lab.magiconch.com/nbnhhsh/",
+        "img": "magiconch.jpg",
+        "desc": "社交平台上通过拼音首字母缩写指代特定词句的情况越来越多，为了让更多人能勉强理解这一门另类沟通方式、做了这一个划词转义工具"
+      },
+      {
+        "name": "福音戰士標題生成器",
+        "url": "https://lab.magiconch.com/eva-title/",
+        "img": "magiconch.jpg",
+        "desc": "一个生成福音戰士標題字体和排版的生成工具"
+      },
+      {
+        "name": "梗图生成器",
+        "url": "https://x.magiconch.com/",
+        "img": "magiconch.jpg",
+        "desc": "一个支持电子包浆的所见即所得的梗图生成器。"
+      },
+      {
+        "name": "猜中国省份",
+        "url": "http://vultr.youmu.moe/quiz/",
+        "img": "youmu.jpg",
+        "desc": "看看你对中国地图有多了解"
+      }
+    ],
+    "其他": [],
+    "接码平台": [
+      {
+        "name": "接码号",
+        "url": "https://jiemahao.com/",
+        "img": "jiemahao.jpg",
+        "desc": "免费接码平台（Free SMS Recieve），在线接收短信，接收短信验证码"
+      },
+      {
+        "name": "SMS-Activate",
+        "url": "https://sms-activate.io/cn",
+        "img": "sms-activate.jpg",
+        "desc": "在线接受短信的虚拟号码服务"
+      },
+      {
+        "name": "全球接码平台",
+        "url": "http://www.bfkdim.com/",
+        "img": "bfkdim.jpg",
+        "desc": "拉新发信|实卡接码网站|y码接码|付费发码|虚拟手机号通话|虚拟手机号通话怎么设置|创联云在线接码短信平台www.bfkdim.com"
+      },
+      {
+        "name": "超级云短信接码平台",
+        "url": "https://www.supercloudsms.com/",
+        "img": "supercloudsms.jpg",
+        "desc": "支持在线接码，支持在线接收短信验证码，支持国外短信验证码，中国短信验证码，国外接码平台"
+      },
+      {
+        "name": "云短信接码平台",
+        "url": "https://www.yunduanxin.xyz/",
+        "img": "yunduanxin.jpg",
+        "desc": "在线接收中国、香港、美国、日本、澳大利亚、加拿大等128个国家短信验证码"
+      },
+      {
+        "name": "有信云短信",
+        "url": "https://www.zusms.com/",
+        "img": "zusms.jpg",
+        "desc": "一种免费服务，用于在线接收手机短信验证码，不需要注册"
+      }
+    ],
+    "论文平台": [
+      {
+        "name": "超星发现",
+        "url": "https://ss.zhizhen.com/",
+        "img": "zhizhen.jpg",
+        "desc": "超星发现系统，整合各高校内外的图书、期刊、报纸、学位论文、标准、专利等各类文献"
+      },
+      {
+        "name": "维普期刊",
+        "url": "https://qikan.cqvip.com/",
+        "img": "cqvip.jpg",
+        "desc": "【维普期刊官网】- 中文期刊服务平台"
+      },
+      {
+        "name": "中国知网",
+        "url": "https://www.cnki.net/",
+        "img": "cnki.jpg",
+        "desc": "提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源"
+      },
+      {
+        "name": "万方数据",
+        "url": "https://wanfangdata.com.cn/",
+        "img": "wanfangdata.jpg",
+        "desc": "万方数据知识服务平台-科研学习全流程支持服务平台"
+      },
+      {
+        "name": "IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/",
+        "img": "ieeexplore.jpg",
+        "desc": "学术文献数据库，主要提供计算机科学、电机工程学和电子学等相关领域文献"
+      },
+      {
+        "name": "Web Of Science",
+        "url": "https://webofscience.clarivate.cn/",
+        "img": "webofscience.jpg",
+        "desc": "一个领先的科学研究平台，提供全面的数据、指标和跨学科的见解"
+      }
+    ]
+  }
+}
