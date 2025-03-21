@@ -338,7 +338,7 @@
         "name": "图片/PDF工具箱",
         "url": "https://www.11zon.com/zh-cn/",
         "img": "11zon.jpg",
-        "desc": "11zon\n                                    压缩图片、图片转换、图片裁剪、调整图片大小、图像旋转、图像合并、压缩PDF、转换PDF"
+        "desc": "11zon - 压缩图片、图片转换、图片裁剪、调整图片大小、图像旋转、图像合并、压缩PDF、转换PDF"
       },
       {
         "name": "TinyPNG",
@@ -350,7 +350,7 @@
         "name": "图片工具箱",
         "url": "https://www.iloveimg.com/zh-cn/",
         "img": "iloveimg.jpg",
-        "desc": "iloveimg\n                                    压缩图片、加水印、html转图片、去背景、模糊面部、裁剪图片、调整图片、提升图片质量"
+        "desc": "iloveimg - 压缩图片、加水印、html转图片、去背景、模糊面部、裁剪图片、调整图片、提升图片质量"
       },
       {
         "name": "音频MIDI",
@@ -470,7 +470,7 @@
         "name": "libcimbar",
         "url": "https://cimbar.org/",
         "img": "cimbar.jpg",
-        "desc": "无网络环境下利用二维码传输文件，无需互联网/蓝牙/NFC等，所有数据都通过相机镜头传输。https://cimbar.org/\n                                    选择需要传输的文件，解码器是一个使用手机摄像头读取动画条形码的手机应用程序：手机打开APP，对准屏幕，传输开始会出现进度条。Android\n                                    APP下载：https://github.com/sz3/cfc/releases"
+        "desc": "无网络环境下利用二维码传输文件，无需互联网/蓝牙/NFC等，所有数据都通过相机镜头传输。选择需要传输的文件，解码器是一个使用手机摄像头读取动画条形码的手机应用程序：手机打开APP，对准屏幕，传输开始会出现进度条。Android APP下载：https://github.com/sz3/cfc/releases"
       },
       {
         "name": "图片识别代码",
@@ -502,7 +502,7 @@
         "name": "Convert curl",
         "url": "https://sqqihao.github.io/trillworks.html",
         "img": "convert.jpg",
-        "desc": "Convert curl syntax to Python, Ansible URI, MATLAB, Node.js,\n                                    R, PHP, Strest, Go, Dart, JSON, Elixir, Rust"
+        "desc": "Convert curl syntax to Python, Ansible URI, MATLAB, Node.js, PHP, Strest, Go, Dart, JSON, Elixir, Rust"
       },
       {
         "name": "爬虫工具库",
@@ -738,7 +738,7 @@
         "name": "ctfshow",
         "url": "https://ctf.show/",
         "img": "ctfshow.jpg",
-        "desc": "萌新入门的好地方，拥有 1500+ 的原创题目，欢乐 有爱\n                                    的学习氛围，超过 10000+ CTFer的共同打造"
+        "desc": "萌新入门的好地方，拥有 1500+ 的原创题目，欢乐 有爱的学习氛围，超过 10000+ CTFer的共同打造"
       },
       {
         "name": "nssctf",
@@ -774,7 +774,7 @@
         "name": "BUUCTF",
         "url": "https://buuoj.cn/",
         "img": "buuctf.jpg",
-        "desc": "一个 CTF 竞赛和训练平台，为各位 CTF\n                                    选手提供真实赛题在线复现等服务"
+        "desc": "一个 CTF 竞赛和训练平台，为各位 CTF 选手提供真实赛题在线复现等服务"
       },
       {
         "name": "洛谷",
@@ -976,7 +976,7 @@
         "name": "DatuChat",
         "url": "https://datuchat.com/",
         "img": "datuchat.jpg",
-        "desc": "DatuChat\n                                    构建于当今顶尖人工智能平台ChatGPT，不仅能聊天、翻译、写文章、作诗，也通过了谷歌和亚马逊的初级程序员面试"
+        "desc": "DatuChat 构建于当今顶尖人工智能平台ChatGPT，不仅能聊天、翻译、写文章、作诗，也通过了谷歌和亚马逊的初级程序员面试"
       },
       {
         "name": "MewXAI星月熊",
@@ -1020,7 +1020,7 @@
         "name": "ASCII Art 字符画工具",
         "url": "http://patorjk.com/software/taag",
         "img": "patorjk.jpg",
-        "desc": "一个文字 banner 生成的利器，通过文本生成ASCII art\n                                    字符画的在线网站"
+        "desc": "一个文字 banner 生成的利器，通过文本生成 ASCII art 字符画的在线网站"
       },
       {
         "name": "图片转字符",
@@ -1074,7 +1074,7 @@
         "name": "Bootstrap",
         "url": "https://v3.bootcss.com/components",
         "img": "bootcss.jpg",
-        "desc": "Bootstrap\n                                    自带了大量可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能"
+        "desc": "Bootstrap 自带了大量可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能"
       },
       {
         "name": "Huggingface",
@@ -1226,7 +1226,7 @@
         "name": "MC皮肤",
         "url": "https://namemc.com/",
         "img": "namemc.jpg",
-        "desc": "现有的Minecraft外观最大的收藏之一。\n                                    有超过200万种皮肤可供选择"
+        "desc": "现有的Minecraft外观最大的收藏之一。有超过200万种皮肤可供选择"
       },
       {
         "name": "MC资源包",
@@ -1360,13 +1360,13 @@
         "name": "图种制作",
         "url": "https://madisonwirtanen.github.io/js-seed-map/",
         "img": "madisonwirtanen.jpg",
-        "desc": "图种制作工具, 将压缩包与图片合成一张新图片, 部署于GitHub\n                                    Pages"
+        "desc": "图种制作工具, 将压缩包与图片合成一张新图片, 部署于 GitHub Pages"
       },
       {
         "name": "114514论证器",
         "url": "https://madisonwirtanen.github.io/homo/",
         "img": "madisonwirtanen.jpg",
-        "desc": "一个将任意数字分解成 114514 构成的公式的工具, 部署于GitHub\n                                    Pages"
+        "desc": "一个将任意数字分解成 114514 构成的公式的工具, 部署于 GitHub Pages"
       },
       {
         "name": "圣地巡礼地图",
