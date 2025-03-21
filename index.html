@@ -304,6 +304,7 @@
         </div>
     </div>
 
+    
     <script>
         // 动态加载数据
         document.addEventListener('DOMContentLoaded', function () {
@@ -329,7 +330,7 @@
                         const section = document.createElement('div');
                         section.innerHTML = `
                             <h4 class="text-gray">
-                                <i class="fa-solid fa-tags" style="margin-right: 7px" id="${category.replace(' ', '')}"></i>${category}
+                                <i class="fa-solid fa-tags" style="margin-right: 7px; color: rgb(194, 195, 199);" id="${category.replace(' ', '')}"></i><span class="category-color">${category}</span>
                             </h4>
                             <div class="row" id="${category}-links"></div>
                             <br/>`;
