@@ -353,6 +353,12 @@
         "desc": "iloveimg - 压缩图片、加水印、html转图片、去背景、模糊面部、裁剪图片、调整图片、提升图片质量"
       },
       {
+        "name": "SVG 在线编辑器",
+        "url": "https://www.jyshare.com/more/svgeditor/",
+        "img": "jyshare.jpg",
+        "desc": "支持通过浏览器访问，实现打开本地 SVG 文件在线编辑"
+      },
+      {
         "name": "音频MIDI",
         "url": "https://midi.martinic.com/zh/audio-to-midi",
         "img": "martinic.jpg",
