@@ -359,6 +359,12 @@
         "desc": "音频转 MIDI"
       },
       {
+        "name": "文件转换器",
+        "url": "https://cdkm.com/",
+        "img": "cdkm.jpg",
+        "desc": "利用许多开源项目构建的新一代转换器，支持文档、图片、电子书、影音"
+      },
+      {
         "name": "菜鸟工具箱",
         "url": "https://www.jyshare.com/front-end/",
         "img": "jyshare.jpg",
@@ -1026,7 +1032,7 @@
         "name": "图片转字符",
         "url": "http://www.glassgiant.com/ascii/",
         "img": "glassgiant.jpg",
-        "desc": "将图片转换为 ASCII 艺术文本，一堆字母、数字和符号。"
+        "desc": "将图片转换为 ASCII 艺术文本，一堆字母、数字和符号"
       },
       {
         "name": "Pexels",
@@ -1468,7 +1474,7 @@
         "name": "梗图生成器",
         "url": "https://x.magiconch.com/",
         "img": "magiconch.jpg",
-        "desc": "一个支持电子包浆的所见即所得的梗图生成器。"
+        "desc": "一个支持电子包浆的所见即所得的梗图生成器"
       },
       {
         "name": "猜中国省份",
