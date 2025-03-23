@@ -371,6 +371,12 @@
         "desc": "利用许多开源项目构建的新一代转换器，支持文档、图片、电子书、影音"
       },
       {
+        "name": "图片颜色替换",
+        "url": "https://imgonline.tools/zh/replace-color",
+        "img": "imgonline.jpg",
+        "desc": "将图像中的一种颜色更改为另一种颜色（交换颜色）。还可以调整距离以替换相似的颜色并保留色调"
+      },
+      {
         "name": "菜鸟工具箱",
         "url": "https://www.jyshare.com/front-end/",
         "img": "jyshare.jpg",
@@ -1487,6 +1493,18 @@
         "url": "https://lab.magiconch.com/eva-title/",
         "img": "magiconch.jpg",
         "desc": "一个生成福音戰士標題字体和排版的生成工具"
+      },
+      {
+        "name": "蔚蓝档案标题生成器",
+        "url": "https://pro-ivan.com/game/bluearchive-logo/index.html",
+        "img": "pro-ivan.jpg",
+        "desc": "https://github.com/nulla2011/Bluearchive-logo"
+      },
+      {
+        "name": "明日方舟标题生成器",
+        "url": "https://arknights-logo-generator.netlify.app/",
+        "img": "arknights.jpg",
+        "desc": "可更换背景，支持拖拽及粘贴图片"
       },
       {
         "name": "梗图生成器",
