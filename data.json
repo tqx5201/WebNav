@@ -1131,6 +1131,12 @@
         "desc": "免费emoji表情符号网站"
       },
       {
+        "name": "fontawesome",
+        "url": "https://fontawesome.com/v6/search",
+        "img": "fontawesome.jpg",
+        "desc": "一个可缩放的矢量图标工具包，可以使用CSS进行自定义"
+      },
+      {
         "name": "xicons",
         "url": "https://www.xicons.org/",
         "img": "xicons.jpg",
