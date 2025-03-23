@@ -507,6 +507,12 @@
         "url": "https://goblin.tools/",
         "img": "goblin.jpg",
         "desc": "将复杂任务分解为可管理步骤的在线工具"
+      },
+      {
+        "name": "图标抓取工具",
+        "url": "https://gonglue.qinggl.com/app/img/icon.jsp",
+        "img": "gonglue.jpg",
+        "desc": "快速的定位网页的 favicon.ico 图标网址"
       }
     ],
     "技术工具": [
@@ -1153,6 +1159,12 @@
         "url": "https://www.calligrapher.ai/",
         "img": "calligrapher.jpg",
         "desc": "随机生成手写风格的英文签名"
+      },
+      {
+        "name": "前端游乐场",
+        "url": "https://codepen.io/trending",
+        "img": "codepen.jpg",
+        "desc": "免费的前端代码托管服务，可以用来制作和测试页面的网站"
       }
     ],
     "影音游戏": [
