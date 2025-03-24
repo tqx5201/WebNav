@@ -279,18 +279,6 @@
         "desc": "站点检测网站"
       },
       {
-        "name": "收藏文章",
-        "url": "https://dstbp.com/posts/articles/",
-        "img": "dstbp1.jpg",
-        "desc": "在学习过程中收藏过的优秀文章"
-      },
-      {
-        "name": "优秀 github 项目",
-        "url": "https://dstbp.com/posts/githubs",
-        "img": "dstbp2.jpg",
-        "desc": "在学习过程中收藏过的 github 项目"
-      },
-      {
         "name": "notion",
         "url": "https://www.notion.so/700f7512c5ed44f7af7d86e7e09ce290",
         "img": "notion.jpg",
@@ -301,12 +289,6 @@
         "url": "https://www.yuque.com/dstbp/knowledge",
         "img": "yuque.jpg",
         "desc": "语雀笔记"
-      },
-      {
-        "name": "自动化云任务",
-        "url": "https://y1.yum9.cc/",
-        "img": "yum9.jpg",
-        "desc": "OneTool 简约大气高效的自动化云任务系统"
       },
       {
         "name": "gmail邮箱",
@@ -399,12 +381,6 @@
         "url": "https://www.remove.bg/",
         "img": "removebg.jpg",
         "desc": "去除照片背景"
-      },
-      {
-        "name": "网盘解析",
-        "url": "https://www.94speed.com/",
-        "img": "94speed.jpg",
-        "desc": "百度网盘无限速批量下载，支持文件夹下载"
       },
       {
         "name": "印章生成器",
@@ -1009,12 +985,6 @@
         "desc": "AI绘画、艺术二维码和艺术字"
       },
       {
-        "name": "阿水ai",
-        "url": "https://ai.ashuiai.com/home",
-        "img": "ashuiai.jpg",
-        "desc": "AI绘画、AI对话、AI写作"
-      },
-      {
         "name": "AI写作",
         "url": "https://xiezuocat.com/",
         "img": "xiezuocat.jpg",
@@ -1057,12 +1027,6 @@
         "url": "https://www.pexels.com/",
         "img": "pexels.jpg",
         "desc": "免费素材图片服务"
-      },
-      {
-        "name": "彼岸壁纸",
-        "url": "http://www.netbian.com/",
-        "img": "netbian.jpg",
-        "desc": "超高清动漫电脑壁纸_彼岸桌面壁纸"
       },
       {
         "name": "unsplash",
@@ -1337,12 +1301,6 @@
         "url": "http://www.uleif.com/",
         "img": "uleif.jpg",
         "desc": "鬼故事_恐怖鬼故事大全_原创短篇鬼故事_鬼故事短篇超吓人"
-      },
-      {
-        "name": "鬼怪网",
-        "url": "http://guiguaiwang.com/",
-        "img": "guiguaiwang.jpg",
-        "desc": "提供各种类型的鬼故事,灵异事件,短篇鬼故事,医院鬼故事,校园鬼故事,网友鬼故事,内涵鬼故事,原创鬼故事"
       },
       {
         "name": "食物合成表",
