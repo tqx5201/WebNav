@@ -1471,6 +1471,18 @@
         "desc": "可更换背景，支持拖拽及粘贴图片"
       },
       {
+        "name": "Minecraft风格字体生成器",
+        "url": "https://textcraft.net/",
+        "img": "textcraft.jpg",
+        "desc": "在线生成 Minecraft 风格字体的网站，支持中英日等多种语言"
+      },
+      {
+        "name": "多种游戏风格字体生成器",
+        "url": "https://fontmeme.com/zh/stranger-things-font/",
+        "img": "fontmeme.jpg",
+        "desc": "支持传说之下、GTA系列、乐高、宝可梦、大表哥等等字体（仅支持英文）"
+      },
+      {
         "name": "梗图生成器",
         "url": "https://x.magiconch.com/",
         "img": "magiconch.jpg",
