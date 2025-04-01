@@ -1147,6 +1147,12 @@
         "url": "https://codepen.io/trending",
         "img": "codepen.jpg",
         "desc": "免费的前端代码托管服务，可以用来制作和测试页面的网站"
+      },
+      {
+        "name": "美璟世界",
+        "url": "https://www.mzgf.com/world",
+        "img": "mzgf.jpg",
+        "desc": "采用 8K+ 级 VR 游览标准录制了全球数百个名胜古迹、城市风景的 360° VR 全景录像"
       }
     ],
     "影音游戏": [
@@ -1319,6 +1325,30 @@
         "url": "https://cybermap.kaspersky.com/cn",
         "img": "cybermap.jpg",
         "desc": "地图 | 卡巴斯基网络威胁实时地图"
+      },
+      {
+        "name": "超耐玩的塔防游戏",
+        "url": "https://yorg.io",
+        "img": "yorg.jpg",
+        "desc": "搭建自己的防御基地、开采资源、运输物资、升级技能……防御夜晚僵尸来袭"
+      },
+      {
+        "name": "在线音乐播放室",
+        "url": "https://music.alang.run",
+        "img": "alang.jpg",
+        "desc": "打开网站，有网友们创建的各种主题的音乐房间，可以自由加入，和全国网友们一起点歌、听歌、聊天"
+      },
+      {
+        "name": "你画我猜",
+        "url": "https://enazo.cn/",
+        "img": "enazo.jpg",
+        "desc": "可以加入创建好的房间一起游戏，也可以自己创建房间，无需登录，打开就能玩"
+      },
+      {
+        "name": "多人在线海战游戏",
+        "url": "https://mk48.io",
+        "img": "mk48.jpg",
+        "desc": "发射鱼雷、导弹等与其他玩家对战，通过收集海上的板条箱或油桶增加积分升级船只，使用更多武器"
       },
       {
         "name": "emoji厨房",
