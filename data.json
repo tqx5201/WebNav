@@ -1351,6 +1351,66 @@
         "desc": "发射鱼雷、导弹等与其他玩家对战，通过收集海上的板条箱或油桶增加积分升级船只，使用更多武器"
       },
       {
+        "name": "小霸王游戏机",
+        "url": "https://www.yikm.net/",
+        "img": "yikm.jpg",
+        "desc": "在线小霸王游戏机，上千款小霸王、红白机、街机游戏等"
+      },
+      {
+        "name": "联机棋类游戏平台",
+        "url": "https://papergames.io/zh/",
+        "img": "papergames.jpg",
+        "desc": "海战游戏、井字游戏、四子棋、五子棋、国际象棋"
+      },
+      {
+        "name": "在线版 CS 1.6 游戏",
+        "url": "https://play-cs.com/zh/servers",
+        "img": "play-cs.jpg",
+        "desc": "打开网页，找一个有空位的房间点击“连”，就可以开始和全球玩家联机对战了"
+      },
+      {
+        "name": "红色警戒2：网页版",
+        "url": "https://ra2web.com",
+        "img": "ra2web.jpg",
+        "desc": "支持联机游戏、排位赛和单机模式，需要注册账号，登录后就可以跟全球玩家在线 PK 了"
+      },
+      {
+        "name": "桌游合集",
+        "url": "https://game.hullqin.cn",
+        "img": "hullqin.jpg",
+        "desc": "20+ 桌游小游戏，可创建房间联机、本地游戏"
+      },
+      {
+        "name": "MC 知名小游戏",
+        "url": "https://bloxd.io/",
+        "img": "bloxd.jpg",
+        "desc": "起床战争、空岛战争、生存、建筑大赛、躲猫猫、跑酷等"
+      },
+      {
+        "name": "Flash 保存计划",
+        "url": "https://flash.homes",
+        "img": "flash.jpg",
+        "desc": "保存了 165670 个 Flash 游戏作品，无需安装软件，浏览器打开就能玩"
+      },
+      {
+        "name": "古诗连词",
+        "url": "https://poetrystrands.com",
+        "img": "poetrystrands.jpg",
+        "desc": "把整篇的古诗打散成无规律的文本，我们要把这些文本连起来还原成古诗原句"
+      },
+      {
+        "name": "奇趣网站收藏家",
+        "url": "https://suroi.fpsgo.net",
+        "img": "suroi.jpg",
+        "desc": "一个小游戏网站，目前已经收集了 1000+ 游戏，各种类型、风格都有"
+      },
+      {
+        "name": "魔方求解器",
+        "url": "https://rubiks-cube-solver.com/zh/",
+        "img": "rubiks-cube-solver.jpg",
+        "desc": "输入魔方各面颜色，网站会自动计算出魔方的复原步骤，点击“求解”，按提示操作即可还原魔方。"
+      },
+      {
         "name": "emoji厨房",
         "url": "https://emoji.supply/kitchen/",
         "img": "emojikitchen.jpg",
