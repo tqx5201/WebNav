@@ -577,6 +577,12 @@
         "desc": "在线的正则表达式测试和学习工具"
       },
       {
+        "name": "国密 HASH 相关工具库",
+        "url": "https://const.net.cn/tool/",
+        "img": "const.jpg",
+        "desc": "SM2、SM4、SM3、MD5、AES GCM 等工具"
+      },
+      {
         "name": "CMD5",
         "url": "https://www.cmd5.com/",
         "img": "cmd5.jpg",
