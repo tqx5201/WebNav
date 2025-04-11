@@ -923,6 +923,12 @@
         "desc": "检测文本内容是否由AI生成；查重+AIGC检测！一站式解决毕业论文重复问题！"
       },
       {
+        "name": "时光图书馆",
+        "url": "https://atimebook.com/",
+        "img": "atimebook.jpg",
+        "desc": "一个收录了各类经典文献、历史资料和文化资源的在线平台，大致内容有照片、课表、杂志、连环画、古籍、书画、乐谱、摄影、游记、文学、县志和老报纸等"
+      },
+      {
         "name": "医药信息查询",
         "url": "https://www.dayi.org.cn/",
         "img": "dayi.jpg",
@@ -939,6 +945,30 @@
         "url": "https://www.lishichelun.com/tool",
         "img": "lishichelun.jpg",
         "desc": "用时间轴的形式展示历史上的人物生平和事件"
+      },
+      {
+        "name": "维修社区",
+        "url": "https://zh.ifixit.com/",
+        "img": "ifixit.jpg",
+        "desc": "号称世界上最大的维修社区，小到消费电子设备和各种小工具、服装，大到汽车卡车都有详细的维修教程"
+      },
+      {
+        "name": "几何指南",
+        "url": "https://jihezn.com",
+        "img": "jihezn.jpg",
+        "desc": "包含了各种木工图纸、材料信息和木工相关知识"
+      },
+      {
+        "name": "3D模型分享网站",
+        "url": "https://makerworld.com.cn/zh",
+        "img": "makerworld.jpg",
+        "desc": "大型的免费3D模型分享网站，模型下载下来就能直接打印"
+      },
+      {
+        "name": "元素周期表PRO",
+        "url": "https://pt.ziziyi.com",
+        "img": "ziziyi.jpg",
+        "desc": "孩子学化学的必备小网站，介绍元素详细信息"
       }
     ],
     "AI站点": [
@@ -1159,6 +1189,12 @@
         "url": "https://www.mzgf.com/world",
         "img": "mzgf.jpg",
         "desc": "采用 8K+ 级 VR 游览标准录制了全球数百个名胜古迹、城市风景的 360° VR 全景录像"
+      },
+      {
+        "name": "田字格字帖生成器",
+        "url": "https://zitie.xueyuqu.com/",
+        "img": "zitie.jpg",
+        "desc": "提供了包括中文、英文、数字、拼音、控笔练习在内的五种类型字帖"
       }
     ],
     "影音游戏": [
