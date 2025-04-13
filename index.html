@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/dark.css" />
+    <link rel="stylesheet" href="./css/dark.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="./css/animation.min.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/loading.min.css" />
@@ -88,6 +88,12 @@
                         </a>
                     </li>
                     <li class="menu-item" style="margin-left: auto; margin-right: 10px">
+                        <a onclick="switchNightMode()" style="cursor: pointer;">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <span>夜间模式</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
                         <i class="fa-solid fa-message" style="margin-right: 6px"></i>
                         <span id="jinrishici-sentence">正在加载今日诗词....</span>
                         <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -312,6 +318,39 @@
 
     
     <script>
+        // 夜间模式切换功能
+        function switchNightMode() {
+            const body = document.body;
+            const isDark = body.classList.contains('dark-theme');
+            
+            if (isDark) {
+                body.classList.remove('dark-theme');
+                localStorage.setItem('darkMode', 'false');
+                iziToast.success({
+                    title: '已切换为日间模式',
+                    position: 'topRight'
+                });
+            } else {
+                body.classList.add('dark-theme');
+                localStorage.setItem('darkMode', 'true');
+                iziToast.success({
+                    title: '已切换为夜间模式',
+                    position: 'topRight'
+                });
+            }
+        }
+
+        // 页面加载时检查是否启用夜间模式
+        window.addEventListener('load', function() {
+            const darkMode = localStorage.getItem('darkMode');
+            // 如果没有存储的偏好设置，或者设置为false，则使用日间模式
+            if (darkMode !== 'true') {
+                document.body.classList.remove('dark-theme');
+            } else {
+                document.body.classList.add('dark-theme');
+            }
+        });
+
         // 动态加载数据
         document.addEventListener('DOMContentLoaded', function () {
             fetch('./data.json')

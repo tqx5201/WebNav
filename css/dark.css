@@ -1,378 +1,362 @@
 /*全局样式*/
-body.night a {
+body.dark-theme {
+    background-color: #232323 !important;
+    color: #a9a9a9 !important;
+    transition: all 0.3s ease;
+}
+
+body.dark-theme a {
     color: #d8d8d8 !important;
 }
 
-body.night::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.66); /* 透明度为0.66的黑色 */
-    z-index: 0;
+body.dark-theme .page-container {
+    background-color: #2c2e2f !important;
 }
 
-body.night {
-    background-color: #232323 !important;
-    background-image: url(https://res.abeim.cn/api-bing_img?export=img&idx=0) !important;
-    transition: 0.3s;
+/* 侧边栏样式 */
+body.dark-theme .sidebar-menu {
+    background-color: rgba(85, 88, 91, 0.85) !important;
+    border-right: 1px solid #5a5d60 !important;
+    backdrop-filter: blur(10px) !important;
 }
 
-body.night .board {
+body.dark-theme .sidebar-menu .main-menu a {
+    color: #d8d8d8 !important;
+}
+
+body.dark-theme .sidebar-menu .main-menu a:hover {
+    background-color: #3f4142 !important;
+}
+
+body.dark-theme .sidebar-menu .main-menu li.active > a {
+    background-color: #3f4142 !important;
+}
+
+/* 顶部导航栏样式 */
+body.dark-theme .user-info-navbar {
+    background-color: rgba(85, 88, 91, 0.85) !important;
+    border-bottom: 1px solid #5a5d60 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+body.dark-theme .menu-item {
+    background-color: transparent !important;
+}
+
+body.dark-theme .menu-item a:hover {
+    background-color: #3f4142 !important;
+}
+
+/* 搜索框样式 
+ * 透明度说明：rgba最后一个参数是透明度，范围0-1
+ * 0.95 = 95%不透明，数值越小越透明
+ * 建议范围：0.9-1.0，如果太透明可以把0.95改大一点
+ */
+body.dark-theme #search-text {
+    background-color: rgba(95, 98, 101, 0.85) !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #5a5d60 !important;
+}
+
+body.dark-theme #search button {
+    background-color: rgba(95, 98, 101, 0.85) !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #5a5d60 !important;
+}
+
+body.dark-theme .s-type-list {
+    background-color: rgba(95, 98, 101, 0.85) !important;
+    border: 1px solid #5a5d60 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+body.dark-theme .search-type input:checked + label,
+body.dark-theme .search-type input:hover + label {
+    background-color: rgba(90, 93, 96, 0.98) !important;
+}
+
+/* 链接卡片样式
+ * 透明度说明：rgba最后一个参数是透明度，范围0-1
+ * 0.95 = 95%不透明，数值越小越透明
+ * 建议范围：0.9-1.0，如果太透明可以把0.95改大一点
+ */
+body.dark-theme .xe-widget.xe-conversations {
+    background: rgba(100, 103, 106, 0.85) !important;
+    border: 1px solid #5a5d60 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+body.dark-theme .xe-widget.xe-conversations:hover {
+    background-color: rgba(110, 113, 116, 0.88) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-2px) !important;
+    transition: all 0.3s ease !important;
+}
+
+body.dark-theme .xe-comment-entry img {
+    border: 1px solid #3f4142 !important;
+}
+
+body.dark-theme .xe-comment a {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .xe-comment p {
+    color: #d0d0d0 !important;
+}
+
+/* 分类标题样式 */
+body.dark-theme .text-gray {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .category-color {
+    color: #d8d8d8 !important;
+}
+
+/* 诗词显示样式 */
+body.dark-theme #jinrishici-sentence {
+    color: #d8d8d8 !important;
+}
+
+/* 滚动条样式 */
+body.dark-theme ::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+body.dark-theme ::-webkit-scrollbar-track {
+    background: #2c2e2f !important;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+    background: #3f4142 !important;
+    border-radius: 4px !important;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb:hover {
+    background: #464646 !important;
+}
+
+/* 过渡动画 */
+body.dark-theme * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* 移除遮罩层 */
+body.dark-theme::before {
+    display: none !important;
+}
+
+body.dark-theme .board {
     background: #2c2e2f;
     box-shadow: 0px 0px 6px #00000061;
 }
 
-body.night .board a {
+body.dark-theme .board a {
     color: #d6d6d6;
 }
 
-body.night .tpwidget_title_hook,
-body.night .tpwidget_text_hook {
+body.dark-theme .tpwidget_title_hook,
+body.dark-theme .tpwidget_text_hook {
     color: #fdfdfd;
 }
 
-body.night,
-body.night #body {
-    background-color: #2c2e2f !important;
-    color: #a9a9a9 !important;
-}
-
-body.night .text-gray {
-    color: #f8f8f8;
-}
-
-body.night .xe-widget.xe-conversations {
-    background: #464646;
-}
-
-body.night .box2 {
+body.dark-theme .box2 {
     border: 1px solid #3f4142;
 }
 
-body.night .xe-comment a {
-    color: #d8d8d8;
-}
-
-body.night .xe-comment p {
-    color: #979898 !important;
-}
-
-body.night .box2:hover {
-    box-shadow: 0 26px 40px -24px rgb(255, 255, 255);
-    -webkit-box-shadow: 0 26px 40px -24px rgba(130, 130, 130, 0.13);
-    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
-    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.14, 1.43);
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease-out;
-    background-color: #232323 !important;
-}
-
-body.night .tpwthwidt .front_37Zqj25,
-body.night .tpwthwidt .widget_ctONpAN {
-    background: #535656;
-    color: red !important;
-}
-
-body.night .tpwthwidt .weakText_3SLbaEo {
-    color: rgb(253, 253, 253);
-}
-
-body.night .tpwthwidt .baseText_31obwQ4 {
-    color: #cccccc;
-}
-
-body.night footer.main-footer {
-    background-color: #464646dd;
-}
-
-body.night .footer-text a {
+body.dark-theme .footer-text a {
     color: #a9a9a9;
 }
 
-body.night .footer-text a:hover,
-body.night footer-text a:focus {
+body.dark-theme .footer-text a:hover,
+body.dark-theme footer-text a:focus {
     color: #ffffff;
     text-decoration: none
 }
 
-body.night .panel {
-    background: #2c2e2f;
+body.dark-theme .panel {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-body.night blockquote {
-    border-left: 5px solid #000;
+body.dark-theme blockquote {
+    border-left-color: #3f4142;
+    color: #a9a9a9;
 }
 
-body.night .respond a {
-    color: #cecece;
+body.dark-theme .respond a {
+    color: #d8d8d8;
 }
 
-body.night .respond .textarea {
-    background-color: #2b2b2b;
-    margin-top: 50px;
-    border-radius: 15px;
-    padding: 10px;
+body.dark-theme .respond .textarea {
+    background-color: #2c2e2f;
+    color: #a9a9a9;
+    border-color: #3f4142;
 }
 
 .go-up {
-    right: 10px !important;
-    position: fixed !important;
-    bottom: 20px !important;
-    height: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
-body.night .go-up a {
-    background-color: rgb(88 88 88) !important;
-    padding: 15px 20px !important;
-    border-radius: 50% !important;
+body.dark-theme .go-up a {
+    background-color: #2c2e2f;
+    color: #a9a9a9;
+    border: 1px solid #3f4142;
 }
 
-body.night .go-up a:hover {
-    background-color: rgb(123 123 123) !important;
+body.dark-theme .go-up a:hover {
+    background-color: #3f4142;
 }
 
 .footer-inner #busuanzi_container_site_pv,
-.footer-inner #busuanzi_container_site_uv {
-    font-weight: bold;
-}
-
 .footer-inner #busuanzi_value_site_pv,
-.footer-inner #busuanzi_value_site_uv {
-    color: #373e4a;
-}
-
-.main-menu #busuanzi_value_site_pv,
-.main-menu #busuanzi_value_site_uv {
-    float: right;
+.main-menu #busuanzi_value_site_pv {
+    color: #a9a9a9;
 }
 
 .sidebar-menu .main-menu a>i {
-    width: 16px;
+    color: #a9a9a9;
 }
 
-/*左侧导航栏*/
-.night .sidebar-menu {
-    background: #464646dd;
+body.dark-theme span.dark-text {
+    color: #a9a9a9;
 }
 
-.night .sidebar-menu .main-menu a:hover {
-    background: #313233;
+body.dark-theme .search-input {
+    background-color: #2c2e2f;
+    color: #a9a9a9;
+    border-color: #3f4142;
 }
 
-.night .sidebar-menu .main-menu li.active>a {
-    background: #464646;
+/* 搜索引擎部分
+ * 透明度说明：同上
+ */
+body.dark-theme .search-engine {
+    background-color: rgba(75, 78, 81, 0.95) !important;
+    backdrop-filter: blur(10px) !important;  /* 这是毛玻璃效果，可以删除 */
 }
 
-/*顶部导航栏*/
-.night .user-info-navbar {
-    background-color: #464646dd !important;
+body.dark-theme .search-engine-list li {
+    background-color: transparent !important;
 }
 
-.night .menu-item {
-    color: #d8d8d8;
+body.dark-theme .search-engine-list li:hover {
+    background-color: rgba(90, 93, 96, 0.98) !important;
 }
 
-.night .menu-item a:hover {
-    background: #464646;
+body.dark-theme #bulletin_box {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-/*搜索栏*/
-.night span.dark-text {
-    color: #ddd9ce !important;
+body.dark-theme .panel-body {
+    background-color: #2c2e2f;
 }
 
-.night #search-text,
-.night .search-type input:checked+label,
-.night .search-type input:hover+label {
-    background-color: #464646 !important;
+body.dark-theme .panel-body p {
+    color: #a9a9a9;
 }
 
-.night .s-type-list {
-    background-color: #464646;
-    box-shadow: 0 9px 20px rgba(0, 0, 0, .3)
+body.dark-theme .fk_service_ax {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-.night .s-type-list:before {
-    border-bottom-color: #464646;
+body.dark-theme .fk_service_ax:hover {
+    background-color: #3f4142;
 }
 
-body.night .submit {
-    color: #a5a5a5;
-    background-color: #0000008f;
-    border: 0px;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 15px;
-    float: right;
-    margin-top: 10px;
+body.dark-theme .fk_service_jk {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-body.night #search button i {
-    color: #b1b1b1;
+body.dark-theme .fk_service_jk:hover {
+    background-color: #3f4142;
 }
 
-body.night #search-text {
-    background-color: #464646;
-    color: #bdbdbd;
+body.dark-theme .fk_service_dh {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-body.night .search-type input:checked+label,
-.search-type input:hover+label {
-    background-color: #464646;
+body.dark-theme .fk_service_dh:hover {
+    background-color: #3f4142;
 }
 
-body.night .s-type-list {
-    background: #464646;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+body.dark-theme .fk_service_upward {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-body.night .xe-comment-entry img {
-    filter: brightness(95%);
+body.dark-theme .fk_service_upward:hover {
+    background-color: #3f4142;
 }
 
-body.night .search-input {
-    border: 1px solid #424242;
-    border-radius: 10px;
-    background-color: #424242;
+body.dark-theme .fk_service_home {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-body.night .search-engine {
-    background: #424242;
-    box-shadow: 0px 5px 20px 0px #2c2e2f;
+body.dark-theme .fk_service_home:hover {
+    background-color: #3f4142;
 }
 
-body.night .search-engine-list li {
-    background: #424242;
+body.dark-theme #fk-span {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
+    color: #a9a9a9;
 }
 
-/*公告*/
-.night #bulletin_box {
-    background: #464646;
+body.dark-theme #fk-span-right {
+    background-color: #2c2e2f;
+    border-color: #3f4142;
 }
 
-/*独立页面*/
-.night .panel-body {
-    background: #464646dd;
-    color: #d8d8d8;
+body.dark-theme #fk-span-right:after {
+    border-left-color: #2c2e2f;
 }
 
-.night .panel-body p {
-    color: #d8d8d8;
+body.dark-theme code[class*=language-],
+body.dark-theme pre {
+    background-color: #2c2e2f;
+    color: #a9a9a9;
 }
 
-/*悬浮窗*/
-.night .fk_service_ax {
-    background: url(../images/ico/sun.svg) no-repeat center center #464646;
-    background-size: 60% 60%;
+body.dark-theme .iziToast:after {
+    background-color: #2c2e2f;
 }
 
-.night .fk_service_ax:hover {
-    background: url(../images/ico/sun.svg) no-repeat center center #313233;
-    background-size: 60% 60%;
+body.dark-theme .iziToast {
+    background-color: #2c2e2f;
+    color: #a9a9a9;
 }
 
-.night .fk_service_jk {
-    background: url(../images/ico/menu-dark.png) no-repeat center center #464646;
-    background-size: 60% 60%;
+body.dark-theme .iziToast-title.slideIn {
+    color: #a9a9a9;
 }
 
-.night .fk_service_jk:hover {
-    background: url(../images/ico/menu-dark.png) no-repeat center center #313233;
-    background-size: 60% 60%;
+body.dark-theme .iziToast-message.slideIn {
+    color: #a9a9a9;
 }
 
-.night .fk_service_dh {
-    background: url(../images/ico/nav-dark.png) no-repeat center center #464646;
-    background-size: 60% 60%;
+body.dark-theme .iziToast-icon {
+    color: #a9a9a9;
 }
 
-.night .fk_service_dh:hover {
-    background: url(../images/ico/nav-dark.png) no-repeat center center #313233;
-    background-size: 60% 60%;
+body.dark-theme .iziToast>.iziToast-progressbar {
+    background-color: #3f4142;
 }
 
-.night .fk_service_upward {
-    background: url(../images/ico/up-dark.png) no-repeat center center #464646;
-    background-size: 60% 60%;
+body.dark-theme .iziToast>.iziToast-progressbar>div {
+    background-color: #a9a9a9;
 }
 
-.night .fk_service_upward:hover {
-    background: url(../images/ico/up-dark.png) no-repeat center center #313233;
-    background-size: 60% 60%;
-}
-
-.night .fk_service_home {
-    background: url(../images/ico/home-dark.png) no-repeat center center #464646;
-    background-size: 60% 60%;
-}
-
-.night .fk_service_home:hover {
-    background: url(../images/ico/home-dark.png) no-repeat center center #313233;
-    background-size: 60% 60%;
-}
-
-.night #fk-span {
-    background: #2c2e2f;
-    border: 1px solid #2c2e2f;
-    color: #dfdfdf;
-    transition: 0.3s;
-}
-
-.night #fk-span-right {
-    border-left: 10px solid #2c2e2f;
-    transition: 0.3s;
-}
-
-.night #fk-span-right:after {
-    border-left: 10px solid #2c2e2f;
-    transition: 0.3s;
-}
-
-/*评论框*/
-.night code[class*=language-],
-.night pre[class*=language-] {
-    color: #d8d8d8 !important;
-    background: #464646 !important;
-}
-
-.night pre {
-    border: 1px solid #464646 !important;
-}
-
-/*弹窗暗黑样式*/
-.night .iziToast:after {
-    border-radius: 8px !important;
-}
-
-.night .iziToast {
-    background: #333 none repeat scroll 0 0 !important;
-}
-
-.night .iziToast-title.slideIn {
-    color: #aaa !important;
-}
-
-.night .iziToast-message.slideIn {
-    color: #aaa !important;
-}
-
-.night .iziToast-icon {
-    color: #aaa !important;
-}
-
-.night .iziToast>.iziToast-progressbar {
-    background: rgb(51, 51, 51) !important;
-}
-
-.night .iziToast>.iziToast-progressbar>div {
-    background: rgb(170, 170, 170) !important;
-}
-
-.night .iziToast>.iziToast-close {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAJOgAACToB8GSSSgAAAAZQTFRFqKioAAAAmKDP8QAAAAJ0Uk5T/wDltzBKAAAAY0lEQVR4nDWOsQ0AIQwDHVGkZARGYTQYjVEyAiUFwg+WvjkpSnI2MjnhZCCRA0Z2dNIw2kmIuh2zrIyVZ8H2qDhpNNA6wW4XI12EX8z8Q6MWOnnHepNAKkmlV5AiFa4aKvSqfSWBUGXNeqSXAAAAAElFTkSuQmCC) no-repeat 50% 50% !important;
-    background-size: 8px !important;
+body.dark-theme .iziToast>.iziToast-close {
+    color: #a9a9a9;
 }
