@@ -555,7 +555,7 @@
             <h2>检测摘要</h2>
             <div class="summary-grid">
                 <div class="summary-item">
-                    <h3>总检查数</h3>
+                    <h3>检查数</h3>
                     <div id="totalChecked">0</div>
                 </div>
                 <div class="summary-item">
@@ -580,32 +580,6 @@
                 </div>
             </div>
             <div class="last-check">上次检测时间: <span id="lastCheckTime">-</span></div>
-        </div>
-
-        <div class="history-panel">
-            <div class="history-title">
-                <h3>历史记录</h3>
-                <button class="clear-history" onclick="clearHistory()">清除历史</button>
-            </div>
-            <div class="history-stats">
-                <div class="history-stat-item">
-                    <h4>最高成功率</h4>
-                    <div class="value" id="highestSuccessRate">0%</div>
-                    <div class="date" id="highestSuccessDate">-</div>
-                </div>
-                <div class="history-stat-item">
-                    <h4>平均成功率</h4>
-                    <div class="value" id="averageSuccessRate">0%</div>
-                </div>
-                <div class="history-stat-item">
-                    <h4>检测次数</h4>
-                    <div class="value" id="totalChecks">0</div>
-                </div>
-                <div class="history-stat-item">
-                    <h4>累计检测URL数</h4>
-                    <div class="value" id="totalUrlsChecked">0</div>
-                </div>
-            </div>
         </div>
 
         <div class="progress-container">
@@ -647,64 +621,15 @@
         let allResults = [];
         let currentFilter = 'all';
 
-        // 历史记录数据结构
-        const history = {
-            checks: [],
-            stats: {
-                highestSuccessRate: 0,
-                highestSuccessDate: null,
-                totalChecks: 0,
-                totalUrlsChecked: 0,
-                averageSuccessRate: 0
-            }
-        };
-
-        // 从localStorage加载历史数据
-        function loadHistory() {
-            const savedHistory = localStorage.getItem('urlCheckerHistory');
-            if (savedHistory) {
-                Object.assign(history, JSON.parse(savedHistory));
-                updateHistoryDisplay();
-            }
-        }
-
-        // 保存历史数据到localStorage
-        function saveHistory() {
-            localStorage.setItem('urlCheckerHistory', JSON.stringify(history));
-        }
-
-        // 更新历史显示
-        function updateHistoryDisplay() {
-            document.getElementById('highestSuccessRate').textContent = history.stats.highestSuccessRate.toFixed(2) + '%';
-            document.getElementById('highestSuccessDate').textContent = history.stats.highestSuccessDate ? new Date(history.stats.highestSuccessDate).toLocaleString() : '-';
-            document.getElementById('averageSuccessRate').textContent = history.stats.averageSuccessRate.toFixed(2) + '%';
-            document.getElementById('totalChecks').textContent = history.stats.totalChecks;
-            document.getElementById('totalUrlsChecked').textContent = history.stats.totalUrlsChecked;
-        }
-
-        // 清除历史记录
-        function clearHistory() {
-            if (confirm('确定要清除所有历史记录吗？')) {
-                history.checks = [];
-                history.stats = {
-                    highestSuccessRate: 0,
-                    highestSuccessDate: null,
-                    totalChecks: 0,
-                    totalUrlsChecked: 0,
-                    averageSuccessRate: 0
-                };
-                saveHistory();
-                updateHistoryDisplay();
-            }
-        }
-
         // 更新检查统计
         function updateStats(checker) {
-            const successRate = (checker.successCount / checker.totalChecked * 100) || 0;
+            // 计算成功数 = 检查数 - 失败数 - 可疑数 - 重定向数
+            const successCount = checker.totalChecked - checker.failedCount - checker.suspiciousCount - checker.redirectCount;
+            const successRate = (successCount / checker.totalChecked * 100) || 0;
             
             // 更新当前检查摘要
             document.getElementById('totalChecked').textContent = checker.totalChecked;
-            document.getElementById('successCount').textContent = checker.successCount;
+            document.getElementById('successCount').textContent = successCount;
             document.getElementById('failedCount').textContent = checker.failedCount;
             document.getElementById('redirectCount').textContent = checker.redirectCount;
             document.getElementById('suspiciousCount').textContent = checker.suspiciousCount;
@@ -712,56 +637,6 @@
             
             const now = new Date();
             document.getElementById('lastCheckTime').textContent = now.toLocaleString();
-
-            // 更新历史统计
-            if (checker.totalChecked > 0) {
-                history.checks.push({
-                    date: now.toISOString(),
-                    totalChecked: checker.totalChecked,
-                    successCount: checker.successCount,
-                    successRate: successRate
-                });
-
-                // 更新最高成功率
-                if (successRate > history.stats.highestSuccessRate) {
-                    history.stats.highestSuccessRate = successRate;
-                    history.stats.highestSuccessDate = now.toISOString();
-                }
-
-                // 更新总体统计
-                history.stats.totalChecks++;
-                history.stats.totalUrlsChecked += checker.totalChecked;
-
-                // 计算平均成功率
-                history.stats.averageSuccessRate = history.checks.reduce((acc, check) => acc + check.successRate, 0) / history.checks.length;
-
-                // 保存并更新显示
-                saveHistory();
-                updateHistoryDisplay();
-            }
-        }
-
-        // 添加主题切换相关代码
-        function setTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            
-            // 更新图标显示
-            const sunIcon = document.querySelector('.sun-icon');
-            const moonIcon = document.querySelector('.moon-icon');
-            if (theme === 'dark') {
-                sunIcon.style.display = 'none';
-                moonIcon.style.display = 'block';
-            } else {
-                sunIcon.style.display = 'block';
-                moonIcon.style.display = 'none';
-            }
-        }
-
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            setTheme(newTheme);
         }
 
         // 在页面加载时设置保存的主题
@@ -769,7 +644,6 @@
             const savedTheme = localStorage.getItem('theme') || 'light';
             setTheme(savedTheme);
             
-            loadHistory();  // 加载历史数据
             const startCheckBtn = document.getElementById('startCheck');
             const stopCheckBtn = document.getElementById('stopCheck');
             const startPeriodicBtn = document.getElementById('startPeriodic');
@@ -882,6 +756,8 @@
                 isChecking = false;
                 document.getElementById('startCheck').disabled = false;
                 document.getElementById('stopCheck').disabled = true;
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('progress').style.width = '0%';
             }
         }
 
@@ -945,6 +821,29 @@
             if (result.isError) return '错误';
             if (result.isRedirected) return '重定向';
             return '正常';
+        }
+
+        // 添加主题切换相关代码
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            // 更新图标显示
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            if (theme === 'dark') {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
         }
     </script>
 </body>
