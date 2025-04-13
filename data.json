@@ -348,7 +348,7 @@
       },
       {
         "name": "图片无损放大",
-        "url": "https://waifu2x.net",
+        "url": "https://waifu2x.udp.jp",
         "img": "waifu2x.jpg",
         "desc": "适合找不到高分辨率原图，N手图片模糊不清时提高清晰度用"
       },
@@ -584,7 +584,7 @@
       },
       {
         "name": "APK加固",
-        "url": "https://nop.gs/upload.php",
+        "url": "https://56.al/",
         "img": "nopgs.jpg",
         "desc": "APK 加固安全测试，在线脱壳"
       },
@@ -1031,6 +1031,12 @@
         "url": "https://chat.deepseek.com/",
         "img": "deepseek.jpg",
         "desc": "深度搜索AI，帮你写代码、读文件、写作各种创意内容，请把你的任务交给我吧"
+      },
+      {
+        "name": "豆包",
+        "url": "https://www.doubao.com/chat/",
+        "img": "doubao.jpg",
+        "desc": "字节跳动旗下的 AI 助手"
       },
       {
         "name": "问小白",
