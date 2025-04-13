@@ -430,12 +430,6 @@
         "img": "xbeibeix.jpg",
         "desc": "输入视频地址，解析下载视频/音频。多种画质分辨率和格式可以按需选择"
       },
-      // {
-      //   "name": "Web 手  https://lab.5ime.cn/video 静等更新 ", 
-      //   "url": "https://5ime.cn",
-      //   "img": "5ime.jpg",
-      //   "desc": "一个短视频和图集去水印解析下载平台，简单好用，常见的各种视频平台都可以使用"
-      // },
       {
         "name": "在线字体查看器",
         "url": "https://www.bejson.com/ui/font/",
