@@ -317,6 +317,12 @@
     ],
     "网页工具": [
       {
+        "name": "MikuTools",
+        "url": "https://tools.miku.ac",
+        "img": "miku.jpg",
+        "desc": "轻量工具箱，支持数据查询、数据转换、文字处理、编程开发"
+      },
+      {
         "name": "图片/PDF工具箱",
         "url": "https://www.11zon.com/zh-cn/",
         "img": "11zon.jpg",
@@ -341,6 +347,12 @@
         "desc": "支持通过浏览器访问，实现打开本地 SVG 文件在线编辑"
       },
       {
+        "name": "图片无损放大",
+        "url": "https://waifu2x.net",
+        "img": "waifu2x.jpg",
+        "desc": "适合找不到高分辨率原图，N手图片模糊不清时提高清晰度用"
+      },
+      {
         "name": "音频MIDI",
         "url": "https://midi.martinic.com/zh/audio-to-midi",
         "img": "martinic.jpg",
@@ -353,10 +365,22 @@
         "desc": "利用许多开源项目构建的新一代转换器，支持文档、图片、电子书、影音"
       },
       {
+        "name": "在线PDF工具",
+        "url": "https://tools.pdf24.org/zh/",
+        "img": "pdf24.jpg",
+        "desc": "免费无限制的在线 PDF 处理工具合集，包含 30 个 PDF 工具，合并、分割、编辑、压缩、格式转换..."
+      },
+      {
         "name": "图片颜色替换",
         "url": "https://imgonline.tools/zh/replace-color",
         "img": "imgonline.jpg",
         "desc": "将图像中的一种颜色更改为另一种颜色（交换颜色）。还可以调整距离以替换相似的颜色并保留色调"
+      },
+      {
+        "name": "AI 自动抠图",
+        "url": "https://bgsub.cn",
+        "img": "bgsub.jpg",
+        "desc": "工具完全免费，能够自动化去除/替换图片背景"
       },
       {
         "name": "ICO 转 JPG",
@@ -400,6 +424,18 @@
         "img": "video2edit.jpg",
         "desc": "旋转视频、剪辑视频、合并视频、比较视频、压缩视频、格式转换"
       },
+      {
+        "name": "B站视频下载",
+        "url": "https://xbeibeix.com/api/bilibili/",
+        "img": "xbeibeix.jpg",
+        "desc": "输入视频地址，解析下载视频/音频。多种画质分辨率和格式可以按需选择"
+      },
+      // {
+      //   "name": "Web 手  https://lab.5ime.cn/video 静等更新 ", 
+      //   "url": "https://5ime.cn",
+      //   "img": "5ime.jpg",
+      //   "desc": "一个短视频和图集去水印解析下载平台，简单好用，常见的各种视频平台都可以使用"
+      // },
       {
         "name": "在线字体查看器",
         "url": "https://www.bejson.com/ui/font/",
@@ -501,6 +537,12 @@
         "url": "https://gonglue.qinggl.com/app/img/icon.jsp",
         "img": "gonglue.jpg",
         "desc": "快速的定位网页的 favicon.ico 图标网址"
+      },
+      {
+        "name": "营销大数据平台",
+        "url": "https://www.5118.com/",
+        "img": "5118.jpg",
+        "desc": "自媒体必备的工具网站，通过多维度数据分析，掌握关键词趋势和竞争情况，还可以进行高频词、疑问词快捷提取"
       }
     ],
     "技术工具": [
@@ -725,6 +767,12 @@
         "url": "https://the-x.cn/",
         "img": "thex.jpg",
         "desc": "The-X 在线工具箱 Base64 解码 AES RAS 解码 加密"
+      },
+      {
+        "name": "在线病毒检测",
+        "url": "https://www.virustotal.com",
+        "img": "thex.jpg",
+        "desc": "使用 73 个反病毒引擎对可疑文档进行分析，保证电脑安全"
       }
     ],
     "赛题平台": [
@@ -969,6 +1017,12 @@
         "url": "https://pt.ziziyi.com",
         "img": "ziziyi.jpg",
         "desc": "孩子学化学的必备小网站，介绍元素详细信息"
+      },
+      {
+        "name": "英语真题在线",
+        "url": "https://zhenti.burningvocabulary.cn/",
+        "img": "zhenti.jpg",
+        "desc": "主要有历年考研英语、大学英语四级、大学英语六级、英语专八的历年考试真题试卷和答案，免费下载 PDF 真题试卷"
       }
     ],
     "AI站点": [
@@ -1399,6 +1453,12 @@
         "desc": "在线小霸王游戏机，上千款小霸王、红白机、街机游戏等"
       },
       {
+        "name": "猜盐（炒饭小测试）",
+        "url": "https://xiaoce.fun/",
+        "img": "xiaoce.jpg",
+        "desc": "包含丰富知识问答测验内容的网站，涵盖了多个领域的趣味题目"
+      },
+      {
         "name": "联机棋类游戏平台",
         "url": "https://papergames.io/zh/",
         "img": "papergames.jpg",
@@ -1439,6 +1499,12 @@
         "url": "https://poetrystrands.com",
         "img": "poetrystrands.jpg",
         "desc": "把整篇的古诗打散成无规律的文本，我们要把这些文本连起来还原成古诗原句"
+      },
+      {
+        "name": "朋友圈切九图",
+        "url": "https://v.magiconch.com/sns-image",
+        "img": "magiconch.jpg",
+        "desc": "切图小工具，在线把图片切成九图、四图，可以在微博、朋友圈、空间等社交网站上分享图片时使用"
       },
       {
         "name": "魔方求解器",
