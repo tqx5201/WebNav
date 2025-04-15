@@ -377,6 +377,12 @@
         "desc": "将图像中的一种颜色更改为另一种颜色（交换颜色）。还可以调整距离以替换相似的颜色并保留色调"
       },
       {
+        "name": "RGB ←→ Hex",
+        "url": "https://www.sioe.cn/yingyong/yanse-rgb-16/",
+        "img": "sioe.jpg",
+        "desc": "RGB颜色值与十六进制颜色码转换工具"
+      },
+      {
         "name": "AI 自动抠图",
         "url": "https://bgsub.cn",
         "img": "bgsub.jpg",
