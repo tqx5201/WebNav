@@ -1125,6 +1125,12 @@
         "desc": "将图片转换为 ASCII 艺术文本，一堆字母、数字和符号"
       },
       {
+        "name": "设计资源平台",
+        "url": "https://iconscout.com/",
+        "img": "iconscout.jpg",
+        "desc": "提供超过840万个商用图标、插画、3D插画和Lottie动画的设计资源平台"
+      },
+      {
         "name": "Pexels",
         "url": "https://www.pexels.com/",
         "img": "pexels.jpg",
