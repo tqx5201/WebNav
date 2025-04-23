@@ -1023,6 +1023,12 @@
         "url": "https://zhenti.burningvocabulary.cn/",
         "img": "zhenti.jpg",
         "desc": "主要有历年考研英语、大学英语四级、大学英语六级、英语专八的历年考试真题试卷和答案，免费下载 PDF 真题试卷"
+      },
+      {
+        "name": "石墨文档",
+        "url": "https://shimo.im/",
+        "img": "shimo.jpg",
+        "desc": "支持多人实时协作的在线文档工具"
       }
     ],
     "AI站点": [
@@ -1167,6 +1173,12 @@
         "desc": "阿里巴巴图标库，国内功能很强大且图标内容很丰富的矢量图标库"
       },
       {
+        "name": "菜鸟图标",
+        "url": "https://icon.sucai999.com",
+        "img": "sucai999.jpg",
+        "desc": "无需注册登录50万+图标免费用，连渐变/3D/动态图标都白嫖"
+      },
+      {
         "name": "Bootstrap",
         "url": "https://v3.bootcss.com/components",
         "img": "bootcss.jpg",
@@ -1255,6 +1267,12 @@
         "url": "https://www.mzgf.com/world",
         "img": "mzgf.jpg",
         "desc": "采用 8K+ 级 VR 游览标准录制了全球数百个名胜古迹、城市风景的 360° VR 全景录像"
+      },
+      {
+        "name": "在线 PS",
+        "url": "https://s.gd-share.cn/4nNI",
+        "img": "gd-share.jpg",
+        "desc": "一款专业精简的在线ps图片处理软件，免下载、免安装，直接在浏览器打开网页版就可随时随地用它修正"
       },
       {
         "name": "田字格字帖生成器",
@@ -1441,6 +1459,48 @@
         "desc": "地图 | 卡巴斯基网络威胁实时地图"
       },
       {
+        "name": "核弹地图",
+        "url": "https://nuclearsecrecy.com/nukemap/",
+        "img": "nuclearsecrecy.jpg",
+        "desc": "一款在线核武器爆炸效果模拟工具，通过可视化手段揭示核爆炸的破坏力，提升公众对核武器危害的认知"
+      },
+      {
+        "name": "圣地巡礼地图",
+        "url": "https://anitabi.cn/map",
+        "img": "anitabi.jpg",
+        "desc": "用地图呈现二次元作品内场景的实际位置，可配合对比图生成器使用"
+      },
+      {
+        "name": "全球航班实时跟踪地图",
+        "url": "https://flightadsb.variflight.com",
+        "img": "flightadsb.jpg",
+        "desc": "提供飞机实时跟踪地图，飞机飞行轨迹回放，航班轨迹数据下载，航班状态，ADS-B设备申请使用，飞机图片展示等信息服务"
+      },
+      {
+        "name": "唐宋文学编年地图",
+        "url": "https://sou-yun.cn/poetlifemap.aspx/",
+        "img": "sou-yun.jpg",
+        "desc": "呈现出诗人一生行走的足迹，帮助我们更加直观地了解诗人的生平和诗歌的创作背景，并介绍诗人在不同地点创作的诗歌作品"
+      },
+      {
+        "name": "全球气象地图",
+        "url": "https://www.ventusky.com",
+        "img": "ventusky.jpg",
+        "desc": "提供全球天气预测地图的网站, 它专注于展示风、雨和温度等气象信息"
+      },
+      {
+        "name": "世界历史地图集",
+        "url": "https://www.oldmapsonline.org/zh/history/regions",
+        "img": "timemap.jpg",
+        "desc": "探索不同历史时期、地区和战争的信息"
+      },
+      {
+        "name": "城市路网绘制器",
+        "url": "https://anvaka.github.io/city-roads/",
+        "img": "anvaka.jpg",
+        "desc": "输入城市名字，自动绘制所有城市道路地图"
+      },
+      {
         "name": "超耐玩的塔防游戏",
         "url": "https://yorg.io",
         "img": "yorg.jpg",
@@ -1579,12 +1639,6 @@
         "desc": "一个将任意数字分解成 114514 构成的公式的工具, 部署于 GitHub Pages"
       },
       {
-        "name": "圣地巡礼地图",
-        "url": "https://anitabi.cn/map",
-        "img": "anitabi.jpg",
-        "desc": "用地图呈现二次元作品内场景的实际位置，可配合对比图生成器使用"
-      },
-      {
         "name": "角色对战",
         "url": "https://www.jazzvswaffles.com/",
         "img": "jazzvswaffles.jpg",
@@ -1651,12 +1705,6 @@
         "desc": "我美吗？我丑吗？我为什么丑？还是不够漂亮？面部美丑在线分析测试。在3分钟内分析完您的脸"
       },
       {
-        "name": "城市路网绘制器",
-        "url": "https://anvaka.github.io/city-roads/",
-        "img": "anvaka.jpg",
-        "desc": "输入城市名字，自动绘制所有城市道路地图"
-      },
-      {
         "name": "电子包浆",
         "url": "https://magiconch.com/patina/",
         "img": "magiconch.jpg",
@@ -1697,6 +1745,12 @@
         "url": "https://fontmeme.com/zh/stranger-things-font/",
         "img": "fontmeme.jpg",
         "desc": "支持传说之下、GTA系列、乐高、宝可梦、大表哥等等字体（仅支持英文）"
+      },
+      {
+        "name": "纸飞机折叠",
+        "url": "https://www.foldnfly.com",
+        "img": "foldnfly.jpg",
+        "desc": "一个教你怎么叠纸飞机的网站，非常好玩的纸飞机数据库"
       },
       {
         "name": "梗图生成器",
