@@ -565,6 +565,12 @@
         "desc": "爬虫工具集，python编程学习工具，数据采集工具导航，AI工具集网站"
       },
       {
+        "name": "Toolbox",
+        "url": "https://app.timelessq.com/",
+        "img": "timelessq.jpg",
+        "desc": "所有数据处理都在客户端完成，不上传服务端；所有工具免费使用且无需登录"
+      },
+      {
         "name": "在线小工具库",
         "url": "https://www.iotool.cn/",
         "img": "iotool.jpg",
@@ -761,6 +767,18 @@
         "url": "https://www.jyshare.com/front-end/9729/",
         "img": "jyshare.jpg",
         "desc": "支持使用 Mermaid 代码绘制流程图，序列图，甘特图，类图，状态图，饼图，实体关系图"
+      },
+      {
+        "name": "PlantUML 编辑器",
+        "url": "https://app.timelessq.com/office/plantuml-editor",
+        "img": "timelessq.jpg",
+        "desc": "在线 PlantUML 编辑器，快速创建各种 UML 图"
+      },
+      {
+        "name": "PlantUML 官方编辑工具",
+        "url": "https://www.plantuml.com/plantuml/uml",
+        "img": "plantuml.jpg",
+        "desc": "PlantUML 官方编辑工具，支持主题更换"
       },
       {
         "name": "The-X 密码学库",
