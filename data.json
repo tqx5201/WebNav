@@ -389,6 +389,12 @@
         "desc": "工具完全免费，能够自动化去除/替换图片背景"
       },
       {
+        "name": "图片锐化",
+        "url": "https://www.lzltool.cn/Image/SharpenImage",
+        "img": "lzltool.jpg",
+        "desc": "的在线免费工具，专为提升照片和图像质量而打造。它能够有效增加照片的清晰度与细节"
+      },
+      {
         "name": "ICO 转 JPG",
         "url": "https://to.imagestool.com/zh-CN/ico-to-jpg",
         "img": "imagestool.jpg",
