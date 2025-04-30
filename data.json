@@ -935,6 +935,18 @@
         "desc": "精易论坛——程序设计学习交流技术论坛"
       },
       {
+        "name": "CTF 导航——移动安全",
+        "url": "https://www.ctfiot.com/yidonganquan",
+        "img": "ctfiot.jpg",
+        "desc": "移动安全、IOT安全、ICS安全、区块链安全"
+      },
+      {
+        "name": "夏冰软件",
+        "url": "https://www.jiamisoft.com/blog/jiamiyingyong",
+        "img": "jiamisoft.jpg",
+        "desc": "分享加密算法、加密技术、加密应用相关文章"
+      },
+      {
         "name": "学者网",
         "url": "https://www.scholat.com/scholarsearch-home.html",
         "img": "scholat.jpg",
@@ -951,12 +963,6 @@
         "url": "http://www.repanso.com/",
         "img": "repanso.jpg",
         "desc": "百度云网盘搜索引擎，网盘云搜索服务。搜索电影、电视剧、小说、文档、资料等百度云资源"
-      },
-      {
-        "name": "CTF 导航——移动安全",
-        "url": "https://www.ctfiot.com/yidonganquan",
-        "img": "ctfiot.jpg",
-        "desc": "移动安全、IOT安全、ICS安全、区块链安全"
       },
       {
         "name": "Z-library",
