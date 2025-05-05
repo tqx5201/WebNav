@@ -9,16 +9,16 @@ html {
 
 a {
     text-decoration: none !important;
-    transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 a:hover {
-    transition: all 0.3s ease;
+    transition: 0.5s;
     text-decoration: none;
 }
 
 p {
-    color: #6c757d;
+    color: #979898
 }
 
 label {
@@ -37,9 +37,16 @@ body::before {
 
 body {
     height: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    background-color: #f2f2f2 !important;
+    background-image: url("../images/background/1.jpg");
+    background-attachment: fixed !important;
+    background-size: auto !important;     /*背景图片大小, 原为cover*/
+    transition: 0.3s;
+    font-family: 'HarmonyOS_Regular', sans-serif !important;
+    opacity: 0.70;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
     font-family: 'Segoe UI', 'PingFang SC', 'HarmonyOS_Regular', Arial, sans-serif !important;
-    background: linear-gradient(135deg, #f6f8fc 0%, #e9ecef 100%) !important;
-    transition: all 0.3s ease;
 }
 
 .col-sm-3 {
@@ -54,21 +61,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo-env .logo {
     display: flex;
     align-items: center;
     font-size: 1.95rem;
-    transition: all 0.3s ease;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 .logo-env .logo:hover {
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .logo-env .logo:active {
@@ -79,7 +84,7 @@ body {
 .logo-env .logo i {
     margin: 6px 10px;
     font-size: 2.45rem;
-    color: #4a6cf7;
+    transition: 0.3s;
 }
 
 .sidebar-menu.collapsed .logo-text {
@@ -93,36 +98,35 @@ body {
 
 /*左侧菜单栏*/
 .sidebar-menu {
-    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
     display: table-cell;
     position: relative;
     width: 230px;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background: #ffffffdd;
+    z-index: 1
 }
 
 .sidebar-menu .main-menu {
-    padding: 20px;
-    list-style: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none
 }
 
 .sidebar-menu .main-menu a {
-    padding: 12px 20px;
-    margin-bottom: 8px;
+    padding: 13px 5px;
+    margin-bottom: 4px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
-    border-radius: 12px;
-    color: #4a5568;
-    transition: all 0.3s ease;
+    font-size: 1.45rem;
+    border-radius: 25px;
 }
 
 .sidebar-menu .main-menu a:hover {
-    background: rgba(74, 108, 247, 0.1);
-    color: #4a6cf7;
-    transform: translateX(5px);
+    background: #d0d0d0;
+    cursor: pointer;
 }
 
 .sidebar-menu .main-menu a:active {
@@ -130,8 +134,9 @@ body {
 }
 
 .sidebar-menu .main-menu a>i {
-    margin-right: 12px;
-    font-size: 1.2rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
 }
 
 .sidebar-menu .main-menu a>span {
@@ -290,12 +295,13 @@ body {
 
 /*搜索框*/
 #search {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    margin: 20px;
+    max-width: 600px;
+    margin: 60px auto 30px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    padding: 24px 32px 18px 32px;
+    transition: box-shadow 0.3s;
 }
 
 #search form {
@@ -303,38 +309,38 @@ body {
 }
 
 #search-text {
-    width: 100%;
-    padding: 12px 20px;
-    border: 2px solid rgba(74, 108, 247, 0.1);
     border-radius: 12px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.8);
+    border: 1.5px solid #e0e0e0;
+    font-size: 1.1rem;
+    padding: 14px 18px;
+    transition: border 0.2s, box-shadow 0.2s;
+    background: #f8fafd;
 }
 
 #search-text:focus {
-    border-color: #4a6cf7;
-    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.1);
-    outline: none;
+    border: 1.5px solid #4f8cff;
+    box-shadow: 0 0 0 2px #4f8cff22;
+    background: #fff;
 }
 
 #search button {
     position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #4a6cf7;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    top: 0;
+    right: 0;
+    background: rgb(44 46 47 / 80%);
+    border: 0;
+    width: 60px;
+    height: 36px;
+    margin: 8px;
+    line-height: 36px;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 #search button:hover {
-    background: #3a5ce5;
-    transform: translateY(-50%) scale(1.05);
+    background: #313437;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #search button i {
@@ -522,50 +528,52 @@ body {
 
 /*链接卡片*/
 .box2 {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px -8px rgba(60,80,180,0.10);
+    background: #fff;
+    transition: box-shadow 0.3s, transform 0.2s;
+    margin: 24px 0 0 0;
+    padding: 0 24px;
+    height: 86px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #e4ecf3;
 }
 
 .box2:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 40px -12px #4f8cff33;
+    transform: translateY(-8px) scale(1.03);
+    background: linear-gradient(90deg, #e3f0ff 0%, #fff 100%);
 }
 
 .dark-theme .box2 {
-    background: rgba(26, 32, 44, 0.9);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: #232526;
+    box-shadow: 0 6px 32px -8px #0008;
 }
 
 .xe-comment-entry img {
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.xe-comment-entry img:hover {
-    transform: scale(1.1);
+    float: left;
+    display: block;
+    margin-right: 10px
 }
 
 .xe-comment {
-    margin-left: 15px;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 50px;
+    top: 50%
 }
 
 .xe-comment p {
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    color: #6c7a89;
+    font-size: 0.98rem;
+    margin-top: 4px;
 }
 
 .dark-theme .xe-comment p {
-    color: #a0aec0;
+    color: #b0b8c1;
 }
 
 .xe-widget.xe-conversations {
@@ -1097,7 +1105,7 @@ pre {
 
 /* ====== 现代化美化样式增强 ====== */
 .dark-theme {
-    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%) !important;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
 }
 
 .dark-theme #search {
@@ -1189,7 +1197,7 @@ pre {
 }
 @media (max-width: 600px) {
     .col-sm-3 { width: 100% !important; }
-    #search { padding: 16px; margin: 10px; }
+    #search { padding: 16px 8px 12px 8px; }
 }
 
 /* 动画细节 */
