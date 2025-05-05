@@ -119,6 +119,11 @@
                         <span class="type-text">常用</span>
                         <ul class="search-type">
                             <li>
+                                <input hidden type="radio" name="type" id="type-site-search"
+                                    value="site-search" data-placeholder="站内搜索" /><label
+                                    for="type-site-search"><span style="color: #008000" class="dark-text">站内搜索</span></label>
+                            </li>
+                            <li>
                                 <input checked hidden type="radio" name="type" id="type-baidu"
                                     value="https://www.baidu.com/s?wd=" data-placeholder="百度一下，你就知道" /><label
                                     for="type-baidu"><span style="color: #2100e0" class="dark-text">百度</span></label>
@@ -316,62 +321,68 @@
         </div>
     </div>
 
-    
     <script>
-        // 夜间模式切换功能
+        // 夜间模式切换
         function switchNightMode() {
             const body = document.body;
             const isDark = body.classList.contains('dark-theme');
-            
+            // 只在class变化时操作，减少不必要的DOM操作
             if (isDark) {
+                if (!body.classList.contains('dark-theme')) return;
                 body.classList.remove('dark-theme');
                 localStorage.setItem('darkMode', 'false');
-                iziToast.success({
-                    title: '已切换为日间模式',
-                    position: 'topRight'
-                });
+                showModeToast('已切换为日间模式');
             } else {
+                if (body.classList.contains('dark-theme')) return;
                 body.classList.add('dark-theme');
                 localStorage.setItem('darkMode', 'true');
-                iziToast.success({
-                    title: '已切换为夜间模式',
-                    position: 'topRight'
-                });
+                showModeToast('已切换为夜间模式');
             }
         }
 
-        // 页面加载时检查是否启用夜间模式
-        window.addEventListener('load', function() {
+        // 独立toast提示，防止多次重复渲染
+        let toastInstance = null;
+        function showModeToast(msg) {
+            if (toastInstance) {
+                iziToast.hide({}, toastInstance);
+            }
+            toastInstance = iziToast.success({
+                title: msg,
+                position: 'topRight',
+                timeout: 1200
+            });
+        }
+
+        // 页面加载时自动切换夜间/日间模式
+        window.addEventListener('DOMContentLoaded', function () {
             const darkMode = localStorage.getItem('darkMode');
-            // 如果没有存储的偏好设置，或者设置为false，则使用日间模式
-            if (darkMode !== 'true') {
-                document.body.classList.remove('dark-theme');
-            } else {
+            if (darkMode === 'true') {
                 document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
             }
         });
 
-        // 动态加载数据
+        // 页面主逻辑
         document.addEventListener('DOMContentLoaded', function () {
             fetch('./data.json')
                 .then(response => response.json())
                 .then(data => {
-                    // 生成菜单
+                    // 动态生成侧边栏菜单
                     const mainMenu = document.getElementById('main-menu');
-                    for (const [key, item] of Object.entries(data['main-menu'])) {
+                    Object.values(data['main-menu']).forEach(item => {
                         const li = document.createElement('li');
-                        li.className = '';
                         li.innerHTML = `
                             <a href="${item.href}" class="smooth">
                                 <i class="${item.icon}"></i>
                                 <span class="title">${item.title}</span>
                             </a>`;
                         mainMenu.appendChild(li);
-                    }
+                    });
 
-                    // 生成链接内容
-                    const container = document.getElementById('links-container');
-                    for (const [category, items] of Object.entries(data.links)) {
+                    // 动态生成链接内容区
+                    const linksContainer = document.getElementById('links-container');
+                    Object.entries(data.links).forEach(([category, items]) => {
                         const section = document.createElement('div');
                         section.innerHTML = `
                             <h4 class="text-gray">
@@ -379,8 +390,7 @@
                             </h4>
                             <div class="row" id="${category}-links"></div>
                             <br/>`;
-                        container.appendChild(section);
-
+                        linksContainer.appendChild(section);
                         const row = document.getElementById(`${category}-links`);
                         items.forEach(item => {
                             const col = document.createElement('div');
@@ -409,21 +419,78 @@
                                 </div>`;
                             row.appendChild(col);
                         });
-                    }
+                    });
 
                     // 初始化图片懒加载
                     if (typeof lozad !== 'undefined') {
-                        lozad('.lozad', {
-                            rootMargin: '200px 0px',
-                            threshold: 0.1
-                        }).observe();
+                        lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
                     }
+
+                    // 保存原始HTML，便于恢复
+                    const originalLinksHTML = linksContainer.innerHTML;
+                    const searchInput = document.getElementById('search-text');
+
+                    // 站内搜索逻辑
+                    searchInput.addEventListener('input', function () {
+                        const keyword = this.value.trim().toLowerCase();
+                        const type = document.querySelector('input[name="type"]:checked').value;
+                        if (type !== 'site-search') return;
+                        if (!keyword) {
+                            // 无关键词时恢复原始分组
+                            linksContainer.innerHTML = originalLinksHTML;
+                        } else {
+                            // 关键词过滤，收集所有匹配卡片
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(originalLinksHTML, 'text/html');
+                            const widgets = Array.from(doc.querySelectorAll('.xe-widget'));
+                            const matched = widgets.filter(item => {
+                                const name = item.querySelector('.xe-user-name strong').textContent.toLowerCase();
+                                const desc = item.querySelector('.xe-comment p').textContent.toLowerCase();
+                                return name.includes(keyword) || desc.includes(keyword);
+                            });
+                            // 只显示匹配项，左对齐排列
+                            linksContainer.innerHTML = '';
+                            const row = document.createElement('div');
+                            row.className = 'row';
+                            matched.forEach(item => {
+                                const col = document.createElement('div');
+                                col.className = 'col-sm-3';
+                                col.innerHTML = item.outerHTML;
+                                row.appendChild(col);
+                            });
+                            linksContainer.appendChild(row);
+                        }
+                        // 重新初始化图片懒加载
+                        if (typeof lozad !== 'undefined') {
+                            lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
+                        }
+                    });
+
+                    // 切换搜索类型时恢复原始内容
+                    document.querySelectorAll('input[name="type"]').forEach(input => {
+                        input.addEventListener('change', function () {
+                            searchInput.value = '';
+                            linksContainer.innerHTML = originalLinksHTML;
+                            if (typeof lozad !== 'undefined') {
+                                lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
+                            }
+                        });
+                    });
+
+                    // 其他搜索类型表单提交
+                    document.getElementById('super-search-fm').addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        const keyword = searchInput.value;
+                        const type = document.querySelector('input[name="type"]:checked').value;
+                        if (type === 'site-search') return; // 站内搜索已在input事件处理
+                        window.open(type + encodeURIComponent(keyword), '_blank');
+                    });
                 })
-                .catch(error => console.error('Error loading data:', error));
+                .catch(error => console.error('数据加载失败:', error));
         });
     </script>
 
-    <!-- 原有脚本保持原样 -->
+    <!-- 搜索脚本 -->
     <script type="text/javascript">
         eval(
             (function (e, t, a, c, i, n) {
@@ -451,7 +518,7 @@
                 }
                 for (; a--;)
                     c[a] &&
-                        (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+                    (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
                 return e;
             })(
                 '!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',
