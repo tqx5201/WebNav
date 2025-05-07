@@ -323,6 +323,12 @@
         "desc": "轻量工具箱，支持数据查询、数据转换、文字处理、编程开发"
       },
       {
+        "name": "进制转换",
+        "url": "https://www.8jz.cn/",
+        "img": "8jz.jpg",
+        "desc": "将数字在不同进制之间进行转换的工具"
+      },
+      {
         "name": "图片/PDF工具箱",
         "url": "https://www.11zon.com/zh-cn/",
         "img": "11zon.jpg",
