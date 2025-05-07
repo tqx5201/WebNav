@@ -1507,6 +1507,18 @@
         "desc": "地图 | 卡巴斯基网络威胁实时地图"
       },
       {
+        "name": "风、气象、海洋状况的全球地图",
+        "url": "https://earth.nullschool.net/",
+        "img": "nullschool.jpg",
+        "desc": "实时模拟全球风向、洋流、天气效果"
+      },
+      {
+        "name": "光污染地图",
+        "url": "https://www.darkmap.cn/",
+        "img": "darkmap.jpg",
+        "desc": "观星爱好者的必备工具，覆盖全球的波特尔等级数据，提供实时光害指数查询和观星地点推荐"
+      },
+      {
         "name": "核弹地图",
         "url": "https://nuclearsecrecy.com/nukemap/",
         "img": "nuclearsecrecy.jpg",
