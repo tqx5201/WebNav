@@ -1427,6 +1427,12 @@
         "desc": "Minecraft 最大资源包网站"
       },
       {
+        "name": "MC 像素画、红石音乐",
+        "url": "https://mcpixelart.com/",
+        "img": "mcpixelart.jpg",
+        "desc": "MC 像素画、地图画、3D雕塑和红石音乐的在线制作、下载和分享平台，支持投影下载，支持网易版和基岩版MC的手动搭建"
+      },
+      {
         "name": "MC光影模组",
         "url": "https://minecraftshader.com/",
         "img": "minecraftshader.jpg",
