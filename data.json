@@ -449,6 +449,12 @@
         "desc": "输入视频地址，解析下载视频/音频。多种画质分辨率和格式可以按需选择"
       },
       {
+        "name": "音乐解密下载",
+        "url": "https://demo.unlock-music.dev/",
+        "img": "unlock-music.jpg",
+        "desc": "在任何设备上解锁已购的加密音乐！支持 网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm), 虾米音乐(xm), 酷我音乐(.kwm)"
+      },
+      {
         "name": "在线字体查看器",
         "url": "https://www.bejson.com/ui/font/",
         "img": "bejson.jpg",
