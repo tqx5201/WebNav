@@ -1913,6 +1913,32 @@
         "img": "webofscience.jpg",
         "desc": "一个领先的科学研究平台，提供全面的数据、指标和跨学科的见解"
       }
+    ],
+    "查重降重平台": [
+      {
+        "name": "SpeedAI",
+        "url": "https://kuaipaper.com/home",
+        "img": "SpeedAI.jpg",
+        "desc": "优化文本内容，降低AI生成痕迹，使文章更具人文特色"
+      },
+      {
+        "name": "知网查重",
+        "url": "https://cx.cnki.net/main.html#/detectionResult",
+        "img": "cnki.jpg",
+        "desc": "单价2元/千字符，支持识别中文、英文、中英文混合文本"
+      },
+      {
+        "name": "PaperPass",
+        "url": "https://www.paperpass.com/panel/index",
+        "img": "paperpass.jpg",
+        "desc": "免费中文论文查重降重，提供职称、课题、高校毕业论文检测服务"
+      },
+      {
+        "name": "PaperYY",
+        "url": "https://staticxin.paperyy.com/page/aigc/index",
+        "img": "paperyy.jpg",
+        "desc": "提供 AIGC 免费论文检测与智能降重服务，精准识别ChatGPT等AI生成内容"
+      }
     ]
   }
 }
