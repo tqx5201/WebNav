@@ -595,6 +595,18 @@
         "desc": "赛博厨子，加解密工具库"
       },
       {
+        "name": "大素数分解网站",
+        "url": "https://factordb.com/",
+        "img": "unknown.jpg",
+        "desc": "大素数分解网站"
+      },
+      {
+        "name": "在线分解质因数工具",
+        "url": "https://www.lddgo.net/math/decomposition-prime",
+        "img": "lddgo.jpg",
+        "desc": "在线免费分解质因数工具，支持分解大数字的质因数，并给出质因数分解公式"
+      },
+      {
         "name": "AST Explorer",
         "url": "https://astexplorer.net/",
         "img": "astexplorer.jpg",
@@ -615,7 +627,7 @@
       {
         "name": "摩斯翻译器",
         "url": "https://www.lddgo.net/encrypt/morse",
-        "img": "morse.jpg",
+        "img": "lddgo.jpg",
         "desc": "在线摩斯密码翻译器"
       },
       {
@@ -729,7 +741,7 @@
       {
         "name": "Javascript混淆",
         "url": "https://www.lddgo.net/encrypt/js",
-        "img": "morse.jpg",
+        "img": "lddgo.jpg",
         "desc": "在线Javascript混淆加密"
       },
       {
