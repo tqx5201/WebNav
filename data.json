@@ -503,12 +503,6 @@
         "desc": "提供免费接口调用平台"
       },
       {
-        "name": "Favicon Fetcher",
-        "url": "https://www.zhanid.com/tool/favicon-fetch.html",
-        "img": "zhanid.jpg",
-        "desc": "获取并下载网站 Favicon"
-      },
-      {
         "name": "磁力在线播放",
         "url": "https://webtor.io/",
         "img": "webtor.jpg",
@@ -549,12 +543,6 @@
         "url": "https://goblin.tools/",
         "img": "goblin.jpg",
         "desc": "将复杂任务分解为可管理步骤的在线工具"
-      },
-      {
-        "name": "图标抓取工具",
-        "url": "https://gonglue.qinggl.com/app/img/icon.jsp",
-        "img": "gonglue.jpg",
-        "desc": "快速的定位网页的 favicon.ico 图标网址"
       },
       {
         "name": "营销大数据平台",
@@ -617,6 +605,12 @@
         "url": "https://56.al/",
         "img": "nopgs.jpg",
         "desc": "APK 加固安全测试，在线脱壳"
+      },
+      {
+        "name": "理科生计算器",
+        "url": "https://www.wolframalpha.com/",
+        "img": "wolframalpha.jpg",
+        "desc": "比ChatGPT更懂公式的计算引擎！输入微积分/统计/化学方程式等问题，秒出详细解题步骤。自动解方程 | 支持天体运动模拟等复杂计算"
       },
       {
         "name": "摩斯翻译器",
@@ -971,6 +965,12 @@
         "desc": "分享加密算法、加密技术、加密应用相关文章"
       },
       {
+        "name": "科研工具箱",
+        "url": "https://yanweb.top/",
+        "img": "yanweb.jpg",
+        "desc": "集合学术GPT、中英文文献查询、论文写作、查重降重、专利检索、期刊检索、院校查询、文献管理等众多功能的科研导航网站"
+      },
+      {
         "name": "学者网",
         "url": "https://www.scholat.com/scholarsearch-home.html",
         "img": "scholat.jpg",
@@ -1007,10 +1007,16 @@
         "desc": "文档搜索引擎"
       },
       {
+        "name": "可显示影响因子的文献检索",
+        "url": "https://www.pubmed.pro/home",
+        "img": "pubmed.jpg",
+        "desc": "查文献输入关键词自动推荐关联词+高引论文，可视化时间轴功能秒抓领域里程碑。读文献专业术语自动标解释，一键生成结构化摘要"
+      },
+      {
         "name": "Sci-Hub",
         "url": "https://sci-hub.ru/",
         "img": "sci-hub.jpg",
-        "desc": "书籍论文下载 将知识带给每个人"
+        "desc": "免费书籍论文下载 将知识带给每个人"
       },
       {
         "name": "arXiv",
@@ -1651,6 +1657,12 @@
         "desc": "把整篇的古诗打散成无规律的文本，我们要把这些文本连起来还原成古诗原句"
       },
       {
+        "name": "流体模拟器",
+        "url": "https://toolwa.com/fluid-simulation/",
+        "img": "toolwa.jpg",
+        "desc": "鼠标滑动生成绚丽的流体效果"
+      },
+      {
         "name": "朋友圈切九图",
         "url": "https://v.magiconch.com/sns-image",
         "img": "magiconch.jpg",
@@ -1660,7 +1672,13 @@
         "name": "魔方求解器",
         "url": "https://rubiks-cube-solver.com/zh/",
         "img": "rubiks-cube-solver.jpg",
-        "desc": "输入魔方各面颜色，网站会自动计算出魔方的复原步骤，点击“求解”，按提示操作即可还原魔方。"
+        "desc": "输入魔方各面颜色，网站会自动计算出魔方的复原步骤，点击“求解”，按提示操作即可还原魔方"
+      },
+      {
+        "name": "支付宝到账音效生成器",
+        "url": "https://toolwa.com/receipt/",
+        "img": "toolwa.jpg",
+        "desc": "生成任意金额的支付宝到账音效，可以下载用于通知或者闹钟铃声"
       },
       {
         "name": "emoji厨房",
@@ -1679,6 +1697,12 @@
         "url": "https://lab.magiconch.com/",
         "img": "magiconch.jpg",
         "desc": "有很多有趣的项目,梗图生成器、拼音首字母缩写释义工具、动画巡礼、重复文字生成"
+      },
+      {
+        "name": "迷宫生成器",
+        "url": "https://toolwa.com/maze/",
+        "img": "toolwa.jpg",
+        "desc": "一个在线的随机迷宫生成工具，它可以快速生成各种不同的迷宫图形"
       },
       {
         "name": "疯狂星期四文案生成器",
@@ -1717,6 +1741,12 @@
         "desc": "基于Al生成，把任意两个角色放在—起的跨战力PK游戏"
       },
       {
+        "name": "架子鼓模拟器",
+        "url": "https://toolwa.com/durms/",
+        "img": "toolwa.jpg",
+        "desc": "架子鼓是一套以鼓为主的组合性打击乐器"
+      },
+      {
         "name": "做房子模拟器",
         "url": "https://rooms.xyz/",
         "img": "rooms.jpg",
@@ -1727,6 +1757,12 @@
         "url": "https://neal.fun/ambient-chaos/",
         "img": "neal.jpg",
         "desc": "在网页实时合成个性化白噪音"
+      },
+      {
+        "name": "摸头杀生成器",
+        "url": "hhttps://toolwa.com/petpet/",
+        "img": "toolwa.jpg",
+        "desc": "万物皆可摸头"
       },
       {
         "name": "元素组合模拟器",
@@ -1741,6 +1777,12 @@
         "desc": "用照片指出你现在鼠标的位置"
       },
       {
+        "name": "魔法键盘",
+        "url": "https://toolwa.com/magic-keyboard/",
+        "img": "toolwa.jpg",
+        "desc": "酷炫JS动画键盘"
+      },
+      {
         "name": "俄罗斯方块",
         "url": "https://v2fy.com/game/tetris/",
         "img": "v2fy.jpg",
@@ -1751,6 +1793,12 @@
         "url": "https://www.iotool.cn/other/bullshit",
         "img": "iotool.jpg",
         "desc": "专门用于填充字数的废话工具"
+      },
+      {
+        "name": "藏头诗生成器",
+        "url": "https://toolwa.com/cts/",
+        "img": "toolwa.jpg",
+        "desc": "输入您的文字、姓名、网名、宣言，我们将免费为您在线生成藏头诗"
       },
       {
         "name": "人类能力测试器",
@@ -1831,6 +1879,24 @@
         "desc": "一个支持电子包浆的所见即所得的梗图生成器"
       },
       {
+        "name": "互联网黑话生成器",
+        "url": "https://toolwa.com/bullshit-internet/",
+        "img": "toolwa.jpg",
+        "desc": "一款能激练应用“赋能、抓手、团环、沉淀、打通”等词汇的文章生成器"
+      },
+      {
+        "name": "彩虹屁生成器",
+        "url": "https://toolwa.com/chp/",
+        "img": "toolwa.jpg",
+        "desc": "喜欢上你这件事，我想用一生说给你听"
+      },
+      {
+        "name": "营销号生成器",
+        "url": "https://toolwa.com/yxh/",
+        "img": "toolwa.jpg",
+        "desc": "营销号是什么？营销号究竟是什么梗？营销号是如何火起来的？这个工具帮你解答！"
+      },
+      {
         "name": "猜中国省份",
         "url": "http://vultr.youmu.moe/quiz/",
         "img": "youmu.jpg",
@@ -1874,6 +1940,62 @@
         "url": "https://www.zusms.com/",
         "img": "zusms.jpg",
         "desc": "一种免费服务，用于在线接收手机短信验证码，不需要注册"
+      }
+    ],
+    "站长工具": [
+      {
+        "name": "Whois 查询",
+        "url": "https://toolwa.com/whois/aznthx.cn/",
+        "img": "toolwa.jpg",
+        "desc": "用来查询域名是否已经被注册，以及注册域名的详细信息"
+      },
+      {
+        "name": "Favicon Fetcher",
+        "url": "https://www.zhanid.com/tool/favicon-fetch.html",
+        "img": "zhanid.jpg",
+        "desc": "获取并下载网站 Favicon"
+      },
+      {
+        "name": "图标抓取工具",
+        "url": "https://gonglue.qinggl.com/app/img/icon.jsp",
+        "img": "gonglue.jpg",
+        "desc": "快速的定位网页的 favicon.ico 图标网址"
+      },
+      {
+        "name": "域名备案查询",
+        "url": "https://toolwa.com/beian/",
+        "img": "toolwa.jpg",
+        "desc": "查询域名的工信部/公安部备案，域名备案号"
+      },
+      {
+        "name": "定时刷新网页",
+        "url": "https://toolwa.com/timed-refresh/",
+        "img": "toolwa.jpg",
+        "desc": "定时刷新网页，网页浏览压力测试，网页刷浏览量"
+      },
+      {
+        "name": "域名微信拦截检测",
+        "url": "https://toolwa.com/check-weixin/",
+        "img": "toolwa.jpg",
+        "desc": "检查域名在微信中是否被拦截或禁止访问"
+      },
+      {
+        "name": "Favicon 图标制作",
+        "url": "https://toolwa.com/favicon/",
+        "img": "toolwa.jpg",
+        "desc": "将 jpg、png、gif 等格式的图片转换成 favicon ico 图标"
+      },
+      {
+        "name": "时间戳转换器",
+        "url": "https://toolwa.com/timestamp/",
+        "img": "toolwa.jpg",
+        "desc": "unix时间戳与时间文本相互转换"
+      },
+      {
+        "name": "WebSocket 在线测试",
+        "url": "https://toolwa.com/websocket/",
+        "img": "toolwa.jpg",
+        "desc": "与 WebSocket 建立连接,测试 WebSocket 通讯"
       }
     ],
     "论文平台": [
