@@ -601,10 +601,34 @@
         "desc": "大素数分解网站"
       },
       {
+        "name": "通用二元整数变量方程求解器",
+        "url": "https://www.alpertron.com.ar/QUAD.HTM",
+        "img": "alpertron.jpg",
+        "desc": "使用了椭圆曲线法 (ECM) 和自初始化二次筛法 (SIQS) 算法，求解形如为 a⁢x² + b⁢x⁢y + c⁢y² + dx + ey + f = 0 的方程，最多可容纳 10,000 位数字"
+      },
+      {
+        "name": "离散对数计算器",
+        "url": "https://www.alpertron.com.ar/DILOG.HTM",
+        "img": "alpertron.jpg",
+        "desc": "使用 Pohlig-Hellman 算法计算离散对数，适用于素数模数和复合模数。唯一的限制是底数与模数、幂与模数必须互质"
+      },
+      {
+        "name": "整数因数分解计算器",
+        "url": "https://www.alpertron.com.ar/ECM.HTM",
+        "img": "alpertron.jpg",
+        "desc": "使用椭圆曲线法 (ECM) 和自初始化二次筛选法 (SIQS)以及 C 语言编写的程序，对数字或数值表达式进行分解"
+      },
+      {
         "name": "在线分解质因数工具",
         "url": "https://www.lddgo.net/math/decomposition-prime",
         "img": "lddgo.jpg",
         "desc": "在线免费分解质因数工具，支持分解大数字的质因数，并给出质因数分解公式"
+      },
+      {
+        "name": "维吉尼亚在线解密",
+        "url": "https://www.guballa.de/vigenere-solver",
+        "img": "guballa.jpg",
+        "desc": "在线工具破解维吉尼亚密码，以及爆破维吉尼亚密钥。此外，它还支持经典的博福特密码变体和 Autokey 密码"
       },
       {
         "name": "AST Explorer",
@@ -617,6 +641,12 @@
         "url": "https://56.al/",
         "img": "nopgs.jpg",
         "desc": "APK 加固安全测试，在线脱壳"
+      },
+      {
+        "name": "乌拉姆螺旋",
+        "url": "https://www.alpertron.com.ar/ULAM.HTM",
+        "img": "alpertron.jpg",
+        "desc": "素数螺旋形式排列"
       },
       {
         "name": "理科生计算器",
