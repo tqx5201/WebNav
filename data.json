@@ -661,6 +661,12 @@
         "desc": "在线摩斯密码翻译器"
       },
       {
+        "name": "在线数学绘图",
+        "url": "https://www.geogebra.org/classic?lang=zh_CN",
+        "img": "geogebra.jpg",
+        "desc": "在线免费的 GeoGebra 应用程序包: 将绘图, 几何, 代数, 3D, 统计, 概率等集成在一起"
+      },
+      {
         "name": "图形计算器",
         "url": "https://www.desmos.com/calculator?lang=zh-CN",
         "img": "desmos.jpg",
