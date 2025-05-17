@@ -757,6 +757,12 @@
         "desc": "在线比较文本，并找出两个文本文件之间的差异"
       },
       {
+        "name": "字符串转列表",
+        "url": "https://www.xdtool.com/string_list",
+        "img": "xdtool.jpg",
+        "desc": "在线文本转列表工具，可以将指定字符（如逗号、空格、分号等）分隔的长字符串，\n 表示回车"
+      },
+      {
         "name": "BugKu工具库",
         "url": "https://ctf.bugku.com/tools.html",
         "img": "bugku.jpg",
