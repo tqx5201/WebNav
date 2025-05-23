@@ -595,6 +595,12 @@
         "desc": "赛博厨子，加解密工具库"
       },
       {
+        "name": "SageMath",
+        "url": "https://sagecell.sagemath.org/",
+        "img": "sagemath.jpg",
+        "desc": "一个开源的数学软件系统，旨在为数值计算、符号计算、代数几何、组合数学等提供统一的框架"
+      },
+      {
         "name": "大素数分解网站",
         "url": "https://factordb.com/",
         "img": "unknown.jpg",
