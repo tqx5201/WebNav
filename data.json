@@ -891,6 +891,12 @@
         "desc": "牛客网公司真题，全网最全企业面试，面试真题模拟题库"
       },
       {
+        "name": "CTFTime",
+        "url": "https://ctftime.org/",
+        "img": "ctftime.jpg",
+        "desc": "较全的国际CTF赛事信息、各大赛事日历、较全的CTF战队信息、各大赛事WriteUp"
+      },
+      {
         "name": "ctfshow",
         "url": "https://ctf.show/",
         "img": "ctfshow.jpg",
@@ -2053,6 +2059,12 @@
       }
     ],
     "论文平台": [
+      {
+        "name": "密码学电子印刷档案",
+        "url": "https://eprint.iacr.org/",
+        "img": "eprint.jpg",
+        "desc": "提供快速访问密码学最新研究成果的途径。论文由作者自行发布，未经任何审阅，仅核实其是否符合密码学范畴，并符合一些最低限度的录用标准和出版条件"
+      },
       {
         "name": "超星发现",
         "url": "https://ss.zhizhen.com/",
