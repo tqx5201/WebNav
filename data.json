@@ -1183,6 +1183,12 @@
         "desc": "我是满血版 DeepSeek，实时在线，支持深度思考和联网搜索。免费不限次数"
       },
       {
+        "name": "当贝 AI",
+        "url": "https://ai.dangbei.com/chat",
+        "img": "dangbei.jpg",
+        "desc": "聚合全网优质大模型，为你提供极速、免费、不限量的大模型服务"
+      },
+      {
         "name": "可灵 AI",
         "url": "https://kling.kuaishou.com/",
         "img": "kling.jpg",
