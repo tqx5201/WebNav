@@ -1195,6 +1195,12 @@
         "desc": "快手AI团队自研的视频生成大模型。生成的视频分辨率高达1080p，时长最高可达2分钟（帧率30fps），且支持自由的宽高比"
       },
       {
+        "name": "Kimi",
+        "url": "https://www.kimi.com/",
+        "img": "kimi.jpg",
+        "desc": "Kimi AI 擅长长文本处理、多语言对话、文件解析、PPT生成"
+      },
+      {
         "name": "EasyChat",
         "url": "https://origin.eqing.tech/",
         "img": "easychat.jpg",
