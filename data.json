@@ -1073,16 +1073,22 @@
         "desc": "文档搜索引擎"
       },
       {
-        "name": "可显示影响因子的文献检索",
+        "name": "可显示影响因子的文献检索（主要是医学方面）",
         "url": "https://www.pubmed.pro/home",
         "img": "pubmed.jpg",
         "desc": "查文献输入关键词自动推荐关联词+高引论文，可视化时间轴功能秒抓领域里程碑。读文献专业术语自动标解释，一键生成结构化摘要"
       },
       {
+        "name": "影响因子查询",
+        "url": "https://www.letpub.com/",
+        "img": "letpub.jpg",
+        "desc": "查询杂志影响因子的网站"
+      },
+      {
         "name": "Sci-Hub",
         "url": "https://sci-hub.ru/",
         "img": "sci-hub.jpg",
-        "desc": "免费书籍论文下载 将知识带给每个人"
+        "desc": "免费论文、书籍下载 将知识带给每个人"
       },
       {
         "name": "arXiv",
@@ -1155,6 +1161,24 @@
         "url": "https://shimo.im/",
         "img": "shimo.jpg",
         "desc": "支持多人实时协作的在线文档工具"
+      },
+      {
+        "name": "Rate My Professor",
+        "url": "https://www.ratemyprofessors.com/",
+        "img": "ratemyprofessors.jpg",
+        "desc": "了解国外导师信息，查询教授、学校等方面信息，打算出国的同学可以关注一下"
+      },
+      {
+        "name": "研究生导师点评网站",
+        "url": "https://pi-review.com/",
+        "img": "pi-review.jpg",
+        "desc": "免费公开，让研究生写点评评价导师，分享导师的信息，帮助之后的学生选择导师的网站。目前最大的问题就是网站上点评的数量太少，所以可能帮助还不大"
+      },
+      {
+        "name": "研控",
+        "url": "https://www.yankong.org/review",
+        "img": "yankong.jpg",
+        "desc": "免费,导师评价,导师推荐,导师点评,选导师,科研,分享,教授,交流,研究生,博士生"
       }
     ],
     "AI站点": [
@@ -1691,6 +1715,12 @@
         "url": "https://xiaoce.fun/",
         "img": "xiaoce.jpg",
         "desc": "包含丰富知识问答测验内容的网站，涵盖了多个领域的趣味题目"
+      },
+      {
+        "name": "明镜高悬断案录",
+        "url": "https://deepnovel.net/judgment",
+        "img": "deepnovel.jpg",
+        "desc": "你将扮演青天大老爷，勘破奇案，明镜断案 - 深度写作 DeepNovel - AI写作阅读平台"
       },
       {
         "name": "联机棋类游戏平台",
