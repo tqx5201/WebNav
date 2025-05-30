@@ -1897,6 +1897,12 @@
         "desc": "在线俄罗斯方块"
       },
       {
+        "name": "扫雷魔方",
+        "url": "https://thomas-boh-wang.itch.io/out-of-mines-control",
+        "img": "thomas-boh-wang.jpg",
+        "desc": "不是扫雷的魔方，是魔方的扫雷"
+      },
+      {
         "name": "狗屁不通文章生成器",
         "url": "https://www.iotool.cn/other/bullshit",
         "img": "iotool.jpg",
