@@ -1897,6 +1897,12 @@
         "desc": "在线俄罗斯方块"
       },
       {
+        "name": "在线扫雷",
+        "url": "https://minesweeper.cn/",
+        "img": "minesweeper.jpg",
+        "desc": "网页扫雷，有初级、中级、高级、自定义可选"
+      },
+      {
         "name": "扫雷魔方",
         "url": "https://thomas-boh-wang.itch.io/out-of-mines-control",
         "img": "thomas-boh-wang.jpg",
