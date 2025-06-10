@@ -2156,6 +2156,18 @@
         "desc": "万方数据知识服务平台-科研学习全流程支持服务平台"
       },
       {
+        "name": "论文评审和讨论平台",
+        "url": "https://openreview.net/",
+        "img": "openreview.jpg",
+        "desc": "致力于推动科学交流开放性的学术平台，提供开放同行评审、出版、访问、讨论等功能，还设有开放目录、推荐系统、API，且部分代码开源，汇聚众多学术会议资源，方便科研人员交流互动、获取前沿成果"
+      },
+      {
+        "name": "谷歌学术",
+        "url": "https://scholar.google.com/",
+        "img": "googlescholar.jpg",
+        "desc": "借助Google 学术搜索，您可以轻松地大范围搜索学术文献。搜索范围囊括众多知识领域和来源：文章、论文、图书、摘要和法院判决意见书"
+      },
+      {
         "name": "IEEE Xplore",
         "url": "https://ieeexplore.ieee.org/",
         "img": "ieeexplore.jpg",
