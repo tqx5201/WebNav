@@ -2168,6 +2168,12 @@
         "desc": "借助Google 学术搜索，您可以轻松地大范围搜索学术文献。搜索范围囊括众多知识领域和来源：文章、论文、图书、摘要和法院判决意见书"
       },
       {
+        "name": "DBLP-计算机科学参考文献",
+        "url": "https://dblp.uni-trier.de/",
+        "img": "dblp.jpg",
+        "desc": "计算机领域文献的统计网站，为每篇文章提供索引和记录。与此同时也会从文章作者的角度进行统计，为每个作者生成其科研工作发表记录"
+      },
+      {
         "name": "IEEE Xplore",
         "url": "https://ieeexplore.ieee.org/",
         "img": "ieeexplore.jpg",
