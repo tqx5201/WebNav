@@ -667,6 +667,12 @@
         "desc": "在线摩斯密码翻译器"
       },
       {
+        "name": "ZIP 密码在线破解",
+        "url": "https://rivers.chaitin.cn/tools/zipcrack",
+        "img": "rivers_chaitin.jpg",
+        "desc": "在线破解 ZIP 压缩包的文件密码"
+      },
+      {
         "name": "在线数学绘图",
         "url": "https://www.geogebra.org/classic?lang=zh_CN",
         "img": "geogebra.jpg",
