@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
             footerFontSize: document.getElementById('footerFontSize').value,
             headerUnderline: document.getElementById('headerUnderline').checked,
             footerUnderline: document.getElementById('footerUnderline').checked,
+            headerMarginTop: document.getElementById('headerMarginTop').value,
+            footerMarginBottom: document.getElementById('footerMarginBottom').value,
             lineSpacing: document.getElementById('lineSpacing').value,
             fontSize: document.getElementById('fontSize').value,
             chineseFont: document.getElementById('chineseFont').value,
@@ -393,7 +395,9 @@ async function generateWordDocument(formData) {
                             top: docx.convertInchesToTwip(parseFloat(formData.margins.top) / 2.54),
                             bottom: docx.convertInchesToTwip(parseFloat(formData.margins.bottom) / 2.54),
                             left: docx.convertInchesToTwip(parseFloat(formData.margins.left) / 2.54),
-                            right: docx.convertInchesToTwip(parseFloat(formData.margins.right) / 2.54)
+                            right: docx.convertInchesToTwip(parseFloat(formData.margins.right) / 2.54),
+                            header: docx.convertInchesToTwip(parseFloat(formData.headerMarginTop) / 2.54),   // 页眉距顶边 1.5cm
+                            footer: docx.convertInchesToTwip(parseFloat(formData.footerMarginBottom) / 2.54)   // 页脚距底边 1.75cm
                         }
                     }
                 },
