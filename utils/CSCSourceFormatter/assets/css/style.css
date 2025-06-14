@@ -208,6 +208,17 @@ select:focus {
     cursor: pointer;
 }
 
+.back-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
 /* 页码设置 */
 .page-number-settings {
     background: #f8fafc;
@@ -366,4 +377,77 @@ input[type="number"]::-webkit-outer-spin-button {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* fillinCode 页面特定样式 */
+.fillinCode-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fillinCode-file-input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.fillinCode-file-input-wrapper input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.fillinCode-file-input-trigger {
+    display: block;
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    text-align: center;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.fillinCode-file-input-wrapper:hover .fillinCode-file-input-trigger {
+    border-color: #3498db;
+    color: #3498db;
+}
+
+.fillinCode-file-name {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#fileTree {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tree-item {
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.tree-item::before {
+    content: "├─";
+    position: absolute;
+    left: -1.5rem;
+    color: #666;
+}
+
+.tree-item:last-child::before {
+    content: "└─";
 } 

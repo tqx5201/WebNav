@@ -97,8 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
             headerTextSpacing: document.getElementById('headerTextSpacing').value,
             footerBeforeSpacing: document.getElementById('footerBeforeSpacing').value,
             footerAfterSpacing: document.getElementById('footerAfterSpacing').value,
-            footerTextSpacing: document.getElementById('footerTextSpacing').value
+            footerTextSpacing: document.getElementById('footerTextSpacing').value,
+            // 修改第一页设计相关数据
+            firstPage: {
+                content: document.getElementById('firstPageContent').value,
+                contentChineseFont: document.getElementById('firstPageContentChineseFont').value,
+                contentEnglishFont: document.getElementById('firstPageContentEnglishFont').value,
+                contentSize: document.getElementById('firstPageContentSize').value,
+                contentAlign: document.getElementById('firstPageContentAlign').value
+            }
         };
+
+        // 将 formData 保存到 SessionStorage
+        sessionStorage.setItem('wordFormData', JSON.stringify(formData));
 
         // 检查 docx 库是否加载
         if (typeof docx === 'undefined') {
@@ -115,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function validateForm() {
     const fileName = document.getElementById('fileName').value;
     if (!fileName) {
-        alert('请填写文件名！');
+        showInfo('请填写文件名！');
         return false;
     }
     return true;
@@ -208,111 +219,171 @@ function showSuccess(message) {
     setTimeout(() => document.body.removeChild(div), 3000);
 }
 
+// 显示信息提示
+function showInfo(message) {
+    const div = document.createElement('div');
+    div.style.cssText = `
+        position: fixed; top: 20px; left: 50%;
+        transform: translateX(-50%);
+        background: #2196F3; color: white;
+        padding: 15px 30px; border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        z-index: 1000; font-size: 14px;
+        max-width: 80%; text-align: center;
+    `;
+    div.textContent = message;
+    document.body.appendChild(div);
+    setTimeout(() => document.body.removeChild(div), 3000);
+}
+
+// 将字符串转换为 docx 对齐方式
+function getAlignmentType(val) {
+    if (!val) return docx.AlignmentType.LEFT;
+    if (val.toLowerCase() === 'both') return docx.AlignmentType.JUSTIFIED;
+    return docx.AlignmentType[val.toUpperCase()] || docx.AlignmentType.LEFT;
+}
+
+// 创建"第 X 页 / 共 Y 页"结构
+function createPageNumberRuns(font, size) {
+    return [
+        new docx.TextRun({ text: '第 ', font, size }),
+        new docx.TextRun({ children: [docx.PageNumber.CURRENT], font, size }),
+        new docx.TextRun({ text: ' 页，共 ', font, size }),
+        new docx.TextRun({ children: [docx.PageNumber.TOTAL_PAGES], font, size }),
+        new docx.TextRun({ text: ' 页', font, size })
+    ];
+}
+
+// 辅助函数：判断字符是否属于英文字符、数字或英文标点
+function isEnglishChar(char) {
+    // 包含基本拉丁字母、数字、以及常见的英文标点符号
+    return /[a-zA-Z0-9\s!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/.test(char);
+}
+
+// 辅助函数：判断字符是否属于中文字符或中文标点
+function isChineseChar(char) {
+    // 包含常用汉字范围 (CJK Unified Ideographs) 和常见的中文全角标点符号
+    return /^[\u4e00-\u9fa5\u3000-\u303f\uff00-\uffef]$/.test(char);
+}
+
+// 将文本分割成中文和英文部分，并应用相应的字体
+function createMixedTextRuns(text, chineseFont, englishFont, size, spacing) {
+    const runs = [];
+    let currentRunText = '';
+    let currentRunType = null; // 'english' or 'chinese'
+
+    for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        let charType;
+
+        if (isEnglishChar(char)) {
+            charType = 'english';
+        } else if (isChineseChar(char)) {
+            charType = 'chinese';
+        } else {
+            // 无法明确判断的"其他"字符，默认使用英文字体
+            charType = 'english';
+        }
+
+        if (currentRunType === null) {
+            currentRunType = charType;
+        }
+
+        if (charType === currentRunType) {
+            currentRunText += char;
+        } else {
+            // 字符类型变化，将当前累积的文本作为一个 TextRun 添加
+            runs.push(new docx.TextRun({
+                text: currentRunText,
+                font: currentRunType === 'english' ? englishFont : chineseFont,
+                size,
+                spacing: spacing ? { line: spacing * 240 } : undefined
+            }));
+            currentRunText = char;
+            currentRunType = charType;
+        }
+    }
+
+    // 添加最后一个 TextRun
+    if (currentRunText.length > 0) {
+        runs.push(new docx.TextRun({
+            text: currentRunText,
+            font: currentRunType === 'english' ? englishFont : chineseFont,
+            size,
+            spacing: spacing ? { line: spacing * 240 } : undefined
+        }));
+    }
+
+    return runs;
+}
+
+// 构建页眉/页脚段落（可包含文本 + 页码 + 制表位）
+function createHeaderFooterParagraph({
+    text,
+    chineseFont,
+    englishFont,
+    size,
+    align,
+    underline,
+    showPageNumber,
+    pageFont,
+    pageSize,
+    location,
+    pageWidthCm = 21.0,
+    marginLeftCm,
+    marginRightCm,
+    beforeSpacingPt,         // 段前间距（磅）
+    afterSpacingPt,          // 段后间距（磅）
+    spacing                // 文本间距（倍数）
+}) {
+    const children = [];
+    const tabStops = [];
+
+    const isBoth = align === 'both' && showPageNumber;
+
+    if (text?.trim()) {
+        children.push(...createMixedTextRuns(text, chineseFont, englishFont, size, spacing));
+    }
+
+    if (isBoth) {
+        children.push(new docx.TextRun({ text: '\t' }));
+
+        const usableWidthCm = pageWidthCm - parseFloat(marginRightCm) - parseFloat(marginLeftCm);
+        const tabStopPosition = docx.convertInchesToTwip(usableWidthCm / 2.54);
+
+        tabStops.push({
+            type: docx.TabStopType.RIGHT,
+            position: tabStopPosition
+        });
+    }
+
+    if (showPageNumber) {
+        children.push(...createPageNumberRuns(chineseFont, pageSize));
+    }
+
+    return new docx.Paragraph({
+        alignment: getAlignmentType(isBoth ? 'left' : align),
+        border: underline
+            ? {
+                bottom: {
+                    style: docx.BorderStyle.SINGLE,
+                    size: 6,
+                    color: "000000"
+                }
+            }
+            : undefined,
+        spacing: {
+            before: beforeSpacingPt ? docx.convertInchesToTwip(beforeSpacingPt / 72) : undefined,
+            after: afterSpacingPt ? docx.convertInchesToTwip(afterSpacingPt / 72) : undefined,
+            line: spacing ? spacing * 240 : undefined
+        },
+        tabStops,
+        children
+    });
+}
+
 // 生成 Word 文档（主函数）
 async function generateWordDocument(formData) {
-    // 将字符串转换为 docx 对齐方式
-    function getAlignmentType(val) {
-        if (!val) return docx.AlignmentType.LEFT;
-        if (val.toLowerCase() === 'both') return docx.AlignmentType.JUSTIFIED;
-        return docx.AlignmentType[val.toUpperCase()] || docx.AlignmentType.LEFT;
-    }
-
-    // 创建"第 X 页 / 共 Y 页"结构
-    function createPageNumberRuns(font, size) {
-        return [
-            new docx.TextRun({ text: '第 ', font, size }),
-            new docx.TextRun({ children: [docx.PageNumber.CURRENT], font, size }),
-            new docx.TextRun({ text: ' 页，共 ', font, size }),
-            new docx.TextRun({ children: [docx.PageNumber.TOTAL_PAGES], font, size }),
-            new docx.TextRun({ text: ' 页', font, size })
-        ];
-    }
-
-    // 将文本分割成中文和英文部分，并应用相应的字体
-    function createMixedTextRuns(text, chineseFont, englishFont, size, spacing) {
-        const runs = [];
-        const textParts = text.split(/([a-zA-Z0-9\s]+)/);
-        
-        textParts.forEach(part => {
-            if (part.trim()) {
-                const isEnglish = /[a-zA-Z0-9]/.test(part);
-                runs.push(new docx.TextRun({
-                    text: part,
-                    font: isEnglish ? englishFont : chineseFont,
-                    size,
-                    spacing: spacing ? { line: spacing * 240 } : undefined
-                }));
-            }
-        });
-        
-        return runs;
-    }
-
-    // 构建页眉/页脚段落（可包含文本 + 页码 + 制表位）
-    function createHeaderFooterParagraph({
-        text,
-        chineseFont,
-        englishFont,
-        size,
-        align,
-        underline,
-        showPageNumber,
-        pageFont,
-        pageSize,
-        location,
-        pageWidthCm = 21.0,
-        marginLeftCm,
-        marginRightCm,
-        beforeSpacingPt,         // 段前间距（磅）
-        afterSpacingPt,          // 段后间距（磅）
-        spacing                // 文本间距（倍数）
-    }) {
-        const children = [];
-        const tabStops = [];
-    
-        const isBoth = align === 'both' && showPageNumber;
-    
-        if (text?.trim()) {
-            children.push(...createMixedTextRuns(text, chineseFont, englishFont, size, spacing));
-        }
-    
-        if (isBoth) {
-            children.push(new docx.TextRun({ text: '\t' }));
-    
-            const usableWidthCm = pageWidthCm - parseFloat(marginRightCm) - parseFloat(marginLeftCm);
-            const tabStopPosition = docx.convertInchesToTwip(usableWidthCm / 2.54);
-    
-            tabStops.push({
-                type: docx.TabStopType.RIGHT,
-                position: tabStopPosition
-            });
-        }
-    
-        if (showPageNumber) {
-            children.push(...createPageNumberRuns(chineseFont, pageSize));
-        }
-
-        return new docx.Paragraph({
-            alignment: getAlignmentType(isBoth ? 'left' : align),
-            border: underline
-                ? {
-                    bottom: {
-                        style: docx.BorderStyle.SINGLE,
-                        size: 6,
-                        color: "000000"
-                    }
-                }
-                : undefined,
-            spacing: {
-                before: beforeSpacingPt ? docx.convertInchesToTwip(beforeSpacingPt / 72) : undefined,
-                after: afterSpacingPt ? docx.convertInchesToTwip(afterSpacingPt / 72) : undefined,
-                line: spacing ? spacing * 240 : undefined
-            },
-            tabStops,
-            children
-        });
-    }
-
     try {
         const doc = new docx.Document({
             sections: [{
@@ -326,8 +397,8 @@ async function generateWordDocument(formData) {
                         }
                     }
                 },
-                headers: formData.hasHeader ? {
-                    default: new docx.Header({
+                headers: {
+                    default: formData.hasHeader ? new docx.Header({
                         children: [
                             createHeaderFooterParagraph({
                                 text: formData.headerText,
@@ -348,10 +419,10 @@ async function generateWordDocument(formData) {
                                 spacing: formData.headerTextSpacing
                             })
                         ]
-                    })
-                } : {},
-                footers: formData.hasFooter ? {
-                    default: new docx.Footer({
+                    }) : undefined
+                },
+                footers: {
+                    default: formData.hasFooter ? new docx.Footer({
                         children: [
                             createHeaderFooterParagraph({
                                 text: formData.footerText,
@@ -372,19 +443,22 @@ async function generateWordDocument(formData) {
                                 spacing: formData.footerTextSpacing
                             })
                         ]
-                    })
-                } : {},
+                    }) : undefined
+                },
                 children: [
-                    new docx.Paragraph({
-                        children: createMixedTextRuns('示例文档', formData.chineseFont, formData.englishFont, formData.fontSize * 3),
-                        heading: docx.HeadingLevel.HEADING_1,
-                        alignment: docx.AlignmentType.CENTER
-                    }),
-                    new docx.Paragraph({
-                        children: createMixedTextRuns('这是一个使用 docx.js v9.5.0 生成的 Word 文档示例。', formData.chineseFont, formData.englishFont, formData.fontSize * 2),
-                        spacing: { line: formData.lineSpacing * 240 },
-                        alignment: getAlignmentType(formData.textAlignment)
-                    })
+                    // 第一页内容（保持格式）
+                    ...formData.firstPage.content.split('\n').map(line => 
+                        new docx.Paragraph({
+                            children: createMixedTextRuns(
+                                line || ' ', // 空行用空格代替
+                                formData.firstPage.contentChineseFont || formData.chineseFont,
+                                formData.firstPage.contentEnglishFont || formData.englishFont,
+                                (formData.firstPage.contentSize * 2) || (formData.fontSize * 2) // 确保字号转换为半磅
+                            ),
+                            spacing: { line: formData.lineSpacing * 240 },
+                            alignment: getAlignmentType(formData.firstPage.contentAlign || formData.textAlignment)
+                        })
+                    )
                 ]
             }],
             styles: {
