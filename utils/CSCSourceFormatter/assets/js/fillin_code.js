@@ -638,8 +638,8 @@ async function getCode() {
                             bottom: docx.convertInchesToTwip(parseFloat(currentFormData.margins.bottom) / 2.54),
                             left: docx.convertInchesToTwip(parseFloat(currentFormData.margins.left) / 2.54),
                             right: docx.convertInchesToTwip(parseFloat(currentFormData.margins.right) / 2.54),
-                            header: docx.convertInchesToTwip(parseFloat(formData.headerMarginTop) / 2.54),   // 页眉距顶边 1.5cm
-                            footer: docx.convertInchesToTwip(parseFloat(formData.footerMarginBottom) / 2.54)   // 页脚距底边 1.75cm
+                            header: docx.convertInchesToTwip(parseFloat(currentFormData.headerMarginTop) / 2.54),   // 页眉距顶边 1.5cm
+                            footer: docx.convertInchesToTwip(parseFloat(currentFormData.footerMarginBottom) / 2.54)   // 页脚距底边 1.75cm
                         }
                     } : {
                         margin: {
