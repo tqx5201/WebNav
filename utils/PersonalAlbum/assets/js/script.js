@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        // 获取照片列表
-        const photos = await getPhotos();
+        // 获取photos目录下的所有图片
+        const photos = await loadPhotos();
         
         if (photos.length === 0) {
             showNoPhotosMessage();
@@ -22,33 +22,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-async function getPhotos() {
+async function loadPhotos() {
     try {
-        // 获取当前仓库的根路径
-        const basePath = window.location.pathname.includes('/PersonalAlbum/') 
-            ? '/PersonalAlbum/' 
-            : '/';
-        
-        // 构建照片目录的URL
-        const photosDirUrl = `${window.location.origin}${basePath}photos/`;
-        
-        // 获取目录内容
-        const response = await fetch(photosDirUrl);
-        const text = await response.text();
-        
-        // 使用正则表达式匹配jpg和png文件
-        const photoRegex = /href="([^"]+\.(jpg|png))"/gi;
+        // 使用 File System Access API
+        const dirHandle = await window.showDirectoryPicker({
+            startIn: 'pictures',
+            mode: 'read'
+        });
+
         const photos = [];
-        let match;
-        
-        while ((match = photoRegex.exec(text)) !== null) {
-            const photoPath = `${photosDirUrl}${match[1]}`;
-            photos.push(photoPath);
+        for await (const entry of dirHandle.values()) {
+            if (entry.kind === 'file') {
+                const file = await entry.getFile();
+                if (file.type.startsWith('image/') && 
+                    (file.name.toLowerCase().endsWith('.jpg') || 
+                     file.name.toLowerCase().endsWith('.jpeg') || 
+                     file.name.toLowerCase().endsWith('.png'))) {
+                    const url = URL.createObjectURL(file);
+                    photos.push(url);
+                }
+            }
         }
-        
         return photos;
     } catch (error) {
-        console.error('获取照片列表失败:', error);
+        console.error('读取照片目录失败:', error);
         return [];
     }
 }
@@ -60,9 +57,22 @@ function showNoPhotosMessage() {
     message.innerHTML = `
         <i class="fas fa-images"></i>
         <h2>暂无照片</h2>
-        <p>请在 photos 目录中添加 .jpg 或 .png 格式的照片</p>
+        <p>请选择包含照片的文件夹</p>
+        <button class="retry-button">重新选择文件夹</button>
     `;
+    
+    // 清空现有内容
+    container.innerHTML = '';
     container.appendChild(message);
+
+    // 添加重试按钮事件
+    const retryButton = message.querySelector('.retry-button');
+    retryButton.addEventListener('click', async () => {
+        const photos = await loadPhotos();
+        if (photos.length > 0) {
+            location.reload();
+        }
+    });
 }
 
 function initCarousel(photos) {
@@ -75,7 +85,7 @@ function initCarousel(photos) {
     photos.forEach((photo, index) => {
         const item = document.createElement('div');
         item.className = 'carousel-item';
-        item.innerHTML = `<img src="${photo}" alt="相册照片 ${index + 1}" loading="lazy">`;
+        item.innerHTML = `<img src="${photo}" alt="相册照片 ${index + 1}">`;
         carouselInner.appendChild(item);
     });
 
@@ -111,7 +121,7 @@ function initGallery(photos) {
     photos.forEach((photo, index) => {
         const item = document.createElement('div');
         item.className = 'gallery-item';
-        item.innerHTML = `<img src="${photo}" alt="相册照片 ${index + 1}" loading="lazy">`;
+        item.innerHTML = `<img src="${photo}" alt="相册照片 ${index + 1}">`;
         
         // 添加点击事件
         item.addEventListener('click', () => {

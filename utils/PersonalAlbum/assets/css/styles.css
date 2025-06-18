@@ -215,24 +215,43 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
     max-width: 400px;
-    animation: fadeIn 0.5s ease-out;
 }
 
 .no-photos-message i {
-    font-size: 48px;
+    font-size: 4em;
     color: var(--primary-color);
     margin-bottom: 20px;
-    display: block;
+    opacity: 0.7;
 }
 
 .no-photos-message h2 {
     color: var(--text-color);
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 1.8em;
 }
 
 .no-photos-message p {
     color: #666;
-    font-size: 16px;
-    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.retry-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all var(--transition-speed);
+    box-shadow: 0 3px 10px rgba(108, 92, 231, 0.2);
+}
+
+.retry-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.retry-button:active {
+    transform: translateY(0);
 } 
