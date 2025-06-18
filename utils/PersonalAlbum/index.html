@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人相册</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">我的个人相册</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <!-- 轮播图内容将通过 JavaScript 动态添加 -->
+                </div>
+                <button class="carousel-button prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-grid">
+                <!-- 相册内容将通过 JavaScript 动态添加 -->
+            </div>
+        </div>
+
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 

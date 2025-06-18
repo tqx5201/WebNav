@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a8a4e6;
+    --background-color: #f8f9fa;
+    --text-color: #2d3436;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    transition: transform var(--transition-speed);
+}
+
+.theme-toggle:hover {
+    transform: rotate(180deg);
+}
+
+/* 轮播图样式 */
+.carousel-container {
+    margin: 30px 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative;
+    height: 400px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform var(--transition-speed);
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.carousel-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 20px;
+}
+
+/* 相册网格样式 */
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform var(--transition-speed);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* 灯箱效果 */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform var(--transition-speed);
+}
+
+.close-lightbox:hover {
+    transform: rotate(90deg);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .carousel {
+        height: 300px;
+    }
+    
+    .title {
+        font-size: 2em;
+    }
+}
+
+/* 无照片提示样式 */
+.no-photos-message {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.no-photos-message i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.no-photos-message h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.no-photos-message p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+} 
