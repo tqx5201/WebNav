@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 尝试加载照片
             const img = new Image();
-            const photoPath = `photos/photo${photoIndex}.jpg`;
+            const photoPath = `photos/${photoIndex}.jpg`;
             
             img.onload = function() {
                 photos.push(photoPath);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img.onerror = function() {
                 // 尝试其他扩展名
                 const currentExt = photoExtensions[photoIndex % photoExtensions.length];
-                const altPhotoPath = `photos/photo${photoIndex}${currentExt}`;
+                const altPhotoPath = `photos/${photoIndex}${currentExt}`;
                 
                 const altImg = new Image();
                 altImg.onload = function() {
