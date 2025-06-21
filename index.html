@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
     <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/css/iziToast.min.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
 
     <!-- 核心脚本 -->
     <script src="./js/lozad.min.js"></script>
@@ -87,6 +88,13 @@
                         <a href="/url-checker.html" target="_blank">
                             <i class="fas fa-check-circle"></i>
                             <span>Check</span>
+                        </a>
+                    </li>
+                    <!-- 设置按钮 -->
+                    <li class="menu-item">
+                        <a id="settings-btn" style="cursor: pointer;">
+                            <i class="fa-solid fa-cog"></i>
+                            <span>设置</span>
                         </a>
                     </li>
                     <!-- 夜间模式切换按钮 -->
@@ -498,6 +506,28 @@
 
     <!-- 搜索功能脚本 -->
     <script src="./js/search.js"></script>
+    <script src="./js/settings.js"></script>
+
+    <!-- 设置面板 -->
+    <div id="settings-panel" class="settings-panel">
+        <div class="settings-panel-header">
+            <h4>背景设置</h4>
+            <button id="close-settings-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="settings-panel-body">
+            <div class="setting-item">
+                <label for="bg-image-url">自定义背景</label>
+                <input type="text" id="bg-image-url" placeholder="输入图片 URL 或留空">
+            </div>
+             <div class="setting-item">
+                <button id="apply-bg-btn">应用背景 (留空则使用必应壁纸)</button>
+            </div>
+            <div class="setting-item">
+                <button id="reset-bg-btn">恢复默认</button>
+            </div>
+        </div>
+    </div>
+    <div id="settings-overlay" class="settings-overlay"></div>
 </body>
 
 </html>
