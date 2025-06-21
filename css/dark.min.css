@@ -82,4 +82,8 @@ body.dark-theme {
 .dark-theme label[for="type-git1"] span,
 .dark-theme label[for="type-links"] span {
     color: #e0e0e0 !important;
+}
+
+.dark-theme .xe-user-name strong {
+    color: #DECDCD !important;
 } 
