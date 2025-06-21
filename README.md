@@ -1,8 +1,8 @@
 <div align="center">
 <img src="./favicon.ico">
-<h1>OneNav</h1>
+<h1>WebNav</h1>
 <p>一个简单美观的个人网址导航主页</p>
-<p>依托GitHubPages和Workflows无服务器部署</p>
+<p>依托 GitHubPages 和 Workflows 无服务器部署</p>
 <p>Powered by 
 <a href="https://github.com/geneasy/geneasy" target="_blank"><strong>GenEasy</strong></a> & 
 <a href="https://github.com/imsyy/OneNav" target="_blank"><strong>OneNav</strong></a> & 
@@ -10,71 +10,102 @@
 </p>
 </div>
 
-# 部署与配置
+## 项目简介
 
-本库可直接通过Workflows自动生成html并部署到GitHubPages, 只需修改links.yml或其它文件后提交即可, 同时也可以将已生成的页面通过Vercel等平台发布.
+DSTBP Navigation 是一个简洁、优雅的个人网址导航页面，为用户提供了丰富多样的实用网址分类集合，涵盖学术资源、赛题平台、AI 站点、设计素材等多个领域。用户可以通过该导航页快速访问各类常用网站，提高上网效率。
 
-## GitHub部署与初步配置
+## 项目结构
 
-1. fork本项目, 注意两个分支同时fork, 勿勾选仅fork主分支, 以下操作均在fork得到的仓库进行;
+```plaintext
+123/
+├── css/
+│   ├── animation.min.css
+│   ├── background.css
+│   ├── bootstrap.min.css
+│   ├── dark.min.css
+│   ├── loading.min.css
+│   ├── mobile.min.css
+│   └── style.min.css
+├── js/
+│   ├── background.js
+│   ├── lozad.min.js
+│   ├── jquery.min.js
+│   ├── search.js
+│   └── url-checker.js
+├── data.json
+├── favicon.ico
+└── index.html
+```
 
-2. 在`Settings -> Actions -> General -> Actions permissions`选择`Allow all actions and reusable workflows`保存, 在`Workflow permissions`选择`Read and write permissions`保存, 确保Workflows的权限;
+### 主要文件说明
 
-3. 在仓库主页按` 。`键或将网址中的`com`改为`dev`来进入编辑器界面, 不嫌麻烦也可以直接clone到本地进行配置;
+- **index.html**：项目的主页面，负责页面的整体布局和结构，包括侧边栏菜单、搜索区域和链接内容区等。页面加载完成后，会根据 data.json 文件动态生成侧边栏菜单和链接内容。
+- **data.json**：存储了所有导航链接的信息，包括网站名称、URL、图标和描述等，并且按照不同的类别进行了分组，如 “赛题平台”、“学术资源”、“AI 站点” 等。
+- **css/ 文件夹**：包含了项目所需的所有 CSS 样式文件，用于美化页面，实现不同的主题效果（如夜间模式）和响应式布局。
+- **js/ 文件夹**：包含了项目所需的 JavaScript 脚本文件，实现了页面的交互功能，如搜索功能、背景设置、URL 检查等。
 
-4. 在编辑器中找到`links.yml`, 根据注释选择性修改, 然后找到最左侧第三个图标`Source Control`输入Message并Commit;
+## 功能特性
 
-5. 在主页选择Actions, 等待部署成功后在`Settings -> Pages`处可找到对应链接, 若部署失败请阅读错误代码并核查之前的步骤;
+### 1. 主题切换
 
-6. 此外如果在fork时将仓库名字改为`${yourname}.github.io`即可直接通过`https://${yourname}.github.io`访问.
+支持夜间 / 日间模式切换，用户可以根据自己的喜好在 localStorage 中设置 `darkMode` 为 `true` 或 `false` 来切换主题。夜间模式采用了现代、简洁且稍亮的深色主题，提升了用户在低光环境下的视觉体验。
 
-## Gitpod进行个性配置
+### 2. 搜索功能
 
-1. 使用GitHub账户[注册登录Gitpod](https://gitpod.io/workspaces)后点击`New Workspace`并选中刚fork的仓库点击`Continue`等待Workspace启动;
+- 提供多种搜索引擎供用户选择，用户可以在不同的搜索引擎之间切换。
+- 支持在新窗口中打开搜索结果，用户可以通过勾选 “在新窗口中打开” 复选框来设置。
+- 搜索框会根据当前选中的搜索引擎显示相应的占位提示文字。
 
-2. 使用命令`bash gitpod.sh`即可复现Workflows的工作同时在8000端口打开了一个http服务以供访问查看效果, 或者也可以使用插件进行实时预览, 根据需要进行个性化的修改与调整.
+### 3. 背景设置
 
-## 使用Vercel发布网页
+用户可以通过点击设置按钮打开背景设置面板，自定义页面的背景图片和透明度。支持使用 Bing 每日壁纸作为背景，也可以输入自定义的图片 URL。设置会保存到 localStorage 中，下次打开页面时会自动应用。
 
-1. Vercel默认对主分支进行部署, 而要部署的html文档在gh-pages分支, 因此可以在`Settings -> General -> Default branches`中点`switch`将gh-pages设置为主分支, 然后再进行Vercel部署, 部署成功后再切换回原来的主分支不会影响Vercel之后的部署. 需注意上述`gitpod.sh`脚本是将html文档输出到了主分支根目录, 所以如果使用了此脚本, 则无需切换分支也可成功部署;
+### 4. URL 检查
 
-2. 使用GitHub账户[注册登录Vercel](https://vercel.com/dashboard)后点击`Add New -> project`并选择fork的仓库直接点击`Deploy`即可;
+项目中包含了 url-checker.js 文件，用于检查单个 URL 的可用性、响应时间、重定向情况和安全性。检查结果会记录下来，方便用户了解链接的状态。
 
-3. Vercel部署成功后可添加自定义域名(自动生成的二级域名已被墙), 可在[dynv6](https://dynv6.com/)免费获取二级域名并按提示配置.
+## 使用方法
 
-## 常用配置项说明
+### 1. 克隆项目
 
-### index.hbs
+```bash
+git clone <项目仓库地址>
+```
 
-此文件为生成html的模板
+### 2. 打开项目
 
-69行: 网页侧栏有宽窄两种形式且可通过按钮调节, 此处有`collapsed`是默认窄, 删去则默认宽;
+将项目文件夹中的 index.html 文件在浏览器中打开，即可看到导航页面。
 
-161-301行: 搜索栏的配置, 未写入links.yml, 可自行删减搜索项目;
+### 3. 搜索功能使用
 
-391-407行: 版权信息定义处;
+- 在搜索框中输入关键词，选择合适的搜索引擎，点击搜索按钮即可进行搜索。
+- 若要切换搜索引擎，点击相应的搜索引擎选项，搜索框的占位提示文字和表单的 action 属性会自动更新。
+- 若要在新窗口中打开搜索结果，勾选 “在新窗口中打开” 复选框。
 
-### css
+### 4. 背景设置使用
 
-style.css
+点击页面上的设置按钮，打开背景设置面板。在面板中可以输入自定义的图片 URL，调整背景透明度，点击 “应用” 按钮即可应用设置。若要恢复默认设置，点击 “重置” 按钮。
 
-32行: 定义了壁纸, 为必应每日一图, api接口来自第三方, 可替换
+### 5. 主题切换
 
-36行: 定义了页面主体部分的透明度为0.88, 可修改
+在 localStorage 中设置 `darkMode` 为 `true` 或 `false`，刷新页面即可切换主题。
 
-40行: 定义了一行显示多少个链接, 此处25%宽度即同时显示四个, 可修改
+## 贡献指南
 
-92/238/607/955行: #ffffffdd定义了顶侧底栏颜色为ffffff, 透明度为十六进制的dd/ff, 可修改
+如果你想为这个项目做出贡献，可以按照以下步骤进行：
 
-dark.css
+1. Fork 这个项目到你的 GitHub 账户。
+2. 创建一个新的分支：`git checkout -b your-feature-branch`。
+3. 进行代码修改和功能添加。
+4. 提交你的更改：`git commit -m "Add your commit message"`。
+5. 推送分支到你的 GitHub 仓库：`git push origin your-feature-branch`。
+6. 在原项目仓库中创建一个 Pull Request。
 
-13行: 定义了透明度为0.66的黑色对壁纸遮罩, 可修改
+## 注意事项
 
-19行: 定义了夜间模式的壁纸, 同上api, 可替换
+- 部分网站可能需要科学上网才能访问，请确保你有合法的网络访问权限。
+- 项目中的一些功能可能依赖于特定的浏览器特性，请使用现代浏览器（如 Chrome、Firefox 等）打开页面。
 
-89/159/172-259行: #464646dd定义了顶侧底栏颜色为464646, 透明度为十六进制的dd/ff, 可修改
+## 许可证
 
-# 项目说明
-
-源码来自于已归档的[OneNav](https://github.com/imsyy/OneNav)
-本仓库进行了一些简单的整理并通过[geneasy](https://github.com/geneasy/geneasy)文档生成工具与Workflows实现了无服务器的部署, 只需修改links.yml添加链接即可自动生成html文档.
+本项目采用 [MIT 许可证](https://opensource.org/licenses/MIT)，你可以自由使用、修改和分发该项目。
