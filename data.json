@@ -130,7 +130,7 @@
         "value": "https://github.com/search?utf8=%E2%9C%93&q=",
         "placeholder": "搜索 Github 仓库",
         "name": "Github",
-        "color": "#000000"
+        "color": "#1D2E47"
       }
     ],
     "工具": [
@@ -146,7 +146,7 @@
         "value": "https://link.chinaz.com/",
         "placeholder": "请输入网址 ( 不带http:// )",
         "name": "友链检测",
-        "color": "#313439"
+        "color": "#B1ED69"
       },
       {
         "id": "type-https",
