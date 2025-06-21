@@ -5,19 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const settingsPanel = document.getElementById('settings-panel');
     const settingsOverlay = document.getElementById('settings-overlay');
     const bgImageUrlInput = document.getElementById('bg-image-url');
+    const opacitySlider = document.getElementById('bg-opacity-slider');
+    const opacityValueSpan = document.getElementById('bg-opacity-value');
     const applyBgBtn = document.getElementById('apply-bg-btn');
     const resetBgBtn = document.getElementById('reset-bg-btn');
     const body = document.body;
 
-    // Ensure all elements exist before proceeding
-    if (!settingsBtn || !closeSettingsBtn || !settingsPanel || !settingsOverlay || !applyBgBtn || !resetBgBtn) {
-        console.warn('Settings panel elements not found. Feature will be disabled.');
+    // Early exit if essential elements are not found
+    if (!settingsBtn) {
         return;
     }
 
     // --- Constants ---
     const BING_API_URL = 'https://bing.img.run/rand.php';
-    const STORAGE_KEY = 'backgroundSetting';
+    const STORAGE_KEY = 'backgroundSettings';
 
     // --- Functions ---
     const showPanel = () => {
@@ -30,30 +31,40 @@ document.addEventListener('DOMContentLoaded', function() {
         settingsOverlay.classList.remove('is-visible');
     };
 
-    const applyBackground = (setting) => {
-        if (!setting) return;
+    const applySettings = (settings) => {
+        if (!settings) return;
 
-        let url;
-        if (setting === 'bing_daily') {
-            url = BING_API_URL;
+        // Apply background image
+        if (settings.url) {
+            const imageUrl = (settings.url === 'bing_daily') ? BING_API_URL : settings.url;
+            body.style.backgroundImage = `url('${imageUrl}')`;
+            body.classList.add('with-custom-bg');
         } else {
-            url = setting; // Assume it's a regular URL
+            body.style.backgroundImage = '';
+            body.classList.remove('with-custom-bg');
         }
-        
-        body.style.backgroundImage = `url('${url}')`;
-        body.classList.add('with-custom-bg');
-    };
-    
-    const saveAndApplyBackground = (setting) => {
-        localStorage.setItem(STORAGE_KEY, setting);
-        applyBackground(setting);
+
+        // Apply opacity
+        const opacity = settings.opacity || 0.9;
+        body.style.setProperty('--content-opacity', opacity);
+
+        // Update UI elements to reflect current state
+        if (opacitySlider) opacitySlider.value = opacity;
+        if (opacityValueSpan) opacityValueSpan.textContent = `${Math.round(opacity * 100)}%`;
+        if (bgImageUrlInput) {
+            bgImageUrlInput.value = (settings.url && settings.url !== 'bing_daily') ? settings.url : '';
+        }
     };
 
-    const resetBackground = () => {
-        body.style.backgroundImage = '';
-        body.classList.remove('with-custom-bg');
+    const saveAndApplySettings = (settings) => {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+        applySettings(settings);
+    };
+
+    const resetSettings = () => {
         localStorage.removeItem(STORAGE_KEY);
-        bgImageUrlInput.value = '';
+        // Reloading the page is the simplest way to reset all styles and states
+        window.location.reload();
     };
 
     // --- Event Handlers ---
@@ -61,27 +72,38 @@ document.addEventListener('DOMContentLoaded', function() {
     closeSettingsBtn.addEventListener('click', hidePanel);
     settingsOverlay.addEventListener('click', hidePanel);
 
+    opacitySlider.addEventListener('input', () => {
+        const newOpacity = opacitySlider.value;
+        if (opacityValueSpan) {
+            opacityValueSpan.textContent = `${Math.round(newOpacity * 100)}%`;
+        }
+        body.style.setProperty('--content-opacity', newOpacity);
+    });
+
+    opacitySlider.addEventListener('change', () => { // 'change' fires when user releases the slider
+        const currentSettings = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        currentSettings.opacity = opacitySlider.value;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(currentSettings));
+    });
+
     applyBgBtn.addEventListener('click', () => {
         const imageUrl = bgImageUrlInput.value.trim();
-        if (imageUrl) {
-            saveAndApplyBackground(imageUrl);
-        } else {
-            saveAndApplyBackground('bing_daily');
-        }
+        const currentSettings = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        currentSettings.url = imageUrl ? imageUrl : 'bing_daily';
+        currentSettings.opacity = opacitySlider.value; // Also save current opacity
+        saveAndApplySettings(currentSettings);
         hidePanel();
     });
 
     resetBgBtn.addEventListener('click', () => {
-        resetBackground();
+        resetSettings();
         hidePanel();
     });
 
     // --- Initialization ---
-    const savedBgSetting = localStorage.getItem(STORAGE_KEY);
-    if (savedBgSetting) {
-        applyBackground(savedBgSetting);
-        if (savedBgSetting !== 'bing_daily') {
-             bgImageUrlInput.value = savedBgSetting;
-        }
+    const savedSettingsJSON = localStorage.getItem(STORAGE_KEY);
+    if (savedSettingsJSON) {
+        const savedSettings = JSON.parse(savedSettingsJSON);
+        applySettings(savedSettings);
     }
 }); 
