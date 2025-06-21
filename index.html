@@ -14,6 +14,7 @@
 
     <!-- 样式表链接 -->
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/dark.min.css" />
     <link rel="stylesheet" href="./css/animation.min.css" />
     <link rel="stylesheet" href="./css/mobile.min.css" />
     <link rel="stylesheet" href="./css/loading.min.css" />
@@ -26,7 +27,6 @@
     <script src="./js/lozad.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/js/iziToast.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/dark-mode-toggle@0.3.0/dist/dark-mode-toggle.mjs"></script>
     
     <!-- 社交媒体/分享预览元信息 -->
     <meta property="og:type" content="article" />
@@ -53,11 +53,9 @@
                         </div>
                     </div>
                     <div class="mobile-menu-toggle visible-xs">
-                        <dark-mode-toggle
-                            id="dark-mode-toggle-mobile"
-                            appearance="toggle"
-                            permanent
-                        ></dark-mode-toggle>
+                        <a onclick="switchNightMode()">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </a>
                         <a href="" data-toggle="mobile-menu">
                             <i class="fa-solid fa-bars"></i>
                         </a>
@@ -93,11 +91,10 @@
                     </li>
                     <!-- 夜间模式切换按钮 -->
                     <li class="menu-item" style="margin-left: auto; margin-right: 10px;">
-                        <dark-mode-toggle
-                            id="dark-mode-toggle-header"
-                            appearance="toggle"
-                            permanent
-                        ></dark-mode-toggle>
+                        <a onclick="switchNightMode()" style="cursor: pointer;">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <span>夜间模式</span>
+                        </a>
                     </li>
                     <!-- 今日诗词 -->
                     <li class="menu-item">
@@ -339,6 +336,23 @@
     <!-- 页面核心脚本 -->
     <script>
         /**
+         * 切换夜间/日间模式
+         */
+        function switchNightMode() {
+            const body = document.body;
+            const isDark = body.classList.contains('dark-theme');
+            if (isDark) {
+                body.classList.remove('dark-theme');
+                localStorage.setItem('darkMode', 'false');
+                showModeToast('已切换为日间模式');
+            } else {
+                body.classList.add('dark-theme');
+                localStorage.setItem('darkMode', 'true');
+                showModeToast('已切换为夜间模式');
+            }
+        }
+
+        /**
          * 显示模式切换提示
          * @param {string} msg - 要显示的消息
          */
@@ -358,8 +372,12 @@
          * 页面加载完成后执行的主逻辑
          */
         document.addEventListener('DOMContentLoaded', function () {
+            // 1. 初始化主题：页面加载时根据 localStorage 自动切换夜间/日间模式
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-theme');
+            }
 
-            // 1. 加载并渲染动态内容
+            // 2. 加载并渲染动态内容
             fetch('./data.json')
                 .then(response => response.json())
                 .then(data => {
@@ -475,13 +493,6 @@
                     });
                 })
                 .catch(error => console.error('数据加载失败:', error));
-            
-            // 2. 监听主题切换事件并显示提示
-            document.addEventListener('colorschemechange', (e) => {
-                const newColorScheme = e.detail.colorScheme;
-                const message = newColorScheme === 'dark' ? '已切换为夜间模式' : '已切换为日间模式';
-                showModeToast(message);
-            });
         });
     </script>
 

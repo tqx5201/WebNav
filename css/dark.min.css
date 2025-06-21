@@ -1,0 +1,80 @@
+/* 
+ * WebNav - Dark Mode Theme
+ * ------------------------
+ * A modern, clean dark theme.
+ */
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* --- General Components --- */
+.dark-theme .sidebar-menu,
+.dark-theme .main-content,
+.dark-theme .navbar.user-info-navbar,
+.dark-theme .logo-env,
+.dark-theme .sidebar-menu-inner {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+/* --- Typography --- */
+.dark-theme,
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6,
+.dark-theme .logo-text a,
+.dark-theme .main-menu a .title,
+.dark-theme .user-info-menu a > span,
+.dark-theme .xe-user-name strong,
+.dark-theme #jinrishici-sentence {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme a {
+    color: #8ab4f8; /* A pleasant blue for links */
+}
+
+.dark-theme a:hover {
+    color: #a5c6fa;
+}
+
+.dark-theme .text-gray,
+.dark-theme .xe-comment p {
+    color: #9e9e9e !important; /* Softer gray for descriptions */
+}
+
+/* --- Link Cards --- */
+.dark-theme .xe-widget.xe-conversations {
+    background-color: #2a2a2e;
+    border: 1px solid #3c3c43;
+}
+
+.dark-theme .xe-widget.xe-conversations:hover {
+    background-color: #3c3c43;
+    border-color: #5e5e64;
+}
+
+/* --- Search Area --- */
+.dark-theme #search-text {
+    background-color: #2a2a2e;
+    color: #e0e0e0;
+    border: 1px solid #3c3c43;
+}
+
+.dark-theme .s-type-list {
+    background-color: #2a2a2e;
+    border: 1px solid #3c3c43;
+}
+
+.dark-theme .s-type-list label:hover {
+    background-color: #3c3c43;
+}
+
+.dark-theme .search-group {
+    background-color: #1e1e1e;
+}
+
+/* --- Special Cases for Text with Hardcoded Colors --- */
+.dark-theme .dark-text {
+    color: #e0e0e0 !important;
+} 
