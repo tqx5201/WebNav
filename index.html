@@ -2,31 +2,35 @@
 <html lang="zh-CN">
 
 <head>
-    <!-- 头部元信息保持原样 -->
+    <!-- 头部元信息：定义文档类型、字符集、兼容模式、视口、作者、标题、关键词和描述 -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="https://dstbp.net/" />
-    <title>DSTBP Navigation</title>
+    <title>DSTBP Navigation - 个人网址集</title>
     <meta name="keywords" content="导航页, 导航, WebNav, DSTBP, Github, Github Pages, r0xanne" />
-    <meta name="description" content="个人网址集" />
+    <meta name="description" content="一个简洁、优雅的个人网址导航页面" />
     <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- 样式表链接 -->
     <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="stylesheet" href="./css/dark.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/dark.min.css" />
     <link rel="stylesheet" href="./css/animation.min.css" />
     <link rel="stylesheet" href="./css/mobile.min.css" />
     <link rel="stylesheet" href="./css/loading.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <link rel="stylesheet"
-        href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <script>
-        var userDefinedSearchData = {};
-        var expandAll = false;
-    </script>
-    <script src="./js/header.min.js"></script>
+    <link rel="stylesheet"
+        href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/css/iziToast.min.css" />
+
+    <!-- 核心脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script type="text/javascript"
+        src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    
+    <!-- 社交媒体/分享预览元信息 -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="DSTBP - WebNav" />
     <meta property="og:description" content="个人网址集" />
@@ -34,17 +38,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="DSTBP - WebNav" />
     <meta name="twitter:description" content="个人网址集" />
-    <link rel="stylesheet"
-        href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/css/iziToast.min.css" />
-    <script type="text/javascript"
-        src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/js/iziToast.min.js"></script>
 </head>
 
 <body class="page-body">
+    <!-- 页面容器 -->
     <div class="page-container">
-        <!-- 侧边栏菜单动态生成 -->
+        <!-- 左侧边栏 -->
         <div class="sidebar-menu toggle-others fixed collapsed">
             <div class="sidebar-menu-inner">
+                <!-- Logo 和移动端切换按钮 -->
                 <header class="logo-env">
                     <div class="logo">
                         <a rel="go-top"><i class="fa-solid fa-compass"></i></a>
@@ -61,12 +63,14 @@
                         </a>
                     </div>
                 </header>
+                <!-- 侧边栏菜单 (将由JS动态生成) -->
                 <ul id="main-menu" class="main-menu"></ul>
             </div>
         </div>
 
+        <!-- 主内容区 -->
         <div class="main-content">
-            <!-- 顶部导航栏保持原样 -->
+            <!-- 顶部导航栏 -->
             <nav class="navbar user-info-navbar" id="navbar" role="navigation">
                 <ul class="user-info-menu left-links list-inline list-unstyled">
                     <li class="menu-item">
@@ -87,12 +91,14 @@
                             <span>Check</span>
                         </a>
                     </li>
+                    <!-- 夜间模式切换按钮 -->
                     <li class="menu-item" style="margin-left: auto; margin-right: 10px">
                         <a onclick="switchNightMode()" style="cursor: pointer;">
                             <i class="fa-solid fa-circle-half-stroke"></i>
                             <span>夜间模式</span>
                         </a>
                     </li>
+                    <!-- 今日诗词 -->
                     <li class="menu-item">
                         <i class="fa-solid fa-message" style="margin-right: 6px"></i>
                         <span id="jinrishici-sentence">正在加载今日诗词....</span>
@@ -101,7 +107,7 @@
                 </ul>
             </nav>
 
-            <!-- 搜索框部分保持原样 -->
+            <!-- 搜索框区域 -->
             <div id="search" class="s-search">
                 <div id="search-list" class="hide-type-list">
                     <div class="s-type">
@@ -115,6 +121,7 @@
                         </div>
                     </div>
 
+                    <!-- 搜索分组：常用 -->
                     <div class="search-group group-a">
                         <span class="type-text">常用</span>
                         <ul class="search-type">
@@ -155,6 +162,7 @@
                         </ul>
                     </div>
 
+                    <!-- 搜索分组：搜索 -->
                     <div class="search-group group-b">
                         <span class="type-text">搜索</span>
                         <ul class="search-type">
@@ -195,7 +203,8 @@
                             </li>
                         </ul>
                     </div>
-
+                    
+                    <!-- 搜索分组：工具 -->
                     <div class="search-group group-c">
                         <span class="type-text">工具</span>
                         <ul class="search-type">
@@ -217,6 +226,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- 搜索分组：社区 -->
                     <div class="search-group group-d">
                         <span class="type-text">社区</span>
                         <ul class="search-type">
@@ -266,6 +277,7 @@
                         </ul>
                     </div>
 
+                    <!-- 搜索分组：生活 -->
                     <div class="search-group group-e">
                         <span class="type-text">生活</span>
                         <ul class="search-type">
@@ -307,40 +319,45 @@
                     </div>
                 </div>
 
+                <!-- 搜索表单 -->
                 <form action="?s=" method="get" target="_blank" id="super-search-fm">
                     <input type="text" id="search-text" placeholder="输入关键字搜索" style="outline: 0"
                         autocomplete="off" /><button type="submit"><i class="fa fa-search"></i></button>
                 </form>
+                <!-- 在新标签页打开选项 -->
                 <div class="set-check hidden-xs">
                     <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off" />
                 </div>
             </div>
 
-            <!-- 链接内容区域动态生成 -->
+            <!-- 链接内容区 (将由JS动态生成) -->
             <div id="links-container"></div>
         </div>
     </div>
 
+    <!-- 页面核心脚本 -->
     <script>
-        // 夜间模式切换
+        /**
+         * 切换夜间/日间模式
+         */
         function switchNightMode() {
             const body = document.body;
             const isDark = body.classList.contains('dark-theme');
-            // 只在class变化时操作，减少不必要的DOM操作
             if (isDark) {
-                if (!body.classList.contains('dark-theme')) return;
                 body.classList.remove('dark-theme');
                 localStorage.setItem('darkMode', 'false');
                 showModeToast('已切换为日间模式');
             } else {
-                if (body.classList.contains('dark-theme')) return;
                 body.classList.add('dark-theme');
                 localStorage.setItem('darkMode', 'true');
                 showModeToast('已切换为夜间模式');
             }
         }
 
-        // 独立toast提示，防止多次重复渲染
+        /**
+         * 显示模式切换提示
+         * @param {string} msg - 要显示的消息
+         */
         let toastInstance = null;
         function showModeToast(msg) {
             if (toastInstance) {
@@ -353,18 +370,19 @@
             });
         }
 
-        // 页面加载时自动切换夜间/日间模式
-        window.addEventListener('DOMContentLoaded', function () {
+        /**
+         * 页面加载完成后执行的主逻辑
+         */
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. 初始化主题：页面加载时根据 localStorage 自动切换夜间/日间模式
             const darkMode = localStorage.getItem('darkMode');
             if (darkMode === 'true') {
                 document.body.classList.add('dark-theme');
             } else {
                 document.body.classList.remove('dark-theme');
             }
-        });
 
-        // 页面主逻辑
-        document.addEventListener('DOMContentLoaded', function () {
+            // 2. 加载并渲染动态内容
             fetch('./data.json')
                 .then(response => response.json())
                 .then(data => {
@@ -426,7 +444,7 @@
                         lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
                     }
 
-                    // 保存原始HTML，便于恢复
+                    // 保存原始HTML，便于站内搜索后恢复
                     const originalLinksHTML = linksContainer.innerHTML;
                     const searchInput = document.getElementById('search-text');
 
@@ -434,12 +452,12 @@
                     searchInput.addEventListener('input', function () {
                         const keyword = this.value.trim().toLowerCase();
                         const type = document.querySelector('input[name="type"]:checked').value;
-                        if (type !== 'site-search') return;
+                        if (type !== 'site-search') return; // 只在站内搜索时生效
                         if (!keyword) {
                             // 无关键词时恢复原始分组
                             linksContainer.innerHTML = originalLinksHTML;
                         } else {
-                            // 关键词过滤，收集所有匹配卡片
+                            // 关键词过滤，收集所有匹配的卡片
                             const parser = new DOMParser();
                             const doc = parser.parseFromString(originalLinksHTML, 'text/html');
                             const widgets = Array.from(doc.querySelectorAll('.xe-widget'));
@@ -448,7 +466,7 @@
                                 const desc = item.querySelector('.xe-comment p').textContent.toLowerCase();
                                 return name.includes(keyword) || desc.includes(keyword);
                             });
-                            // 只显示匹配项，左对齐排列
+                            // 只显示匹配项，重新排列
                             linksContainer.innerHTML = '';
                             const row = document.createElement('div');
                             row.className = 'row';
@@ -466,71 +484,132 @@
                         }
                     });
 
-                    // 切换搜索类型时恢复原始内容
+                    // 切换搜索类型时，清空输入框并恢复原始内容
                     document.querySelectorAll('input[name="type"]').forEach(input => {
                         input.addEventListener('change', function () {
-                            searchInput.value = '';
-                            linksContainer.innerHTML = originalLinksHTML;
-                            if (typeof lozad !== 'undefined') {
-                                lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
+                            if (document.querySelector('input[name="type"]:checked').value !== 'site-search') {
+                                searchInput.value = '';
+                                linksContainer.innerHTML = originalLinksHTML;
+                                if (typeof lozad !== 'undefined') {
+                                    lozad('.lozad', { rootMargin: '200px 0px', threshold: 0.1 }).observe();
+                                }
                             }
                         });
-                    });
-
-                    // 其他搜索类型表单提交
-                    document.getElementById('super-search-fm').addEventListener('submit', function (e) {
-                        e.preventDefault();
-                        const keyword = searchInput.value;
-                        const type = document.querySelector('input[name="type"]:checked').value;
-                        if (type === 'site-search') return; // 站内搜索已在input事件处理
-                        window.open(type + encodeURIComponent(keyword), '_blank');
                     });
                 })
                 .catch(error => console.error('数据加载失败:', error));
         });
     </script>
 
-    <!-- 搜索脚本 -->
-    <script type="text/javascript">
-        eval(
-            (function (e, t, a, c, i, n) {
-                if (
-                    ((i = function (e) {
-                        return (
-                            (e < t ? "" : i(parseInt(e / t))) +
-                            (35 < (e %= t)
-                                ? String.fromCharCode(e + 29)
-                                : e.toString(36))
-                        );
-                    }),
-                        !"".replace(/^/, String))
-                ) {
-                    for (; a--;) n[i(a)] = c[a] || i(a);
-                    (c = [
-                        function (e) {
-                            return n[e];
-                        },
-                    ]),
-                        (i = function () {
-                            return "\\w+";
-                        }),
-                        (a = 1);
+    <!-- 搜索功能脚本 (已整理和注释) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- DOM 元素获取 ---
+            const searchForm = document.getElementById('super-search-fm');
+            const searchInput = document.getElementById('search-text');
+            const searchTypeRadios = document.querySelectorAll('input[name="type"]');
+            const newWindowCheckbox = document.getElementById('set-search-blank');
+            const searchGroups = document.querySelectorAll('.search-group');
+
+            // --- 辅助函数 ---
+
+            /** 获取当前选中搜索引擎的 URL */
+            const getActionUrl = () => document.querySelector('input[name="type"]:checked')?.value || '';
+
+            /** 获取当前选中搜索引擎的占位提示文字 */
+            const getPlaceholder = () => document.querySelector('input[name="type"]:checked')?.getAttribute('data-placeholder') || '输入关键字搜索';
+
+            /** 从 localStorage 获取上一次使用的搜索引擎类型，若无则返回第一个 */
+            const getDefaultSearchType = () => localStorage.getItem('search_type') || (searchTypeRadios.length > 0 ? searchTypeRadios[0].value : '');
+            
+            /** 检查是否应在新窗口打开搜索结果，默认为 true */
+            const shouldOpenInNewWindow = () => (localStorage.getItem('search_new_window') || '1') === '1';
+
+            /** 更新表单的 action 属性，站内搜索除外 */
+            const updateAction = (url) => { if (url && url !== 'site-search') searchForm.action = url; };
+
+            /** 更新搜索框的 placeholder */
+            const updatePlaceholder = (text) => { searchInput.placeholder = text; };
+            
+            /** 更新表单的 target 属性，决定是否在新标签页打开 */
+            const updateTarget = (openInNew) => openInNew ? searchForm.target = '_blank' : searchForm.removeAttribute('target');
+            
+            /** 将设置保存到 localStorage */
+            const saveToLocalStorage = (key, value) => localStorage.setItem(`search_${key}`, value);
+
+            /** 高亮当前选中的搜索引擎所在的分组 */
+            function highlightActiveGroup(radioElement) {
+                searchGroups.forEach(group => group.classList.remove('s-current'));
+                if (radioElement) {
+                    let parent = radioElement.closest('.search-group');
+                    if(parent) parent.classList.add('s-current');
                 }
-                for (; a--;)
-                    c[a] &&
-                    (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
-                return e;
-            })(
-                '!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',
-                62,
-                77,
-                "||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split(
-                    "|"
-                ),
-                0,
-                {}
-            )
-        );
+            }
+            
+            // --- 事件处理函数 ---
+
+            /** 当切换搜索引擎时触发 */
+            function onSearchTypeChange(event) {
+                const selectedRadio = event.target;
+                updatePlaceholder(selectedRadio.getAttribute('data-placeholder'));
+                updateAction(selectedRadio.value);
+                saveToLocalStorage('type', selectedRadio.value);
+                searchInput.focus();
+                highlightActiveGroup(selectedRadio);
+            }
+
+            /** 当"在新窗口中打开"复选框状态改变时触发 */
+            function onNewWindowToggle(event) {
+                const isChecked = event.target.checked;
+                saveToLocalStorage('new_window', isChecked ? '1' : '0');
+                updateTarget(isChecked);
+            }
+
+            /** 当搜索表单提交时触发 */
+            function onFormSubmit(event) {
+                const keyword = searchInput.value.trim();
+                const actionUrl = getActionUrl();
+
+                // 对于外部搜索，阻止默认提交并手动处理
+                if (actionUrl !== 'site-search') {
+                    event.preventDefault();
+                    if (keyword === '') {
+                        searchInput.focus();
+                        return;
+                    }
+                    const url = actionUrl + encodeURIComponent(keyword);
+                    shouldOpenInNewWindow() ? window.open(url, '_blank') : window.location.href = url;
+                }
+                // 对于站内搜索，不执行任何操作，其逻辑由 input 事件处理
+            }
+
+            // --- 初始化 ---
+            function init() {
+                // 1. 设置"在新窗口中打开"复选框的初始状态
+                const openInNew = shouldOpenInNewWindow();
+                newWindowCheckbox.checked = openInNew;
+                updateTarget(openInNew);
+
+                // 2. 设置默认的搜索引擎
+                const defaultType = getDefaultSearchType();
+                const defaultRadio = document.querySelector(`input[name="type"][value="${defaultType}"]`);
+                if (defaultRadio) {
+                    defaultRadio.checked = true;
+                    highlightActiveGroup(defaultRadio);
+                }
+
+                // 3. 设置初始的 placeholder 和 action
+                updatePlaceholder(getPlaceholder());
+                updateAction(getActionUrl());
+
+                // 4. 绑定事件监听器
+                searchTypeRadios.forEach(radio => radio.addEventListener('change', onSearchTypeChange));
+                newWindowCheckbox.addEventListener('change', onNewWindowToggle);
+                searchForm.addEventListener('submit', onFormSubmit);
+            }
+
+            init();
+        });
     </script>
 </body>
 
