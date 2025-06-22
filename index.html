@@ -341,7 +341,10 @@
         </div>
     </div>
 
-    <!-- 页面核心脚本 -->
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" style="display:none;position:fixed;right:30px;bottom:40px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:#007bff;color:#fff;font-size:24px;box-shadow:0 2px 8px rgba(0,0,0,0.15);cursor:pointer;transition:background 0.3s;" title="返回顶部">
+        <i class="fa fa-arrow-up"></i>
+    </button>
     <script>
         /**
          * 切换夜间/日间模式
@@ -501,6 +504,19 @@
                     });
                 })
                 .catch(error => console.error('数据加载失败:', error));
+
+            // 返回顶部按钮逻辑
+            const backToTopBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         });
     </script>
 
