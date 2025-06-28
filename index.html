@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./css/dark.min.css" />
     <link rel="stylesheet" href="./css/animation.min.css" />
     <link rel="stylesheet" href="./css/mobile.min.css" />
-    <link rel="stylesheet" href="./css/loading.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
     <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/font-awesome/6.0.0/css/all.min.css" />
@@ -42,44 +41,6 @@
 <body class="page-body">
     <!-- 页面容器 -->
     <div class="page-container">
-        <!-- 左侧边栏 -->
-        <div class="sidebar-menu toggle-others fixed collapsed">
-            <div class="sidebar-menu-inner">
-                <!-- Logo 和移动端切换按钮 -->
-                <header class="logo-env">
-                    <div class="logo">
-                        <a rel="go-top"><i class="fa-solid fa-compass"></i></a>
-                        <div class="logo-text">
-                            <a rel="go-top">WebNav</a>
-                        </div>
-                    </div>
-                    <div class="mobile-menu-toggle visible-xs">
-                        <!-- 手机端专用图标 -->
-                        <a href="https://dstbp.net/" target="_blank" class="mobile-icon">
-                            <i class="fa-solid fa-house"></i>
-                        </a>
-                        <a href="https://github.com/DSTBP" target="_blank" class="mobile-icon">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/url-checker.html" target="_blank" class="mobile-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </a>
-                        <a id="mobile-settings-btn" class="mobile-icon" style="cursor: pointer;">
-                            <i class="fa-solid fa-cog"></i>
-                        </a>
-                        <a onclick="switchNightMode()" class="mobile-icon">
-                            <i class="fa-solid fa-circle-half-stroke"></i>
-                        </a>
-                        <a href="" data-toggle="mobile-menu">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </div>
-                </header>
-                <!-- 侧边栏菜单 (将由JS动态生成) -->
-                <ul id="main-menu" class="main-menu"></ul>
-            </div>
-        </div>
-
         <!-- 主内容区 -->
         <div class="main-content">
             <!-- 顶部导航栏 -->
@@ -444,18 +405,6 @@
             fetch('./data.json')
                 .then(response => response.json())
                 .then(data => {
-                    // 动态生成侧边栏菜单
-                    const mainMenu = document.getElementById('main-menu');
-                    Object.values(data['main-menu']).forEach(item => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `
-                            <a href="${item.href}" class="smooth">
-                                <i class="${item.icon}"></i>
-                                <span class="title">${item.title}</span>
-                            </a>`;
-                        mainMenu.appendChild(li);
-                    });
-
                     // 动态生成链接内容区
                     const linksContainer = document.getElementById('links-container');
                     Object.entries(data.links).forEach(([category, items]) => {
@@ -600,6 +549,7 @@
         </div>
     </div>
     <div id="settings-overlay" class="settings-overlay"></div>
+    <script src="sidebar.min.js"></script>
 </body>
 
 </html>
