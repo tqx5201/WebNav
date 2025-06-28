@@ -71,18 +71,18 @@
                             <span>背景设置</span>
                         </a>
                     </li>
-                    <!-- 夜间模式切换按钮 -->
-                    <li class="menu-item" style="margin-left: auto; margin-right: 10px;">
+                    <!-- 今日诗词 - 移动端隐藏 -->
+                    <li class="menu-item desktop-only">
+                        <i class="fa-solid fa-message" style="margin-right: 6px"></i>
+                        <span id="jinrishici-sentence">正在加载今日诗词....</span>
+                        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                    </li>
+                    <!-- 夜间模式切换按钮 - 移到最右侧 -->
+                    <li class="menu-item night-mode-btn">
                         <a onclick="switchNightMode()" style="cursor: pointer;">
                             <i class="fa-solid fa-circle-half-stroke"></i>
                             <span>夜间模式</span>
                         </a>
-                    </li>
-                    <!-- 今日诗词 -->
-                    <li class="menu-item">
-                        <i class="fa-solid fa-message" style="margin-right: 6px"></i>
-                        <span id="jinrishici-sentence">正在加载今日诗词....</span>
-                        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
                     </li>
                 </ul>
             </nav>
