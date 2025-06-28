@@ -138,3 +138,38 @@ html{height:100%}*{user-select:none}a{text-decoration:none!important;transition:
   width: 60px !important;
   height: 50px !important;
 }
+
+/* 今日诗词样式调整 */
+.menu-item.desktop-only {
+  display: flex !important;
+  align-items: center;
+  margin-left: 15px;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.menu-item.desktop-only i {
+  font-size: 1.75rem;
+  margin-right: 6px;
+}
+
+/* 夜间模式按钮样式确保一致性 */
+.menu-item.night-mode-btn a i {
+  font-size: 1.75rem;
+}
+
+/* 桌面端导航栏布局调整 */
+@media screen and (min-width: 769px) {
+  .navbar.user-info-navbar .user-info-menu {
+    justify-content: flex-start;
+  }
+  
+  .menu-item.night-mode-btn {
+    margin-left: auto;
+  }
+  
+  .menu-item.desktop-only {
+    margin-left: 15px;
+  }
+}
