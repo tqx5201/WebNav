@@ -54,7 +54,20 @@
                         </div>
                     </div>
                     <div class="mobile-menu-toggle visible-xs">
-                        <a onclick="switchNightMode()">
+                        <!-- 手机端专用图标 -->
+                        <a href="https://dstbp.net/" target="_blank" class="mobile-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <a href="https://github.com/DSTBP" target="_blank" class="mobile-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="/url-checker.html" target="_blank" class="mobile-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </a>
+                        <a id="mobile-settings-btn" class="mobile-icon" style="cursor: pointer;">
+                            <i class="fa-solid fa-cog"></i>
+                        </a>
+                        <a onclick="switchNightMode()" class="mobile-icon">
                             <i class="fa-solid fa-circle-half-stroke"></i>
                         </a>
                         <a href="" data-toggle="mobile-menu">
@@ -388,7 +401,46 @@
                 document.body.classList.add('dark-theme');
             }
 
-            // 2. 加载并渲染动态内容
+            // 2. 初始化设置面板功能
+            const settingsBtn = document.getElementById('settings-btn');
+            const mobileSettingsBtn = document.getElementById('mobile-settings-btn');
+            const closeSettingsBtn = document.getElementById('close-settings-btn');
+            const settingsPanel = document.getElementById('settings-panel');
+            const settingsOverlay = document.getElementById('settings-overlay');
+
+            // 桌面端设置按钮点击事件
+            if (settingsBtn) {
+                settingsBtn.addEventListener('click', function() {
+                    settingsPanel.classList.add('is-visible');
+                    settingsOverlay.classList.add('is-visible');
+                });
+            }
+
+            // 手机端设置按钮点击事件
+            if (mobileSettingsBtn) {
+                mobileSettingsBtn.addEventListener('click', function() {
+                    settingsPanel.classList.add('is-visible');
+                    settingsOverlay.classList.add('is-visible');
+                });
+            }
+
+            // 关闭设置面板
+            if (closeSettingsBtn) {
+                closeSettingsBtn.addEventListener('click', function() {
+                    settingsPanel.classList.remove('is-visible');
+                    settingsOverlay.classList.remove('is-visible');
+                });
+            }
+
+            // 点击遮罩层关闭设置面板
+            if (settingsOverlay) {
+                settingsOverlay.addEventListener('click', function() {
+                    settingsPanel.classList.remove('is-visible');
+                    settingsOverlay.classList.remove('is-visible');
+                });
+            }
+
+            // 3. 加载并渲染动态内容
             fetch('./data.json')
                 .then(response => response.json())
                 .then(data => {
