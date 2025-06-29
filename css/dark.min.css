@@ -41,6 +41,11 @@ body.dark-theme {
     color: #e0e0e0 !important;
 }
 
+/* 今日诗词图标夜间模式白色 */
+.dark-theme .menu-item .fa-solid.fa-message {
+    color: #ffffff !important;
+}
+
 .dark-theme a {
     color: #BECFE3; /* A pleasant blue for links */
 }
