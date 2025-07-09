@@ -383,6 +383,12 @@
         "desc": "将图像中的一种颜色更改为另一种颜色（交换颜色）。还可以调整距离以替换相似的颜色并保留色调"
       },
       {
+        "name": "图片去水印",
+        "url": "https://lightpdf.cn/image-watermark-remover",
+        "img": "lightpdf.jpg",
+        "desc": "轻松批量移除图片中的水印 / 文字 / 标志 / 人物等，还搭配 AI 图像增强功能，让图片更清晰"
+      },
+      {
         "name": "RGB To Hex",
         "url": "https://www.toolhelper.cn/Color/RGBToHex",
         "img": "toolhelper.jpg",
