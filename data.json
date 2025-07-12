@@ -359,6 +359,12 @@
         "desc": "适合找不到高分辨率原图，N手图片模糊不清时提高清晰度用"
       },
       {
+        "name": "AI图片无损放大",
+        "url": "https://ai.nero.com/zh-cn/image-upscaler",
+        "img": "nero.jpg",
+        "desc": "免费的！一键放大图像和照片，几秒就可完成增强并下载"
+      },
+      {
         "name": "音频MIDI",
         "url": "https://midi.martinic.com/zh/audio-to-midi",
         "img": "martinic.jpg",
