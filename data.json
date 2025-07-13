@@ -353,6 +353,12 @@
         "desc": "支持通过浏览器访问，实现打开本地 SVG 文件在线编辑"
       },
       {
+        "name": "照片转电子扫描件/复印件",
+        "url": "https://tugaigai.com/image_scanner",
+        "img": "tugaigai.jpg",
+        "desc": "在线将照片转换为扫描后的电子扫描件和PDF复印件,无需打印机/扫描器"
+      },
+      {
         "name": "图片无损放大",
         "url": "https://waifu2x.udp.jp",
         "img": "waifu2x.jpg",
