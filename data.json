@@ -413,6 +413,12 @@
         "desc": "工具完全免费，能够自动化去除/替换图片背景"
       },
       {
+        "name": "图片背景色添加",
+        "url": "https://uutool.cn/png-bg/",
+        "img": "uutool.jpg",
+        "desc": "支持为PNG图片批量添加指定颜色的背景色"
+      },
+      {
         "name": "图片锐化",
         "url": "https://www.lzltool.cn/Image/SharpenImage",
         "img": "lzltool.jpg",
@@ -725,6 +731,18 @@
         "url": "https://www.cmd5.com/",
         "img": "cmd5.jpg",
         "desc": "一款强大的MD5查询软件，专为解密MD5哈希值而设计"
+      },
+      {
+        "name": "md5.so",
+        "url": "http://md5.so/",
+        "img": "md5so.jpg",
+        "desc": "新晋强大的MD5查询软件"
+      },
+      {
+        "name": "SOMD5",
+        "url": "https://www.somd5.com/",
+        "img": "somd5.jpg",
+        "desc": "输入让你无语的MD5"
       },
       {
         "name": "MD5",
