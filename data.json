@@ -1031,6 +1031,18 @@
         "desc": "密码应用,软件破解,软件安全,游戏外挂与反外挂_(゜-゜)つロ 逆向"
       },
       {
+        "name": "中文查找英文文献",
+        "url": "https://www.x-mol.com/",
+        "img": "x-mol.jpg",
+        "desc": "直接用中文查找英文文献，直接将所有英文文献标题和摘要翻译成中文"
+      },
+      {
+        "name": "AI 读文献",
+        "url": "https://resoomer.ai/en/",
+        "img": "resoomer.jpg",
+        "desc": "导入下载好的文献，AI 自动分析文献重点"
+      },
+      {
         "name": "Algorithm Archive",
         "url": "https://www.algorithm-archive.org/",
         "img": "algorithm-archive.jpg",
