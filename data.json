@@ -2116,6 +2116,44 @@
         "desc": "一种免费服务，用于在线接收手机短信验证码，不需要注册"
       }
     ],
+    "梯子平台": [
+      {
+        "name": "iKuuu VPN",
+        "url": "https://ikuuu.ch/user",
+        "img": "iKuuu.jpg",
+        "desc": "注册有免费 50GB 可供使用，月租 12 元 300GB，质量一般"
+      },
+      {
+        "name": "FlowerCloud",
+        "url": "https://api-flowercloud.com/cart.php",
+        "img": "flowercloud.jpg",
+        "desc": "月租 39 元 150GB，质量优"
+      },
+      {
+        "name": "一元机场",
+        "url": "https://一元机场.ink",
+        "img": "unknown.jpg",
+        "desc": "月租 7 元 500GB，季付 15 元 300GB，质量一般"
+      },
+      {
+        "name": "闪电⚡",
+        "url": "https://sd.369.cyou/",
+        "img": "shandiancn.jpg",
+        "desc": "月租 15 元 320GB，年付 178 元 320GB，质量佳"
+      },
+      {
+        "name": "鸽子 VPN",
+        "url": "https://ww.gz99.top",
+        "img": "unknown.jpg",
+        "desc": "月租 15 元 188GB，年付 99 元 130GB，质量佳"
+      },
+      {
+        "name": "Bywave",
+        "url": "https://by.ltd",
+        "img": "bywave.jpg",
+        "desc": "质量优，https://github.com/winston779/bywave"
+      }
+    ],
     "站长工具": [
       {
         "name": "Whois 查询",
