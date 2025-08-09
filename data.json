@@ -431,6 +431,12 @@
         "desc": "支持批量转换，支持画布扩展"
       },
       {
+        "name": "文件压缩器",
+        "url": "https://tiny.imagestool.com/zh-CN/",
+        "img": "imagestool.jpg",
+        "desc": "支持图片、PDF、视频、音频批量压缩，有效减小文件大小、浏览器操作，保护您的隐私"
+      },
+      {
         "name": "菜鸟工具箱",
         "url": "https://www.jyshare.com/front-end/",
         "img": "jyshare.jpg",
