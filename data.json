@@ -999,6 +999,12 @@
         "desc": "一个 CTF 竞赛和训练平台，为各位 CTF 选手提供真实赛题在线复现等服务"
       },
       {
+        "name": "青少年CTF练习平台",
+        "url": "https://www.qsnctf.com/",
+        "img": "qsnctf.jpg",
+        "desc": "提升网络安全技能，挑战自我极限，题目较少"
+      },
+      {
         "name": "洛谷",
         "url": "https://www.luogu.com.cn/training/list",
         "img": "luogu.jpg",
@@ -1019,12 +1025,6 @@
     ],
     "学术资源": [
       {
-        "name": "码农学习路线图",
-        "url": "https://roadmap.sh/roadmaps",
-        "img": "roadmap.jpg",
-        "desc": "面向开发人员的社区驱动型交互式路线图、文章和资源"
-      },
-      {
         "name": "OI Wiki",
         "url": "https://oi-wiki.org/",
         "img": "oiwiki.jpg",
@@ -1035,6 +1035,72 @@
         "url": "https://ctf-wiki.org/",
         "img": "ctfwiki.jpg",
         "desc": "包含 CTF 各大范畴的基础知识"
+      },
+      {
+        "name": "OEIS",
+        "url": "https://oeis.org/",
+        "img": "oeis.jpg",
+        "desc": "一个网上可搜索的整数数列资料库，常用于解析数论"
+      },
+      {
+        "name": "看雪论坛",
+        "url": "https://bbs.kanxue.com/",
+        "img": "kanxue.jpg",
+        "desc": "专注于PC、移动、智能设备安全研究及逆向工程的开发者社区"
+      },
+      {
+        "name": "先知社区",
+        "url": "https://xz.aliyun.com/news",
+        "img": "xz.jpg",
+        "desc": "阿里云旗下的网络安全技术分享平台，聚焦漏洞分析、渗透测试、代码审计等前沿技术领域"
+      },
+      {
+        "name": "吾爱破解",
+        "url": "https://www.52pojie.cn/index.php",
+        "img": "52pojie.jpg",
+        "desc": "深耕软件逆向工程与反病毒技术领域，包含多种破解软件，可以向坛友求助资源"
+      },
+      {
+        "name": "稀土掘金",
+        "url": "https://juejin.cn/",
+        "img": "juejin.jpg",
+        "desc": "面向中国开发者的技术社区平台，涵盖前端、后端、移动端、AI、区块链等全技术栈"
+      },
+      {
+        "name": "奇安信攻防社区",
+        "url": "https://forum.butian.net/",
+        "img": "qianxin.jpg",
+        "desc": "奇安信补天漏洞响应平台为用户打造的技术交流分享平台，社区以促进攻防技术的切磋与交流为目标"
+      },
+      {
+        "name": "精易论坛",
+        "url": "https://bbs.125.la/",
+        "img": "bbs.jpg",
+        "desc": "精易论坛——程序设计学习交流技术论坛"
+      },
+      {
+        "name": "FreeBuff",
+        "url": "https://www.freebuf.com/",
+        "img": "freebuf.jpg",
+        "desc": "成立于 2010 年。它以“关注黑客与极客”为口号，内容覆盖信息安全资讯、漏洞分析、攻防实战、CTF 比赛"
+      },
+      {
+        "name": "CTF 导航——移动安全",
+        "url": "https://www.ctfiot.com/yidonganquan",
+        "img": "ctfiot.jpg",
+        "desc": "移动安全、IOT安全、ICS安全、区块链安全"
+      },
+      {
+        "name": "夏冰软件",
+        "url": "https://www.jiamisoft.com/blog/jiamiyingyong",
+        "img": "jiamisoft.jpg",
+        "desc": "分享加密算法、加密技术、加密应用相关文章"
+      },
+      {
+        "name": "码农学习路线图",
+        "url": "https://roadmap.sh/roadmaps",
+        "img": "roadmap.jpg",
+        "desc": "面向开发人员的社区驱动型交互式路线图、文章和资源"
       },
       {
         "name": "网安学习文章",
@@ -1067,40 +1133,22 @@
         "desc": "计算机教育中缺失的一课：如何使用计算机相关的基础工具"
       },
       {
-        "name": "OEIS",
-        "url": "https://oeis.org/",
-        "img": "oeis.jpg",
-        "desc": "一个网上可搜索的整数数列资料库，常用于解析数论"
-      },
-      {
         "name": "Android原生OS",
         "url": "https://mi.fiime.cn/Android",
         "img": "fiime.jpg",
         "desc": "基于android的针对各种设备的开源操作系统，收录最全的安卓原生系统下载站点"
       },
       {
-        "name": "精易论坛",
-        "url": "https://bbs.125.la/",
-        "img": "bbs.jpg",
-        "desc": "精易论坛——程序设计学习交流技术论坛"
-      },
-      {
-        "name": "CTF 导航——移动安全",
-        "url": "https://www.ctfiot.com/yidonganquan",
-        "img": "ctfiot.jpg",
-        "desc": "移动安全、IOT安全、ICS安全、区块链安全"
-      },
-      {
-        "name": "夏冰软件",
-        "url": "https://www.jiamisoft.com/blog/jiamiyingyong",
-        "img": "jiamisoft.jpg",
-        "desc": "分享加密算法、加密技术、加密应用相关文章"
-      },
-      {
         "name": "科研工具箱",
         "url": "https://yanweb.top/",
         "img": "yanweb.jpg",
         "desc": "集合学术GPT、中英文文献查询、论文写作、查重降重、专利检索、期刊检索、院校查询、文献管理等众多功能的科研导航网站"
+      },
+      {
+        "name": "教育漏洞报告平台",
+        "url": "https://src.sjtu.edu.cn/",
+        "img": "sjtu.jpg",
+        "desc": "面向全教育行业的漏洞报告平台。帮助提升教育系统各级各类学校、单位的信息系统和网站安全性"
       },
       {
         "name": "学者网",
@@ -1371,10 +1419,40 @@
         "desc": "免费素材图片服务"
       },
       {
-        "name": "unsplash",
+        "name": "航拍素材",
         "url": "https://unsplash.com/",
         "img": "unsplash.jpg",
+        "desc": "全球航拍爱好者和专业摄影师的作品社区"
+      },
+      {
+        "name": "unsplash",
+        "url": "https://www.skypixel.com/",
+        "img": "skypixel.jpg",
         "desc": "免版权的精美图片网站"
+      },
+      {
+        "name": "影视飓风素材库",
+        "url": "https://www.ysjf.com/material",
+        "img": "ysjf.jpg",
+        "desc": "国内免费超级棒的素材库，超级好的公司"
+      },
+      {
+        "name": "视频 DIY 素材",
+        "url": "https://www.spdiy.com/video",
+        "img": "spdiy.jpg",
+        "desc": "各种类型视频素材网站"
+      },
+      {
+        "name": "hippopx",
+        "url": "https://www.hippopx.com/",
+        "img": "hippopx.jpg",
+        "desc": "各种类型图片素材网站"
+      },
+      {
+        "name": "videezy",
+        "url": "https://www.videezy.com/",
+        "img": "videezy.jpg",
+        "desc": "部分免费的视频素材网站"
       },
       {
         "name": "Flaticon",
@@ -1553,6 +1631,12 @@
         "desc": "MP3 音乐高品质在线免费下载"
       },
       {
+        "name": "音乐魔石",
+        "url": "https://yym4.com/",
+        "img": "yym4.jpg",
+        "desc": "一个可以免费无损下载全网所有音乐的网站"
+      },
+      {
         "name": "漫猫动漫",
         "url": "https://www.comicat.org/",
         "img": "comicat.jpg",
@@ -1659,6 +1743,12 @@
         "url": "https://www.nexusmods.com/",
         "img": "nexusmods.jpg",
         "desc": "目前全世界最大的游戏 Mod 分享平台"
+      },
+      {
+        "name": "风灵月影",
+        "url": "https://flingtrainer.com/",
+        "img": "flingtrainer.jpg",
+        "desc": "风灵月影丰富的修改器资源"
       }
     ],
     "摸鱼娱乐": [
@@ -1801,6 +1891,12 @@
         "desc": "打开网页，找一个有空位的房间点击“连”，就可以开始和全球玩家联机对战了"
       },
       {
+        "name": "在线养仓鼠",
+        "url": "https://hammyhome.com/",
+        "img": "hammyhome.jpg",
+        "desc": "是一个可以养赛博仓鼠的网站，可以给他投喂让他运动"
+      },
+      {
         "name": "红色警戒2：网页版",
         "url": "https://ra2web.com",
         "img": "ra2web.jpg",
@@ -1811,6 +1907,12 @@
         "url": "https://game.hullqin.cn",
         "img": "hullqin.jpg",
         "desc": "20+ 桌游小游戏，可创建房间联机、本地游戏"
+      },
+      {
+        "name": "寻找不动的表情包",
+        "url": "http://emojisandearthporn.com/",
+        "img": "emojisandearthporn.jpg",
+        "desc": "很难很考验眼力的一个小游戏，一般人真的找不出来"
       },
       {
         "name": "MC 知名小游戏",
@@ -1831,10 +1933,22 @@
         "desc": "把整篇的古诗打散成无规律的文本，我们要把这些文本连起来还原成古诗原句"
       },
       {
+        "name": "Nazo 烧脑游戏",
+        "url": "https://nazo.one-story.cn/",
+        "img": "nazo.jpg",
+        "desc": "Nazo game 是一个烧脑的在线解密游戏。截至2024年4月，约有11700人通关到51关"
+      },
+      {
         "name": "流体模拟器",
         "url": "https://toolwa.com/fluid-simulation/",
         "img": "toolwa.jpg",
         "desc": "鼠标滑动生成绚丽的流体效果"
+      },
+      {
+        "name": "点击触发音效",
+        "url": "https://aidn.jp/mikutap/",
+        "img": "mikutap.jpg",
+        "desc": "一个非常魔性的休闲小游戏，兼容电脑和手机。点击 Start，然后用鼠标 / 手指点击屏幕，或随意按键盘上的任意键，配上背景音乐非常 Happy"
       },
       {
         "name": "朋友圈切九图",
@@ -1861,6 +1975,12 @@
         "desc": "Emoji表情素材合成器，轻松拥有emoji合成表情"
       },
       {
+        "name": "在线沙画",
+        "url": "https://thisissand.com/",
+        "img": "thisissand.jpg",
+        "desc": "鼠标操作，点击左键绘画，右上角可以选择沙子颜色，能画出各种图案"
+      },
+      {
         "name": "语气转换器",
         "url": "https://goblin.tools/Formalizer",
         "img": "goblin.jpg",
@@ -1883,6 +2003,12 @@
         "url": "https://crazyv50.com/",
         "img": "crazyv50.jpg",
         "desc": "刚换的qq音乐的会员兑换码，多了一个，发你们用 KFC-CRAZY-THURSDAY-VME50"
+      },
+      {
+        "name": "3D斯诺克",
+        "url": "http://www.heyzxz.me/pcol/",
+        "img": "heyzxz.jpg",
+        "desc": "一个可以不去台球厅就可以打斯诺克的网站"
       },
       {
         "name": "Steam 游戏库吐槽姬",
