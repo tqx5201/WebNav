@@ -2420,6 +2420,12 @@
         "url": "https://webofscience.clarivate.cn/",
         "img": "webofscience.jpg",
         "desc": "一个领先的科学研究平台，提供全面的数据、指标和跨学科的见解"
+      },
+      {
+        "name": "ACM Digital Library",
+        "url": "https://dl.acm.org/",
+        "img": "acm.jpg",
+        "desc": "美国计算机协会数字图书馆全文数据库，所有 ICPS 论文都可免费获取"
       }
     ],
     "查重降重平台": [
