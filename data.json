@@ -1033,6 +1033,12 @@
         "url": "https://www.python-spider.com/challenge/",
         "img": "yuanrenxue.jpg",
         "desc": "猿人学JS逆向、Android逆向平台"
+      },
+      {
+        "name": "ImaginaryCTF",
+        "url": "https://imaginaryctf.org/ArchivedChallenges",
+        "img": "imaginaryctf.jpg",
+        "desc": "归档：Crypto 为主的 CTF"
       }
     ],
     "学术资源": [
