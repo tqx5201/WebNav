@@ -1357,6 +1357,12 @@
         "desc": "我是满血版 DeepSeek，实时在线，支持深度思考和联网搜索。免费不限次数"
       },
       {
+        "name": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/",
+        "img": "copilot.png",
+        "desc": "微软 Copilot 是一种集成在多种 Microsoft 产品中的人工智能助手，旨在提高工作效率和创造力"
+      },
+      {
         "name": "当贝 AI",
         "url": "https://ai.dangbei.com/chat",
         "img": "dangbei.png",
