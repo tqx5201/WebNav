@@ -83,7 +83,7 @@
       },
       {
         "id": "type-git1",
-        "value": "https://github.com/search?utf8=%E2%9C%93&q=",
+        "value": "https://bgithub.xyz/search?utf8=%E2%9C%93&q=",
         "placeholder": "搜索 Github 仓库",
         "name": "Github",
         "color": "#000000"
@@ -127,7 +127,7 @@
       },
       {
         "id": "type-git",
-        "value": "https://github.com/search?utf8=%E2%9C%93&q=",
+        "value": "https://bgithub.xyz/search?utf8=%E2%9C%93&q=",
         "placeholder": "搜索 Github 仓库",
         "name": "Github",
         "color": "#1D2E47"
@@ -316,6 +316,12 @@
       }
     ],
     "网页工具": [
+      {
+        "name": "min-python",
+        "url": "https://www.min2k.com/tools/min-python/",
+        "img": "miku.png",
+        "desc": "在线python、编程开发"
+      },
       {
         "name": "MikuTools",
         "url": "https://tools.miku.ac",
@@ -2206,7 +2212,7 @@
         "name": "蔚蓝档案标题生成器",
         "url": "https://pro-ivan.com/game/bluearchive-logo/index.html",
         "img": "pro-ivan.png",
-        "desc": "https://github.com/nulla2011/Bluearchive-logo"
+        "desc": "https://bgithub.xyz/nulla2011/Bluearchive-logo"
       },
       {
         "name": "明日方舟标题生成器",
@@ -2486,3 +2492,4 @@
     ]
   }
 }
+
