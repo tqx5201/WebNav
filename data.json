@@ -2143,6 +2143,12 @@
         "desc": "在线俄罗斯方块"
       },
       {
+        "name": "俄罗斯方块",
+        "url": "https://7259.cloudns.ch/games/elsfk/",
+        "img": "v2fy.png",
+        "desc": "俄罗斯方块（生态版）"
+      },
+      {
         "name": "在线扫雷",
         "url": "https://minesweeper.cn/",
         "img": "minesweeper.png",
@@ -2492,4 +2498,5 @@
     ]
   }
 }
+
 
