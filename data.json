@@ -608,7 +608,7 @@
     "技术工具": [
       {
         "name": "Convert curl",
-        "url": "https://sqqihao.github.io/trillworks.html",
+        "url": "https://curlconverter.com/",
         "img": "convert.png",
         "desc": "Convert curl syntax to Python, Ansible URI, MATLAB, Node.js, PHP, Strest, Go, Dart, JSON, Elixir, Rust"
       },
@@ -875,6 +875,12 @@
         "url": "https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx",
         "img": "javascriptobfuscator.png",
         "desc": "提供 JavaScript 代码ob混淆加密"
+      },
+      {
+        "name": "Javascript-Obfuscator",
+        "url": "https://7259.cloudns.ch/tools/ob/",
+        "img": "javascriptobfuscator.png",
+        "desc": "(生态)JavaScript 代码ob混淆解密"
       },
       {
         "name": "JS解混淆",
@@ -2504,6 +2510,7 @@
     ]
   }
 }
+
 
 
 
