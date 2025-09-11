@@ -323,6 +323,12 @@
         "desc": "在线python、编程开发"
       },
       {
+        "name": "ssq",
+        "url": "https://7259.cloudns.ch/tools/ssq.html.php",
+        "img": "https://www.zhcw.com/static/images/zhcwDemo/Icon-cz64-1.png",
+        "desc": "双色球选号器"
+      },
+      {
         "name": "lbu.cc",
         "url": "https://www.lbu.cc/",
         "img": "https://www.lbu.cc/favicon.ico",
@@ -2510,6 +2516,7 @@
     ]
   }
 }
+
 
 
 
