@@ -319,8 +319,14 @@
       {
         "name": "min-python",
         "url": "https://www.min2k.com/tools/min-python/",
-        "img": "miku.png",
+        "img": "https://cdn.min2k.com/tools/min-python/favicon.ico",
         "desc": "在线python、编程开发"
+      },
+      {
+        "name": "lbu.cc",
+        "url": "https://www.lbu.cc/",
+        "img": "https://www.lbu.cc/favicon.ico",
+        "desc": "我爱工具"
       },
       {
         "name": "MikuTools",
@@ -2498,5 +2504,6 @@
     ]
   }
 }
+
 
 
