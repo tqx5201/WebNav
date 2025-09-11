@@ -323,6 +323,7 @@
         // 把所有 .category-color 绑单击事件
         $('.category-color').on('click', function () {
           // 拿文本 → 拼 id → 切换显隐
+            alert('kkk');
           $('#' + $.trim($(this).text()) + '-links').slideToggle();   // 或者 .toggle()
         });
         
