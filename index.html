@@ -320,12 +320,7 @@
         <i class="fa fa-arrow-up"></i>
     </button>
     <script>
-        // 把所有 .category-color 绑单击事件
-        $('.category-color').on('click', function () {
-          // 拿文本 → 拼 id → 切换显隐
-            alert('kkk');
-          $('#' + $.trim($(this).text()) + '-links').slideToggle();   // 或者 .toggle()
-        });
+        
         
         /**
          * 切换夜间/日间模式
@@ -527,6 +522,14 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
+		// 在 DOM ready 里写一次即可
+		$(function () {
+			// 把点击委托给已经存在的父层（这里假设是 body，也可以换成你的真实容器）
+			$('body').on('click', '.category-color', function () {
+				const id = $.trim($(this).text()) + '-links';   // 拿到对应 div 的 id
+				$('#' + id).slideToggle();                     // 切换显隐
+			});
+		});
     </script>
 
     <!-- 搜索功能脚本 -->
