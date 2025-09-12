@@ -2518,20 +2518,20 @@
       {
         "name": "clawcloud",
         "url": "https://clawcloud.run",
-        "img": "SpeedAI.png",
-        "desc": "爪云"
+        "img": "https://ap-northeast-1.run.claw.cloud/favicon.ico?v=0327",
+        "desc": "爪云,github用户每月5美元免费额度，可部署docker镜像"
       },
       {
         "name": "hubuhost",
         "url": "https://h102.hubuhost.com/login/",
-        "img": "cnki.png",
-        "desc": "单价2元/千字符，支持识别中文、英文、中英文混合文本"
+        "img": "https://hubuhost.com/img/icons/favicon.ico",
+        "desc": "德国免费空间,60G免费PHP空间，带数库"
       },
       {
         "name": "cloudflare",
         "url": "https://cloudflare.com/login",
-        "img": "paperpass.png",
-        "desc": "免费中文论文查重降重，提供职称、课题、高校毕业论文检测服务"
+        "img": "https://dash.cloudflare.com/mstile-70x70.png",
+        "desc": "云耀，免费CDN加速，域名解析"
       },
       {
         "name": "afraid",
@@ -2542,6 +2542,7 @@
     ]
   }
 }
+
 
 
 
