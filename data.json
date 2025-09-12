@@ -2513,9 +2513,36 @@
         "img": "paperyy.png",
         "desc": "提供 AIGC 免费论文检测与智能降重服务，精准识别ChatGPT等AI生成内容"
       }
+    ],
+    "免费空间/域名": [
+      {
+        "name": "clawcloud",
+        "url": "https://clawcloud.run",
+        "img": "SpeedAI.png",
+        "desc": "爪云"
+      },
+      {
+        "name": "hubuhost",
+        "url": "https://h102.hubuhost.com/login/",
+        "img": "cnki.png",
+        "desc": "单价2元/千字符，支持识别中文、英文、中英文混合文本"
+      },
+      {
+        "name": "cloudflare",
+        "url": "https://cloudflare.com/login",
+        "img": "paperpass.png",
+        "desc": "免费中文论文查重降重，提供职称、课题、高校毕业论文检测服务"
+      },
+      {
+        "name": "afraid",
+        "url": "https://freedns.afraid.org/",
+        "img": "paperyy.png",
+        "desc": "免费DNS解析"
+      }
     ]
   }
 }
+
 
 
 
