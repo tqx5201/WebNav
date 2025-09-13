@@ -34,18 +34,34 @@ class URLChecker {
         ];
     }
 
+
+	// 通用：给 fetch 加超时
+	async fetchWithTimeout(resource, options = {}, timeout = 5000) {
+	  const controller = new AbortController();
+	  const id = setTimeout(() => controller.abort(), timeout);
+
+	  return fetch(resource, {
+		...options,
+		signal: controller.signal,
+	  }).finally(() => clearTimeout(id));
+	}
+		
     // 检查单个URL
-    async checkURL(url, name, category) {
+    async checkURL(url,name,img,desc, category) {
         try {
             const startTime = Date.now();
-            const response = await fetch(url, {
-                method: 'HEAD',
-                mode: 'no-cors',
-                redirect: 'follow',
-                headers: {
+			const response = await this.fetchWithTimeout(
+				url,
+				{
+				  method: 'HEAD',
+				  mode: 'no-cors',
+				  redirect: 'follow',
+				  headers: {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-                }
-            });
+					}
+				},
+				10000 // 10 秒超时
+			  );
 
             const endTime = Date.now();
             const responseTime = endTime - startTime;
@@ -75,6 +91,9 @@ class URLChecker {
             // 记录结果
             const result = {
                 name,
+				url,
+				img,
+				desc,
                 category,
                 originalUrl: url,
                 finalUrl,
@@ -87,7 +106,8 @@ class URLChecker {
                 securityDetails,
                 timestamp: new Date().toISOString()
             };
-
+			//console.log(result);
+			//console.log(response);
             this.results.push(result);
             return result;
 
@@ -98,6 +118,9 @@ class URLChecker {
 
             const errorResult = {
                 name,
+				url,
+				img,
+				desc,
                 category,
                 originalUrl: url,
                 finalUrl: url,
@@ -110,10 +133,11 @@ class URLChecker {
                 error: this.getDetailedError(error),
                 timestamp: new Date().toISOString()
             };
-
+			//console.log(errorResult);
             this.results.push(errorResult);
             return errorResult;
         }
+		
     }
 
     // 执行安全检查
@@ -257,7 +281,7 @@ class URLChecker {
         for (const category of Object.keys(data.links)) {
             for (const item of data.links[category]) {
                 if (item.url) {
-                    const result = await this.checkURL(item.url, item.name, category);
+                    const result = await this.checkURL(item, category);
                     results.push(result);
                 }
             }
